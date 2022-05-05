@@ -1,0 +1,14 @@
+base:
+  project_name: Consignment-pricing-using-mlops
+  random_state: 45
+  target_data: 
+
+data_source:
+  local_data: H:/consignment pricing using mlops/data_given/Consignment_pricing_raw.csv
+
+load_data: 
+  raw_data_csv: H:/consignment pricing using mlops/raw_data_csv/Consignment_pricing_raw.csv
+
+
+raw_data:
+  raw: H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv
