@@ -17,7 +17,6 @@ class GetData:
             self.logger.log(log_file,"'read_params' FUNCTION STARTED")
             with open(config_path) as file:
                 self.config = yaml.safe_load(file)
-                print(self.config)
                 self.logger.log(log_file,"config file i.e 'params.yaml' loaded successfully")
                 return self.config
             
@@ -36,7 +35,6 @@ class GetData:
             self.data_path = self.config["data_source"]["local_data"]
             self.raw_path = self.config["raw_data"]["raw"]
             self.data = pd.read_csv(self.raw_path)
-            print(self.data)
             self.logger.log(log_file,"Raw data loaded successfully")
             return self.data
         except Exception as e:
