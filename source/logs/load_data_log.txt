@@ -1,14 +1,2 @@
-2022-05-05/23:34:44		load_data function started
-2022-05-05/23:34:55		load_data function started
-2022-05-05/23:35:53		load_data function started
-2022-05-05/23:35:53		exception occured in load_data method[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data_csv/Consignment_pricing_raw.csv'
-2022-05-05/23:35:53		error occured while loading the data
-2022-05-05/23:36:01		load_data function started
-2022-05-05/23:36:01		exception occured in load_data method[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data_csv/Consignment_pricing_raw.csv'
-2022-05-05/23:36:01		error occured while loading the data
-2022-05-05/23:37:13		load_data function started
-2022-05-05/23:37:13		exception occured in load_data method'NoneType' object has no attribute 'to_csv'
-2022-05-05/23:37:13		error occured while loading the data
-2022-05-05/23:39:57		load_data function started
-2022-05-05/23:39:57		exception occured in load_data method'NoneType' object has no attribute 'to_csv'
-2022-05-05/23:39:57		error occured while loading the data
+2022-05-06/23:21:44		'load_data' FUNCTION STARTED
+2022-05-06/23:21:45		Data loaded successfully to 'raw' folder

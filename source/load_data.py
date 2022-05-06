@@ -1,5 +1,4 @@
-from yaml import load
-from source.get_data import GetData
+from get_data import GetData
 from application_logging.logger import Applogger
 import argparse
 class LoadData:
@@ -10,14 +9,15 @@ class LoadData:
     def load_data(self,config_path):
         try:
             log_file=open("logs/load_data_log.txt","a+")
-            self.logger.log(log_file,"load_data function started")
+            self.logger.log(log_file,"'load_data' FUNCTION STARTED")
             self.config=self.getdata.read_params(config_path)
             self.data=self.getdata.get_data(config_path)
             self.raw_data=self.config["load_data"]["raw_data_csv"]
             self.data.to_csv(self.raw_data,index=False)
+            self.logger.log(log_file,"Data loaded successfully to 'raw' folder")
         except Exception as e:
-            self.logger.log(log_file,"exception occured in load_data method"+str(e))
-            self.logger.log(log_file,"error occured while loading the data")
+            self.logger.log(log_file,"Exception occured in load_data method"+str(e))
+            self.logger.log(log_file,"Error occured while loading the data")
   
 object_=LoadData()
           
