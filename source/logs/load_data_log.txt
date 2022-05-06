@@ -1,2 +1,4 @@
 2022-05-06/23:21:44		'load_data' FUNCTION STARTED
 2022-05-06/23:21:45		Data loaded successfully to 'raw' folder
+2022-05-06/23:36:51		'load_data' FUNCTION STARTED
+2022-05-06/23:36:51		Data loaded successfully to 'raw' folder
