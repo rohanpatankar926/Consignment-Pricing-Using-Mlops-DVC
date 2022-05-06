@@ -1,0 +1,103 @@
+2022-05-05/22:35:49		exception occured in read_params method:log() missing 1 required positional argument: 'log_message'
+2022-05-05/22:35:49		Error occured while reading the yaml file
+2022-05-05/22:36:31		read_params function start
+2022-05-05/22:36:31		exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-05/22:36:31		Error occured while reading the yaml file
+2022-05-05/22:37:28		read_params function start
+2022-05-05/22:38:00		exception occured in get_data method:read_params() takes 1 positional argument but 2 were given
+2022-05-05/22:38:00		error occured while reading the data
+2022-05-05/22:38:09		exception occured in get_data method:read_params() takes 1 positional argument but 2 were given
+2022-05-05/22:38:09		error occured while reading the data
+2022-05-05/22:38:52		read_params function start
+2022-05-05/22:38:52		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:38:52		error occured while reading the data
+2022-05-05/22:39:15		read_params function start
+2022-05-05/22:39:15		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:39:15		error occured while reading the data
+2022-05-05/22:39:27		read_params function start
+2022-05-05/22:39:27		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:39:27		error occured while reading the data
+2022-05-05/22:51:48		read_params function start
+2022-05-05/22:51:48		exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-05/22:51:48		Error occured while reading the yaml file
+2022-05-05/22:51:48		exception occured in get_data method:'NoneType' object is not subscriptable
+2022-05-05/22:51:48		error occured while reading the data
+2022-05-05/22:51:52		read_params function start
+2022-05-05/22:51:52		exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-05/22:51:52		Error occured while reading the yaml file
+2022-05-05/22:51:52		exception occured in get_data method:'NoneType' object is not subscriptable
+2022-05-05/22:51:52		error occured while reading the data
+2022-05-05/22:52:04		read_params function start
+2022-05-05/22:52:04		exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-05/22:52:04		Error occured while reading the yaml file
+2022-05-05/22:52:04		exception occured in get_data method:'NoneType' object is not subscriptable
+2022-05-05/22:52:04		error occured while reading the data
+2022-05-05/22:52:23		read_params function start
+2022-05-05/22:52:23		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:52:23		error occured while reading the data
+2022-05-05/22:52:32		read_params function start
+2022-05-05/22:52:32		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:52:32		error occured while reading the data
+2022-05-05/22:53:14		read_params function start
+2022-05-05/22:53:14		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:53:14		error occured while reading the data
+2022-05-05/22:53:20		read_params function start
+2022-05-05/22:53:20		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:53:20		error occured while reading the data
+2022-05-05/22:54:03		read_params function start
+2022-05-05/22:54:03		get_data function started
+2022-05-05/22:54:03		exception occured in get_data method:[Errno 2] No such file or directory: 'raw_data/Consignment_pricing_raw.csv'
+2022-05-05/22:54:03		error occured while reading the data
+2022-05-05/22:54:37		read_params function start
+2022-05-05/22:54:37		get_data function started
+2022-05-05/23:28:59		read_params function start
+2022-05-05/23:28:59		exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-05/23:28:59		Error occured while reading the yaml file
+2022-05-05/23:28:59		get_data function started
+2022-05-05/23:28:59		exception occured in get_data method:'NoneType' object is not subscriptable
+2022-05-05/23:28:59		error occured while reading the data
+2022-05-05/23:29:49		read_params function start
+2022-05-05/23:29:49		get_data function started
+2022-05-05/23:29:52		read_params function start
+2022-05-05/23:29:52		get_data function started
+2022-05-05/23:34:29		read_params function start
+2022-05-05/23:34:29		get_data function started
+2022-05-05/23:34:44		read_params function start
+2022-05-05/23:34:44		read_params function start
+2022-05-05/23:34:44		get_data function started
+2022-05-05/23:34:55		read_params function start
+2022-05-05/23:34:55		read_params function start
+2022-05-05/23:34:55		get_data function started
+2022-05-05/23:35:53		read_params function start
+2022-05-05/23:35:53		read_params function start
+2022-05-05/23:35:53		get_data function started
+2022-05-05/23:36:01		read_params function start
+2022-05-05/23:36:01		read_params function start
+2022-05-05/23:36:01		get_data function started
+2022-05-05/23:37:13		read_params function start
+2022-05-05/23:37:13		read_params function start
+2022-05-05/23:37:13		get_data function started
+2022-05-05/23:37:13		exception occured in get_data method:[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv'
+2022-05-05/23:37:13		error occured while reading the data
+2022-05-05/23:39:57		read_params function start
+2022-05-05/23:39:57		read_params function start
+2022-05-05/23:39:57		get_data function started
+2022-05-05/23:39:57		exception occured in get_data method:[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv'
+2022-05-05/23:39:57		error occured while reading the data
+2022-05-05/23:40:00		read_params function start
+2022-05-05/23:40:00		get_data function started
+2022-05-05/23:40:00		exception occured in get_data method:[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv'
+2022-05-05/23:40:00		error occured while reading the data
+2022-05-05/23:40:09		read_params function start
+2022-05-05/23:40:09		get_data function started
+2022-05-05/23:40:09		exception occured in get_data method:[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv'
+2022-05-05/23:40:09		error occured while reading the data
+2022-05-06/20:02:24		read_params function start
+2022-05-06/20:02:24		get_data function started
+2022-05-06/20:02:24		exception occured in get_data method:[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv'
+2022-05-06/20:02:24		error occured while reading the data
+2022-05-06/20:04:33		read_params function start
+2022-05-06/20:04:33		config loaded successfully
+2022-05-06/20:04:33		get_data function started
+2022-05-06/20:04:33		exception occured in get_data method:[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/raw_data/Consignment_pricing_raw.csv'
+2022-05-06/20:04:33		error occured while reading the data
