@@ -45,8 +45,11 @@ class GetData:
 
 object_=GetData()
 
-if __name__=="__main__":
-    args=argparse.ArgumentParser()
-    args.add_argument("--config",default="H:/consignment pricing using mlops/params.yaml")
-    parsed_args=args.parse_args()
-    data=object_.get_data(config_path=parsed_args.config)
+def main_func(__name__, object_):
+    if __name__=="__main__":
+        args=argparse.ArgumentParser()
+        args.add_argument("--config",default="H:/consignment pricing using mlops/params.yaml")
+        parsed_args=args.parse_args()
+        data=object_.get_data(config_path=parsed_args.config)
+
+main_func(__name__, object_)
