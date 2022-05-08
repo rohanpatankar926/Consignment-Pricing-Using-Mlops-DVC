@@ -416,3 +416,65 @@
 2022-05-08/00:40:48		config file i.e 'params.yaml' loaded successfully
 2022-05-08/00:41:28		'read_params' FUNCTION STARTED
 2022-05-08/00:41:28		config file i.e 'params.yaml' loaded successfully
+2022-05-08/17:47:34		'read_params' FUNCTION STARTED
+2022-05-08/17:47:34		config file i.e 'params.yaml' loaded successfully
+2022-05-08/17:48:27		'read_params' FUNCTION STARTED
+2022-05-08/17:48:27		config file i.e 'params.yaml' loaded successfully
+2022-05-08/17:48:38		'read_params' FUNCTION STARTED
+2022-05-08/17:48:38		config file i.e 'params.yaml' loaded successfully
+2022-05-08/17:52:38		'read_params' FUNCTION STARTED
+2022-05-08/17:52:38		config file i.e 'params.yaml' loaded successfully
+2022-05-08/17:53:27		'read_params' FUNCTION STARTED
+2022-05-08/17:53:27		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:20		'read_params' FUNCTION STARTED
+2022-05-08/23:52:20		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:20		'read_params' FUNCTION STARTED
+2022-05-08/23:52:20		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:20		'read_params' FUNCTION STARTED
+2022-05-08/23:52:20		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:20		'get_data' FUNCTION STARTED
+2022-05-08/23:52:20		Raw data loaded successfully
+2022-05-08/23:52:41		'read_params' FUNCTION STARTED
+2022-05-08/23:52:41		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:41		'read_params' FUNCTION STARTED
+2022-05-08/23:52:41		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:41		'read_params' FUNCTION STARTED
+2022-05-08/23:52:41		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:52:41		'get_data' FUNCTION STARTED
+2022-05-08/23:52:41		Raw data loaded successfully
+2022-05-08/23:53:02		'read_params' FUNCTION STARTED
+2022-05-08/23:53:02		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:53:02		'read_params' FUNCTION STARTED
+2022-05-08/23:53:02		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:53:02		'read_params' FUNCTION STARTED
+2022-05-08/23:53:02		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:53:02		'get_data' FUNCTION STARTED
+2022-05-08/23:53:02		Raw data loaded successfully
+2022-05-08/23:55:02		'read_params' FUNCTION STARTED
+2022-05-08/23:55:02		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:55:02		'get_data' FUNCTION STARTED
+2022-05-08/23:55:02		Raw data loaded successfully
+2022-05-08/23:56:28		'read_params' FUNCTION STARTED
+2022-05-08/23:56:28		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:56:28		'read_params' FUNCTION STARTED
+2022-05-08/23:56:28		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:56:28		'read_params' FUNCTION STARTED
+2022-05-08/23:56:29		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:56:28		'get_data' FUNCTION STARTED
+2022-05-08/23:56:29		Raw data loaded successfully
+2022-05-08/23:57:35		'read_params' FUNCTION STARTED
+2022-05-08/23:57:35		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:57:35		'read_params' FUNCTION STARTED
+2022-05-08/23:57:35		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:57:35		'read_params' FUNCTION STARTED
+2022-05-08/23:57:35		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:57:35		'get_data' FUNCTION STARTED
+2022-05-08/23:57:35		Raw data loaded successfully
+2022-05-08/23:59:10		'read_params' FUNCTION STARTED
+2022-05-08/23:59:10		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:59:10		'read_params' FUNCTION STARTED
+2022-05-08/23:59:10		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:59:10		'read_params' FUNCTION STARTED
+2022-05-08/23:59:10		config file i.e 'params.yaml' loaded successfully
+2022-05-08/23:59:10		'get_data' FUNCTION STARTED
+2022-05-08/23:59:10		Raw data loaded successfully
