@@ -14,10 +14,17 @@ class FeatureEngineering:
         self.load_data = LoadData()
 
     def data_(self,config_path):
-        self.config = self.get_data.read_params(config_path)
-        self.data = self.config["data"]["processed"]
-        self.data = pd.read_csv(self.data)
-        return self.data
+        try:
+            logfile=open("logs/feature_engineering_logs.logs","a+")
+            self.logger.log(logfile,"'data_' FUNCTION STARTED")
+            self.config = self.get_data.read_params(config_path)
+            self.data = self.config["data"]["processed"]
+            self.data = pd.read_csv(self.data)
+            self.logger.log(logfile,"Data loaded successfully")
+            return self.data
+        except Exception as e:
+            self.logger.log(logfile,"Exception occurred while loading the data"+ str(e))
+            self.logger.log(logfile,"Failed to load the data please check your code and run")
 
     # outlier detection
     def outlier_detection(self, data, colname):
@@ -54,28 +61,41 @@ class FeatureEngineering:
             return x
     
     def freight_cost_transform(self,config_path):
-        self.data = self.remove_outliers(config_path)
-        self.data["freight_cost_(usd)"]=self.data["freight_cost_(usd)"].apply(self.trans_freight_cost)
-        self.median_value=self.data["freight_cost_(usd)"].median()
-        self.data["freight_cost_(usd)"]=self.data["freight_cost_(usd)"].replace(np.nan,self.median_value)
-        self.data["freight_cost_(usd)"]=self.data["freight_cost_(usd)"].astype(float)
-        return self.data
+        try:
+            logfile=open("logs/feature_engineering_log.txt","a+")
+            self.logger.log(logfile,"'freight_cost_transform' FUNCTION STARTED")
+            self.data = self.remove_outliers(config_path)
+            self.data["freight_cost_(usd)"]=self.data["freight_cost_(usd)"].apply(self.trans_freight_cost)
+            self.median_value=self.data["freight_cost_(usd)"].median()
+            self.data["freight_cost_(usd)"]=self.data["freight_cost_(usd)"].replace(np.nan,self.median_value)
+            self.data["freight_cost_(usd)"]=self.data["freight_cost_(usd)"].astype(float)
+            self.logger.log("freight_cost_transform function compiled successfully")
+            return self.data
+        except Exception as e:
+            self.logger.log("Exception occurred while compiling the code"+ str(e))
+            self.logger.log("Failed to execute the code please check your code and run")
     
     def feature_engineering(self,config_path):
-        self.data = self.freight_cost_transform(config_path)
-        self.data["po_/_so_#"]=pd.get_dummies(self.data["po_/_so_#"])
-        self.data["asn/dn_#"]=pd.get_dummies(self.data["asn/dn_#"])
-        self.data["country"].value_counts()
-        frequency=self.data["country"].value_counts().to_dict()
-        self.data["country"]=self.data["country"].map(frequency)
-        self.data["fulfill_via"]=pd.get_dummies(self.data["fulfill_via"])
-        self.data["vendor_inco_term"]=pd.get_dummies(self.data["vendor_inco_term"])
-        self.data["sub_classification"]=pd.get_dummies(self.data["sub_classification"])
-        self.data["first_line_designation"]=pd.get_dummies(self.data["first_line_designation"])
-        self.data["shipment_mode"]=pd.get_dummies(self.data["shipment_mode"])
-        self.data["pq_#"]=pd.get_dummies(self.data["pq_#"])
-        print(self.data)
-        # [data for data in self.data if self.data[data].dtypes=="O"]
+        try:
+            logfile=open("source\logs\feature_engineering_log.txt","a+")
+            self.logger.log("'feature_engineering' FUNCTION STARTED")
+            self.data = self.freight_cost_transform(config_path)
+            self.data["po_/_so_#"]=pd.get_dummies(self.data["po_/_so_#"])
+            self.data["asn/dn_#"]=pd.get_dummies(self.data["asn/dn_#"])
+            self.data["country"].value_counts()
+            frequency=self.data["country"].value_counts().to_dict()
+            self.data["country"]=self.data["country"].map(frequency)
+            self.data["fulfill_via"]=pd.get_dummies(self.data["fulfill_via"])
+            self.data["vendor_inco_term"]=pd.get_dummies(self.data["vendor_inco_term"])
+            self.data["sub_classification"]=pd.get_dummies(self.data["sub_classification"])
+            self.data["first_line_designation"]=pd.get_dummies(self.data["first_line_designation"])
+            self.data["shipment_mode"]=pd.get_dummies(self.data["shipment_mode"])
+            self.data["pq_#"]=pd.get_dummies(self.data["pq_#"])
+            self.logger.log("feature engineering function compiled successfully")
+            # [data for data in self.data if self.data[data].dtypes=="O"]
+        except Exception as e:
+            self.logger.log(logfile, "Exception occurred while compiling the code"+ str(e))
+            self.logger.log(logfile,"Failed to execute the code please check your code and run")
 
     def final_data(self,config_path):
             try:
