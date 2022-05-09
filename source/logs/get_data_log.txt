@@ -850,3 +850,15 @@
 2022-05-10/01:47:06		config file i.e 'params.yaml' loaded successfully
 2022-05-10/01:47:06		'read_params' FUNCTION STARTED
 2022-05-10/01:47:06		config file i.e 'params.yaml' loaded successfully
+2022-05-10/02:36:50		'read_params' FUNCTION STARTED
+2022-05-10/02:36:50		config file i.e 'params.yaml' loaded successfully
+2022-05-10/02:36:51		'read_params' FUNCTION STARTED
+2022-05-10/02:36:51		config file i.e 'params.yaml' loaded successfully
+2022-05-10/02:37:30		'read_params' FUNCTION STARTED
+2022-05-10/02:37:30		config file i.e 'params.yaml' loaded successfully
+2022-05-10/02:37:31		'read_params' FUNCTION STARTED
+2022-05-10/02:37:31		config file i.e 'params.yaml' loaded successfully
+2022-05-10/02:38:29		'read_params' FUNCTION STARTED
+2022-05-10/02:38:29		config file i.e 'params.yaml' loaded successfully
+2022-05-10/02:38:30		'read_params' FUNCTION STARTED
+2022-05-10/02:38:30		config file i.e 'params.yaml' loaded successfully
