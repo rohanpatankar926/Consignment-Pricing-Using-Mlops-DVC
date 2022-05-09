@@ -8,3 +8,310 @@
 2022-05-08/17:52:38		removed outliers function compiled successfully
 2022-05-08/17:53:27		'remove_outliers' FUNCTION STARTED
 2022-05-08/17:53:27		removed outliers function compiled successfully
+2022-05-09/23:06:13		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:06:13		removed outliers function compiled successfully
+2022-05-09/23:07:34		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:07:34		removed outliers function compiled successfully
+2022-05-09/23:08:12		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:08:12		removed outliers function compiled successfully
+2022-05-09/23:08:20		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:08:20		removed outliers function compiled successfully
+2022-05-09/23:10:36		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:10:36		removed outliers function compiled successfully
+2022-05-09/23:10:47		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:10:47		removed outliers function compiled successfully
+2022-05-09/23:10:55		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:10:56		removed outliers function compiled successfully
+2022-05-09/23:16:07		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:16:07		removed outliers function compiled successfully
+2022-05-09/23:16:56		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:16:57		removed outliers function compiled successfully
+2022-05-09/23:17:09		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:17:09		removed outliers function compiled successfully
+2022-05-09/23:18:02		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:18:02		removed outliers function compiled successfully
+2022-05-09/23:18:40		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:18:40		removed outliers function compiled successfully
+2022-05-09/23:19:07		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:19:08		removed outliers function compiled successfully
+2022-05-09/23:19:39		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:19:39		removed outliers function compiled successfully
+2022-05-09/23:19:49		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:19:49		removed outliers function compiled successfully
+2022-05-09/23:20:20		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:20:20		removed outliers function compiled successfully
+2022-05-09/23:22:33		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:22:33		removed outliers function compiled successfully
+2022-05-09/23:28:41		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:28:41		removed outliers function compiled successfully
+2022-05-09/23:29:05		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:29:06		removed outliers function compiled successfully
+2022-05-09/23:29:30		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:29:30		removed outliers function compiled successfully
+2022-05-09/23:31:19		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:31:19		removed outliers function compiled successfully
+2022-05-09/23:31:56		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:31:56		removed outliers function compiled successfully
+2022-05-09/23:32:28		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:32:28		removed outliers function compiled successfully
+2022-05-09/23:32:42		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:32:42		removed outliers function compiled successfully
+2022-05-09/23:33:01		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:33:01		removed outliers function compiled successfully
+2022-05-09/23:33:21		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:33:21		removed outliers function compiled successfully
+2022-05-09/23:33:46		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:33:46		removed outliers function compiled successfully
+2022-05-09/23:34:21		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:34:21		removed outliers function compiled successfully
+2022-05-09/23:34:48		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:34:48		removed outliers function compiled successfully
+2022-05-09/23:36:23		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:36:23		removed outliers function compiled successfully
+2022-05-09/23:36:56		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:36:56		removed outliers function compiled successfully
+2022-05-09/23:37:22		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:37:22		removed outliers function compiled successfully
+2022-05-09/23:37:49		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:37:49		removed outliers function compiled successfully
+2022-05-09/23:38:42		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:38:42		removed outliers function compiled successfully
+2022-05-09/23:39:02		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:39:02		removed outliers function compiled successfully
+2022-05-09/23:39:17		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:39:17		removed outliers function compiled successfully
+2022-05-09/23:47:32		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:47:33		removed outliers function compiled successfully
+2022-05-09/23:48:18		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:48:19		removed outliers function compiled successfully
+2022-05-09/23:49:06		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:49:06		removed outliers function compiled successfully
+2022-05-09/23:49:28		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:49:28		removed outliers function compiled successfully
+2022-05-09/23:49:35		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:49:35		removed outliers function compiled successfully
+2022-05-09/23:49:46		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:49:47		removed outliers function compiled successfully
+2022-05-09/23:49:59		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:49:59		removed outliers function compiled successfully
+2022-05-09/23:51:00		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:51:00		removed outliers function compiled successfully
+2022-05-09/23:51:34		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:51:35		removed outliers function compiled successfully
+2022-05-09/23:55:48		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:55:48		Exception occured in remove_outliers method'process'
+2022-05-09/23:55:48		Error occured while removing outliers
+2022-05-09/23:56:35		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:56:35		Exception occured in remove_outliers method'process'
+2022-05-09/23:56:35		Error occured while removing outliers
+2022-05-09/23:57:19		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:57:19		Exception occured in remove_outliers method'process'
+2022-05-09/23:57:19		Error occured while removing outliers
+2022-05-09/23:57:46		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:57:46		Exception occured in remove_outliers method'process'
+2022-05-09/23:57:46		Error occured while removing outliers
+2022-05-09/23:58:01		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:58:01		Exception occured in remove_outliers method'process'
+2022-05-09/23:58:01		Error occured while removing outliers
+2022-05-09/23:58:20		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:58:20		Exception occured in remove_outliers method'process'
+2022-05-09/23:58:20		Error occured while removing outliers
+2022-05-09/23:58:29		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:58:29		Exception occured in remove_outliers method'process'
+2022-05-09/23:58:29		Error occured while removing outliers
+2022-05-09/23:59:59		'remove_outliers' FUNCTION STARTED
+2022-05-09/23:59:59		Exception occured in remove_outliers method'process'
+2022-05-09/23:59:59		Error occured while removing outliers
+2022-05-10/00:00:14		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:00:14		Exception occured in remove_outliers method'process'
+2022-05-10/00:00:14		Error occured while removing outliers
+2022-05-10/00:00:29		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:00:29		Exception occured in remove_outliers method'process'
+2022-05-10/00:00:29		Error occured while removing outliers
+2022-05-10/00:00:31		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:00:31		Exception occured in remove_outliers method'process'
+2022-05-10/00:00:31		Error occured while removing outliers
+2022-05-10/00:01:20		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:01:20		Exception occured in remove_outliers method'process'
+2022-05-10/00:01:20		Error occured while removing outliers
+2022-05-10/00:01:41		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:01:41		Exception occured in remove_outliers method'process'
+2022-05-10/00:01:41		Error occured while removing outliers
+2022-05-10/00:02:16		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:02:16		Exception occured in remove_outliers method'process'
+2022-05-10/00:02:16		Error occured while removing outliers
+2022-05-10/00:04:34		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:04:34		Exception occured in remove_outliers method'process'
+2022-05-10/00:04:34		Error occured while removing outliers
+2022-05-10/00:04:40		'remove_outliers' FUNCTION STARTED
+2022-05-10/00:04:40		Exception occured in remove_outliers method'process'
+2022-05-10/00:04:40		Error occured while removing outliers
+2022-05-10/01:01:46		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:01:46		Exception occured in remove_outliers method'process'
+2022-05-10/01:01:46		Error occured while removing outliers
+2022-05-10/01:01:59		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:01:59		Exception occured in remove_outliers method'process'
+2022-05-10/01:01:59		Error occured while removing outliers
+2022-05-10/01:02:09		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:02:09		Exception occured in remove_outliers method'process'
+2022-05-10/01:02:09		Error occured while removing outliers
+2022-05-10/01:02:56		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:02:57		Exception occured in remove_outliers method'process'
+2022-05-10/01:02:57		Error occured while removing outliers
+2022-05-10/01:05:36		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:05:36		Exception occured in remove_outliers method'process'
+2022-05-10/01:05:36		Error occured while removing outliers
+2022-05-10/01:06:02		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:06:02		Exception occured in remove_outliers method'process'
+2022-05-10/01:06:02		Error occured while removing outliers
+2022-05-10/01:07:01		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:07:01		Exception occured in remove_outliers method'process'
+2022-05-10/01:07:01		Error occured while removing outliers
+2022-05-10/01:07:26		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:07:26		Exception occured in remove_outliers method'process'
+2022-05-10/01:07:26		Error occured while removing outliers
+2022-05-10/01:07:48		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:07:48		Exception occured in remove_outliers method'process'
+2022-05-10/01:07:48		Error occured while removing outliers
+2022-05-10/01:07:59		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:07:59		Exception occured in remove_outliers method'process'
+2022-05-10/01:07:59		Error occured while removing outliers
+2022-05-10/01:08:25		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:08:26		Exception occured in remove_outliers method'process'
+2022-05-10/01:08:26		Error occured while removing outliers
+2022-05-10/01:08:34		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:08:34		Exception occured in remove_outliers method'process'
+2022-05-10/01:08:34		Error occured while removing outliers
+2022-05-10/01:08:36		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:08:36		Exception occured in remove_outliers method'process'
+2022-05-10/01:08:36		Error occured while removing outliers
+2022-05-10/01:08:49		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:08:49		Exception occured in remove_outliers method'process'
+2022-05-10/01:08:49		Error occured while removing outliers
+2022-05-10/01:08:53		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:08:53		Exception occured in remove_outliers method'process'
+2022-05-10/01:08:53		Error occured while removing outliers
+2022-05-10/01:19:57		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:19:57		removed outliers function compiled successfully
+2022-05-10/01:20:06		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:20:06		removed outliers function compiled successfully
+2022-05-10/01:20:09		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:20:09		removed outliers function compiled successfully
+2022-05-10/01:20:56		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:20:56		removed outliers function compiled successfully
+2022-05-10/01:21:19		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:21:19		removed outliers function compiled successfully
+2022-05-10/01:21:59		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:21:59		removed outliers function compiled successfully
+2022-05-10/01:23:23		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:23:23		removed outliers function compiled successfully
+2022-05-10/01:23:23		'data' FUNCTION STARTED
+2022-05-10/01:23:23		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:23:23		Failed to execute the code please check your code and run
+2022-05-10/01:26:47		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:26:47		removed outliers function compiled successfully
+2022-05-10/01:27:28		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:27:28		removed outliers function compiled successfully
+2022-05-10/01:27:40		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:27:40		removed outliers function compiled successfully
+2022-05-10/01:27:58		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:27:58		removed outliers function compiled successfully
+2022-05-10/01:28:16		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:28:16		removed outliers function compiled successfully
+2022-05-10/01:28:28		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:28:28		removed outliers function compiled successfully
+2022-05-10/01:29:26		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:29:27		removed outliers function compiled successfully
+2022-05-10/01:30:03		'data' FUNCTION STARTED
+2022-05-10/01:30:03		Exception occurred while compiling the codefeature_engineering() takes 1 positional argument but 2 were given
+2022-05-10/01:30:03		Failed to execute the code please check your code and run
+2022-05-10/01:30:20		'data' FUNCTION STARTED
+2022-05-10/01:30:20		Exception occurred while compiling the codefeature_engineering() takes 1 positional argument but 2 were given
+2022-05-10/01:30:20		Failed to execute the code please check your code and run
+2022-05-10/01:31:08		'data' FUNCTION STARTED
+2022-05-10/01:31:08		Exception occurred while compiling the codefeature_engineering() takes 1 positional argument but 2 were given
+2022-05-10/01:31:08		Failed to execute the code please check your code and run
+2022-05-10/01:31:32		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:31:33		removed outliers function compiled successfully
+2022-05-10/01:31:32		'data' FUNCTION STARTED
+2022-05-10/01:31:33		data function compiled successfully
+2022-05-10/01:33:44		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:33:44		removed outliers function compiled successfully
+2022-05-10/01:33:44		'data' FUNCTION STARTED
+2022-05-10/01:33:44		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:33:44		Failed to execute the code please check your code and run
+2022-05-10/01:33:56		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:33:56		removed outliers function compiled successfully
+2022-05-10/01:33:56		'data' FUNCTION STARTED
+2022-05-10/01:33:56		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:33:56		Failed to execute the code please check your code and run
+2022-05-10/01:35:00		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:35:00		removed outliers function compiled successfully
+2022-05-10/01:35:00		'data' FUNCTION STARTED
+2022-05-10/01:35:01		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:35:01		Failed to execute the code please check your code and run
+2022-05-10/01:35:08		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:35:08		removed outliers function compiled successfully
+2022-05-10/01:35:08		'data' FUNCTION STARTED
+2022-05-10/01:35:08		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:35:08		Failed to execute the code please check your code and run
+2022-05-10/01:37:55		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:37:55		removed outliers function compiled successfully
+2022-05-10/01:37:55		'data' FUNCTION STARTED
+2022-05-10/01:37:55		Exception occurred while compiling the code'NoneType' object has no attribute 'drop'
+2022-05-10/01:37:55		Failed to execute the code please check your code and run
+2022-05-10/01:38:33		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:38:33		removed outliers function compiled successfully
+2022-05-10/01:38:33		'data' FUNCTION STARTED
+2022-05-10/01:38:34		Exception occurred while compiling the code'NoneType' object has no attribute 'drop'
+2022-05-10/01:38:34		Failed to execute the code please check your code and run
+2022-05-10/01:40:25		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:40:25		removed outliers function compiled successfully
+2022-05-10/01:40:25		'data' FUNCTION STARTED
+2022-05-10/01:40:25		data function compiled successfully
+2022-05-10/01:40:45		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:40:45		removed outliers function compiled successfully
+2022-05-10/01:40:45		'data' FUNCTION STARTED
+2022-05-10/01:40:46		data function compiled successfully
+2022-05-10/01:41:07		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:41:07		removed outliers function compiled successfully
+2022-05-10/01:41:07		'data' FUNCTION STARTED
+2022-05-10/01:41:08		data function compiled successfully
+2022-05-10/01:41:19		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:41:19		removed outliers function compiled successfully
+2022-05-10/01:41:19		'data' FUNCTION STARTED
+2022-05-10/01:41:19		data function compiled successfully
+2022-05-10/01:41:29		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:41:30		removed outliers function compiled successfully
+2022-05-10/01:41:29		'data' FUNCTION STARTED
+2022-05-10/01:41:30		data function compiled successfully
+2022-05-10/01:41:38		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:41:38		removed outliers function compiled successfully
+2022-05-10/01:41:38		'data' FUNCTION STARTED
+2022-05-10/01:41:38		data function compiled successfully
+2022-05-10/01:41:59		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:41:59		removed outliers function compiled successfully
+2022-05-10/01:41:59		'data' FUNCTION STARTED
+2022-05-10/01:41:59		data function compiled successfully
+2022-05-10/01:42:41		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:42:41		removed outliers function compiled successfully
+2022-05-10/01:42:41		'data' FUNCTION STARTED
+2022-05-10/01:42:41		data function compiled successfully
+2022-05-10/01:44:04		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:44:04		removed outliers function compiled successfully
+2022-05-10/01:44:04		'data' FUNCTION STARTED
+2022-05-10/01:44:05		Exception occurred while compiling the code'transformed_data'
+2022-05-10/01:44:05		Failed to execute the code please check your code and run
+2022-05-10/01:44:38		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:44:38		removed outliers function compiled successfully
+2022-05-10/01:44:38		'data' FUNCTION STARTED
+2022-05-10/01:44:38		Exception occurred while compiling the code'transform'
+2022-05-10/01:44:38		Failed to execute the code please check your code and run
+2022-05-10/01:46:17		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:46:17		removed outliers function compiled successfully
+2022-05-10/01:46:17		'data' FUNCTION STARTED
+2022-05-10/01:46:17		data function compiled successfully
+2022-05-10/01:47:06		'remove_outliers' FUNCTION STARTED
+2022-05-10/01:47:06		removed outliers function compiled successfully
+2022-05-10/01:47:06		'data' FUNCTION STARTED
+2022-05-10/01:47:07		data function compiled successfully

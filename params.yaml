@@ -13,10 +13,13 @@ raw_data:
   raw: H:/consignment pricing using mlops/consignment_data/Consignment_pricing_raw.csv
 
 data:
-  process: "H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv"
+  processed: "H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv"
+
+final_data:
+  transformed_data: "H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_transformed.csv"
 
 columns:
-  select: ["pq_#",'po_/_so_#', 'asn/dn_#', 'country', 'fulfill_via', 'vendor_inco_term',
+  select: ["pq_#",'po_/_so_#', 'asn/dn_#',        'country', 'fulfill_via', 'vendor_inco_term',
        'sub_classification', 'unit_of_measure_(per_pack)',
        'line_item_quantity', 'line_item_value', 'pack_price', 'unit_price',
        'first_line_designation', 'freight_cost_(usd)', 'shipment_mode',

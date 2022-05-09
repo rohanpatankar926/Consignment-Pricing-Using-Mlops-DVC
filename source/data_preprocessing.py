@@ -156,13 +156,13 @@ class Preprocessing:
             self.logger.log(log_file, "'data' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.drop_unnecessary_columns(config_path)
-            self.data.to_csv(self.config["data"]["process"])
+            self.data.to_csv(self.config["data"]["processed"])
             print(self.data)
             self.logger.log(log_file, "data function compiled successfully")
         except Exception as e:
             self.logger.log(
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(
+                log_file, "Exception occurred while compiling the code"+ str(e))
+            self.logger.log(log_file,
                 "Failed to execute the code please check your code and run")
 
 

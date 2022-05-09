@@ -109,3 +109,144 @@
 2022-05-08/23:59:14		drop_unnecessary_columns function compiled successfully
 2022-05-08/23:59:10		'data' FUNCTION STARTED
 2022-05-08/23:59:14		data function compiled successfully
+2022-05-09/23:55:48		'data' FUNCTION STARTED
+2022-05-09/23:56:35		'data' FUNCTION STARTED
+2022-05-09/23:57:19		'data' FUNCTION STARTED
+2022-05-09/23:57:46		'data' FUNCTION STARTED
+2022-05-09/23:57:46		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-09/23:57:46		Failed to execute the code please check your code and run
+2022-05-09/23:58:01		'data' FUNCTION STARTED
+2022-05-09/23:58:01		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-09/23:58:01		Failed to execute the code please check your code and run
+2022-05-09/23:58:20		'data' FUNCTION STARTED
+2022-05-09/23:58:20		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-09/23:58:20		Failed to execute the code please check your code and run
+2022-05-09/23:58:29		'data' FUNCTION STARTED
+2022-05-09/23:58:29		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-09/23:58:29		Failed to execute the code please check your code and run
+2022-05-10/00:02:16		'data' FUNCTION STARTED
+2022-05-10/00:02:16		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/00:02:16		Failed to execute the code please check your code and run
+2022-05-10/00:04:34		'data' FUNCTION STARTED
+2022-05-10/00:04:34		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/00:04:34		Failed to execute the code please check your code and run
+2022-05-10/00:04:40		'data' FUNCTION STARTED
+2022-05-10/00:04:40		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/00:04:40		Failed to execute the code please check your code and run
+2022-05-10/01:01:46		'data' FUNCTION STARTED
+2022-05-10/01:01:46		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/01:01:46		Failed to execute the code please check your code and run
+2022-05-10/01:01:59		'data' FUNCTION STARTED
+2022-05-10/01:01:59		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/01:01:59		Failed to execute the code please check your code and run
+2022-05-10/01:02:09		'data' FUNCTION STARTED
+2022-05-10/01:02:09		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/01:02:09		Failed to execute the code please check your code and run
+2022-05-10/01:02:56		'data' FUNCTION STARTED
+2022-05-10/01:02:57		Exception occurred while compiling the code'NoneType' object is not subscriptable
+2022-05-10/01:02:57		Failed to execute the code please check your code and run
+2022-05-10/01:15:29		'column_imputation' FUNCTION STARTED
+2022-05-10/01:15:29		column_imputation function compiled successfully
+2022-05-10/01:15:29		'impute_missing' FUNCTION STARTED
+2022-05-10/01:15:29		impute_missing function compiled successfully
+2022-05-10/01:15:29		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:15:30		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:15:29		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:15:32		transform_dates_columns function compiled successfully
+2022-05-10/01:15:29		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:15:32		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:15:29		'data' FUNCTION STARTED
+2022-05-10/01:15:55		'column_imputation' FUNCTION STARTED
+2022-05-10/01:15:55		column_imputation function compiled successfully
+2022-05-10/01:15:55		'impute_missing' FUNCTION STARTED
+2022-05-10/01:15:55		impute_missing function compiled successfully
+2022-05-10/01:15:55		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:15:56		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:15:55		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:15:58		transform_dates_columns function compiled successfully
+2022-05-10/01:15:55		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:15:58		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:15:55		'data' FUNCTION STARTED
+2022-05-10/01:15:58		Exception occurred while compiling the code'process'
+2022-05-10/01:15:58		Failed to execute the code please check your code and run
+2022-05-10/01:16:13		'column_imputation' FUNCTION STARTED
+2022-05-10/01:16:13		column_imputation function compiled successfully
+2022-05-10/01:16:13		'impute_missing' FUNCTION STARTED
+2022-05-10/01:16:13		impute_missing function compiled successfully
+2022-05-10/01:16:13		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:16:14		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:16:13		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:16:17		transform_dates_columns function compiled successfully
+2022-05-10/01:16:13		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:16:17		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:16:13		'data' FUNCTION STARTED
+2022-05-10/01:16:17		Exception occurred while compiling the code'process'
+2022-05-10/01:16:17		Failed to execute the code please check your code and run
+2022-05-10/01:17:31		'column_imputation' FUNCTION STARTED
+2022-05-10/01:17:31		column_imputation function compiled successfully
+2022-05-10/01:17:31		'impute_missing' FUNCTION STARTED
+2022-05-10/01:17:31		impute_missing function compiled successfully
+2022-05-10/01:17:31		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:17:32		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:17:31		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:17:34		transform_dates_columns function compiled successfully
+2022-05-10/01:17:31		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:17:34		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:17:31		'data' FUNCTION STARTED
+2022-05-10/01:17:34		Exception occurred while compiling the code'process'
+2022-05-10/01:17:34		Failed to execute the code please check your code and run
+2022-05-10/01:17:47		'column_imputation' FUNCTION STARTED
+2022-05-10/01:17:47		column_imputation function compiled successfully
+2022-05-10/01:17:47		'impute_missing' FUNCTION STARTED
+2022-05-10/01:17:47		impute_missing function compiled successfully
+2022-05-10/01:17:47		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:17:48		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:17:47		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:17:50		transform_dates_columns function compiled successfully
+2022-05-10/01:17:47		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:17:50		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:17:47		'data' FUNCTION STARTED
+2022-05-10/01:17:50		Exception occurred while compiling the code'process'
+2022-05-10/01:17:50		Failed to execute the code please check your code and run
+2022-05-10/01:18:19		'column_imputation' FUNCTION STARTED
+2022-05-10/01:18:19		column_imputation function compiled successfully
+2022-05-10/01:18:19		'impute_missing' FUNCTION STARTED
+2022-05-10/01:18:19		impute_missing function compiled successfully
+2022-05-10/01:18:19		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:18:20		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:18:19		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:18:22		transform_dates_columns function compiled successfully
+2022-05-10/01:18:19		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:18:22		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:18:19		'data' FUNCTION STARTED
+2022-05-10/01:18:22		data function compiled successfully
+2022-05-10/01:19:57		'data' FUNCTION STARTED
+2022-05-10/01:19:57		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:19:57		Failed to execute the code please check your code and run
+2022-05-10/01:20:06		'data' FUNCTION STARTED
+2022-05-10/01:20:06		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:20:06		Failed to execute the code please check your code and run
+2022-05-10/01:20:09		'data' FUNCTION STARTED
+2022-05-10/01:20:09		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:20:09		Failed to execute the code please check your code and run
+2022-05-10/01:20:56		'data' FUNCTION STARTED
+2022-05-10/01:20:56		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:20:56		Failed to execute the code please check your code and run
+2022-05-10/01:21:19		'data' FUNCTION STARTED
+2022-05-10/01:21:19		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:21:19		Failed to execute the code please check your code and run
+2022-05-10/01:21:59		'data' FUNCTION STARTED
+2022-05-10/01:21:59		Exception occurred while compiling the code'NoneType' object has no attribute 'to_csv'
+2022-05-10/01:21:59		Failed to execute the code please check your code and run
+2022-05-10/01:33:37		'column_imputation' FUNCTION STARTED
+2022-05-10/01:33:37		column_imputation function compiled successfully
+2022-05-10/01:33:37		'impute_missing' FUNCTION STARTED
+2022-05-10/01:33:37		impute_missing function compiled successfully
+2022-05-10/01:33:37		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/01:33:38		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/01:33:37		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/01:33:41		transform_dates_columns function compiled successfully
+2022-05-10/01:33:37		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/01:33:41		drop_unnecessary_columns function compiled successfully
+2022-05-10/01:33:37		'data' FUNCTION STARTED
+2022-05-10/01:33:41		data function compiled successfully
