@@ -7,8 +7,6 @@ sys.path.append('H:\consignment pricing using mlops')
 from application_logging.logger import Applogger
 import pandas as pd
 
-
-
 class GetData:
     def __init__(self):
         self.logger = Applogger()

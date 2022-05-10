@@ -24,3 +24,8 @@ columns:
        'line_item_quantity', 'line_item_value', 'pack_price', 'unit_price',
        'first_line_designation', 'freight_cost_(usd)', 'shipment_mode',
        'line_item_insurance_(usd)', 'days_to_process']
+
+split_data:
+  train_path: "H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv"
+  test_path: "H:/consignment pricing using mlops/data/split_data/Consignment_pricing_test.csv"
+  split_ratio: 0.20

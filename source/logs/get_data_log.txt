@@ -862,3 +862,27 @@
 2022-05-10/02:38:29		config file i.e 'params.yaml' loaded successfully
 2022-05-10/02:38:30		'read_params' FUNCTION STARTED
 2022-05-10/02:38:30		config file i.e 'params.yaml' loaded successfully
+2022-05-10/11:39:25		'read_params' FUNCTION STARTED
+2022-05-10/11:39:25		Exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-10/11:39:25		Error occured while reading the yaml file
+2022-05-10/11:41:17		'read_params' FUNCTION STARTED
+2022-05-10/11:41:17		Exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-10/11:41:17		Error occured while reading the yaml file
+2022-05-10/11:41:39		'read_params' FUNCTION STARTED
+2022-05-10/11:41:39		Exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-10/11:41:39		Error occured while reading the yaml file
+2022-05-10/11:42:00		'read_params' FUNCTION STARTED
+2022-05-10/11:42:00		Exception occured in read_params method:[Errno 2] No such file or directory: 'params.yaml'
+2022-05-10/11:42:00		Error occured while reading the yaml file
+2022-05-10/11:42:49		'read_params' FUNCTION STARTED
+2022-05-10/11:42:49		config file i.e 'params.yaml' loaded successfully
+2022-05-10/11:43:22		'read_params' FUNCTION STARTED
+2022-05-10/11:43:22		config file i.e 'params.yaml' loaded successfully
+2022-05-10/11:43:37		'read_params' FUNCTION STARTED
+2022-05-10/11:43:37		config file i.e 'params.yaml' loaded successfully
+2022-05-10/11:44:54		'read_params' FUNCTION STARTED
+2022-05-10/11:44:54		config file i.e 'params.yaml' loaded successfully
+2022-05-10/11:46:07		'read_params' FUNCTION STARTED
+2022-05-10/11:46:07		config file i.e 'params.yaml' loaded successfully
+2022-05-10/11:46:50		'read_params' FUNCTION STARTED
+2022-05-10/11:46:50		config file i.e 'params.yaml' loaded successfully
