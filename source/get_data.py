@@ -1,11 +1,11 @@
 # This python file is for fetching the data and dump to the folder called data
 # import modules and libraries
+import pandas as pd
 import argparse
 import yaml
 import sys
-sys.path.append('H:\consignment pricing using mlops')
+sys.path.append('H:/consignment pricing using mlops')
 from application_logging.logger import Applogger
-import pandas as pd
 
 class GetData:
     def __init__(self):
@@ -13,7 +13,7 @@ class GetData:
 
     def read_params(self, config_path):
         try:
-            log_file = open("logs/get_data_log.txt", "a+")
+            log_file = open("logs/get_data_log.log", "a+")
             self.logger.log(log_file, "'read_params' FUNCTION STARTED")
             with open(config_path) as file:
                 self.config = yaml.safe_load(file)
@@ -30,7 +30,7 @@ class GetData:
 
     def get_data(self, config_path):
         try:
-            log_file = open("logs/get_data_log.txt", "a+")
+            log_file = open("logs/get_data_log.log", "a+")
             self.logger.log(log_file, "'get_data' FUNCTION STARTED")
             self.config = self.read_params(config_path)
             self.data_path = self.config["data_source"]["local_data"]

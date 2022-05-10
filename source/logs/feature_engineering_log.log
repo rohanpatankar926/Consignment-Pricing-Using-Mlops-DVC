@@ -1,0 +1,10 @@
+2022-05-10/12:08:07		'data_' FUNCTION STARTED
+2022-05-10/12:08:07		Data loaded successfully
+2022-05-10/12:08:07		'remove_outliers' FUNCTION STARTED
+2022-05-10/12:08:07		removed outliers function compiled successfully
+2022-05-10/12:08:07		'freight_cost_transform' FUNCTION STARTED
+2022-05-10/12:08:07		freight_cost_transform function compiled successfully
+2022-05-10/12:08:07		'feature_engineering' FUNCTION STARTED
+2022-05-10/12:08:07		feature engineering function compiled successfully
+2022-05-10/12:08:07		'data' FUNCTION STARTED
+2022-05-10/12:08:07		data function compiled successfully

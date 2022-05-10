@@ -15,7 +15,7 @@ class FeatureEngineering:
 
     def data_(self, config_path):
         try:
-            logfile = open("logs/feature_engineering_log.txt", "a+")
+            logfile = open("logs/feature_engineering_log.log", "a+")
             self.logger.log(logfile, "'data_' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.config["data"]["processed"]
@@ -36,7 +36,7 @@ class FeatureEngineering:
 
     def remove_outliers(self, config_path):
         try:
-            logfile = open("logs/feature_engineering_log.txt", "a+")
+            logfile = open("logs/feature_engineering_log.log", "a+")
             self.logger.log(logfile, "'remove_outliers' FUNCTION STARTED")
             self.data = self.data_(config_path)
             self.data0 = self.outlier_detection(self.data, "line_item_value")
@@ -64,7 +64,7 @@ class FeatureEngineering:
 
     def freight_cost_transform(self, config_path):
         try:
-            logfile = open("logs/feature_engineering_log.txt", "a+")
+            logfile = open("logs/feature_engineering_log.log", "a+")
             self.logger.log(
                 logfile, "'freight_cost_transform' FUNCTION STARTED")
             self.data = self.remove_outliers(config_path)
@@ -75,7 +75,8 @@ class FeatureEngineering:
                 np.nan, self.median_value)
             self.data["freight_cost_(usd)"] = self.data["freight_cost_(usd)"].astype(
                 float)
-            self.logger.log(logfile,"freight_cost_transform function compiled successfully")
+            self.logger.log(
+                logfile, "freight_cost_transform function compiled successfully")
             return self.data
         except Exception as e:
             self.logger.log(
@@ -85,7 +86,7 @@ class FeatureEngineering:
 
     def feature_engineering(self, config_path):
         try:
-            logfile = open("logs/feature_engineering_log.txt", "a+")
+            logfile = open("logs/feature_engineering_log.log", "a+")
             self.logger.log(logfile, "'feature_engineering' FUNCTION STARTED")
             self.data = self.freight_cost_transform(config_path)
             self.data["po_/_so_#"] = pd.get_dummies(self.data["po_/_so_#"])
@@ -114,7 +115,7 @@ class FeatureEngineering:
 
     def final_data(self, config_path):
         try:
-            logfile = open("logs/feature_engineering_log.txt", "a+")
+            logfile = open("logs/feature_engineering_log.log", "a+")
             self.logger.log(logfile, "'data' FUNCTION STARTED")
             self.finaldata = self.feature_engineering(config_path)
             self.config = self.get_data.read_params(config_path)

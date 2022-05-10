@@ -1,0 +1,12 @@
+2022-05-10/12:07:59		'column_imputation' FUNCTION STARTED
+2022-05-10/12:07:59		column_imputation function compiled successfully
+2022-05-10/12:07:59		'impute_missing' FUNCTION STARTED
+2022-05-10/12:07:59		impute_missing function compiled successfully
+2022-05-10/12:07:59		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-10/12:08:00		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-10/12:07:59		'transform_dates_columns' FUNCTION STARTED
+2022-05-10/12:08:02		transform_dates_columns function compiled successfully
+2022-05-10/12:07:59		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-10/12:08:02		drop_unnecessary_columns function compiled successfully
+2022-05-10/12:07:59		'data' FUNCTION STARTED
+2022-05-10/12:08:02		data function compiled successfully

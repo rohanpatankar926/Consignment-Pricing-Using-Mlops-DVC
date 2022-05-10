@@ -1,7 +1,8 @@
 from get_data import GetData
-from application_logging.logger import Applogger
 import argparse
-
+import sys
+sys.path.append('H:/consignment pricing using mlops')
+from application_logging.logger import Applogger
 
 class LoadData:
     def __init__(self):
@@ -10,7 +11,7 @@ class LoadData:
 
     def load_data(self, config_path):
         try:
-            log_file = open("logs/load_data_log.txt", "a+")
+            log_file = open("logs/load_data_log.log", "a+")
             self.logger.log(log_file, "'load_data' FUNCTION STARTED")
             self.config = self.getdata.read_params(config_path)
             self.data = self.getdata.get_data(config_path)

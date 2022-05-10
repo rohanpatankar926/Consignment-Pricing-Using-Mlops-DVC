@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import argparse
 
+
 class Preprocessing:
     def __init__(self):
         self.logger = Applogger()
@@ -13,7 +14,7 @@ class Preprocessing:
 
     def column_imputation(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(log_file, "'column_imputation' FUNCTION STARTED")
             self.data = self.get_data.get_data(config_path)
             self.data.columns = self.data.columns.str.lower()
@@ -29,7 +30,7 @@ class Preprocessing:
 
     def impute_missing(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(log_file, "'impute_missing' FUNCTION STARTED")
             self.data = self.column_imputation(config_path)
             self.data = self.data.drop("dosage", axis=1)
@@ -60,7 +61,7 @@ class Preprocessing:
 
     def transform_pq_first_sent_to_client_date_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(
                 log_file, "'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED")
             self.data = self.impute_missing(config_path)
@@ -84,7 +85,7 @@ class Preprocessing:
 
     def transform_dates_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(
                 log_file, "'transform_dates_columns' FUNCTION STARTED")
             self.data = self.transform_pq_first_sent_to_client_date_columns(
@@ -93,8 +94,10 @@ class Preprocessing:
                 self.transform_dates)
             self.data["delivered_to_client_date"] = self.data["delivered_to_client_date"].apply(
                 self.transform_dates)
-            self.data["days_to_process"] = self.data["delivery_recorded_date"] - self.data["pq_first_sent_to_client_date"]
-            self.data['days_to_process'] = self.data['days_to_process'].dt.days.astype('int64')
+            self.data["days_to_process"] = self.data["delivery_recorded_date"] - \
+                self.data["pq_first_sent_to_client_date"]
+            self.data['days_to_process'] = self.data['days_to_process'].dt.days.astype(
+                'int64')
             self.logger.log(
                 log_file, "transform_dates_columns function compiled successfully")
             return self.data
@@ -114,7 +117,7 @@ class Preprocessing:
 
     def transform_freight_cost_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(
                 log_file, "'transform_freight_cost_columns' FUNCTION STARTED")
             self.data = self.transform_dates_columns(config_path)
@@ -135,7 +138,7 @@ class Preprocessing:
 
     def drop_unnecessary_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(
                 log_file, "'drop_unnecessary_columns' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
@@ -152,21 +155,21 @@ class Preprocessing:
 
     def data(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.logs", "a+")
+            log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(log_file, "'data' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.drop_unnecessary_columns(config_path)
             self.data.to_csv(self.config["data"]["processed"])
-            print(self.data)
             self.logger.log(log_file, "data function compiled successfully")
         except Exception as e:
             self.logger.log(
-                log_file, "Exception occurred while compiling the code"+ str(e))
+                log_file, "Exception occurred while compiling the code" + str(e))
             self.logger.log(log_file,
-                "Failed to execute the code please check your code and run")
+                            "Failed to execute the code please check your code and run")
 
 
 object_ = Preprocessing()
+
 
 def main_func(__name__, object_):
     if __name__ == "__main__":
