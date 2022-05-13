@@ -1,0 +1,57 @@
+stages:
+  load_data:
+    cmd: python source/load_data.py --config=params.yaml
+    deps:
+    - source/get_data.py
+    - source/load_data.py
+    - data_given/Consignment_pricing_raw.csv
+    outs:
+    - data/raw/Consignment_pricing_raw.csv
+
+  preprocessing:
+    cmd: python source/preprocessing.py --config=params.yaml
+    deps:
+      - source/preprocessing.py
+      - data/raw/Consignment_pricing_raw.csv
+    outs:
+      - data/processed/Consignment_pricing_processed.csv
+
+  feature_engineering:
+    cmd: python source/feature_engineering.py --config=params.yaml
+    deps:
+    - source/feature_engineering.py
+    - data/processed/Consignment_pricing_processed.csv
+    outs: 
+    - data/transformed_data/Consignment_pricing_transformed.csv
+
+  split_data:
+    cmd: python source/split_data.py --config=params.yaml
+    deps:
+    - source/split_data.py
+    - data/transformed_data/Consignment_pricing_transformed.csv
+    outs:
+    - data/split_data/Consignment_pricing_train.csv
+    - data/split_data/Consignment_pricing_test.csv
+
+  train_model:
+    cmd: python source/train_model.py --config=params.yaml
+    deps:
+    - source/train_model.py
+    - data/split_data/Consignment_pricing_train.csv
+    - data/split_data/Consignment_pricing_test.csv
+    params:
+    - estimators.GradientBoostingRegressor.params.learning_rate
+    - estimators.GradientBoostingRegressor.params.n_estimators
+    - estimators.GradientBoostingRegressor.params.alpha
+    - estimators.GradientBoostingRegressor.params.verbose
+    - estimators.GradientBoostingRegressor.params.validation_fraction
+    - estimators.GradientBoostingRegressor.params.tol
+    - estimators.GradientBoostingRegressor.params.ccp_alpha
+    metrics:
+    - reports/scores.json:
+        cache: false
+    - reports/params.json:
+        cache: false
+    outs:
+    - saved_models/model.pkl
+

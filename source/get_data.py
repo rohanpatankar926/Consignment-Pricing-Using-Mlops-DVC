@@ -4,14 +4,14 @@ import pandas as pd
 import argparse
 import yaml
 import sys
-sys.path.append('H:/consignment pricing using mlops')
+sys.append("H:\consignment pricing using mlops")
 from application_logging.logger import Applogger
 
 class GetData:
     def __init__(self):
         self.logger = Applogger()
 
-    def read_params(self, config_path):
+    def read_params(self,config_path):
         try:
             log_file = open("logs/get_data_log.log", "a+")
             self.logger.log(log_file, "'read_params' FUNCTION STARTED")
@@ -52,9 +52,7 @@ def main_func(__name__, object_):
     if __name__ == "__main__":
         args = argparse.ArgumentParser()
         args.add_argument(
-            "--config", default="H:/consignment pricing using mlops/params.yaml")
+            "--config", default="params.yml")
         parsed_args = args.parse_args()
         data = object_.get_data(config_path=parsed_args.config)
-
-
 main_func(__name__, object_)

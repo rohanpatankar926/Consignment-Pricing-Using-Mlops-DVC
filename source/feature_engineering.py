@@ -134,6 +134,6 @@ object_ = FeatureEngineering()
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument(
-        "--config", default="H:/consignment pricing using mlops/params.yaml")
+        "--config", default="params.yaml")
     parsed_args = args.parse_args()
     data = object_.final_data(config_path=parsed_args.config)

@@ -10,3 +10,27 @@
 2022-05-10/12:08:02		drop_unnecessary_columns function compiled successfully
 2022-05-10/12:07:59		'data' FUNCTION STARTED
 2022-05-10/12:08:02		data function compiled successfully
+2022-05-12/11:19:28		'column_imputation' FUNCTION STARTED
+2022-05-12/11:19:28		column_imputation function compiled successfully
+2022-05-12/11:19:28		'impute_missing' FUNCTION STARTED
+2022-05-12/11:19:28		impute_missing function compiled successfully
+2022-05-12/11:19:28		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-12/11:19:31		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-12/11:19:28		'transform_dates_columns' FUNCTION STARTED
+2022-05-12/11:19:37		transform_dates_columns function compiled successfully
+2022-05-12/11:19:28		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-12/11:19:37		drop_unnecessary_columns function compiled successfully
+2022-05-12/11:19:28		'data' FUNCTION STARTED
+2022-05-12/11:19:37		data function compiled successfully
+2022-05-12/11:20:05		'column_imputation' FUNCTION STARTED
+2022-05-12/11:20:06		column_imputation function compiled successfully
+2022-05-12/11:20:05		'impute_missing' FUNCTION STARTED
+2022-05-12/11:20:06		impute_missing function compiled successfully
+2022-05-12/11:20:05		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-12/11:20:08		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-12/11:20:05		'transform_dates_columns' FUNCTION STARTED
+2022-05-12/11:20:15		transform_dates_columns function compiled successfully
+2022-05-12/11:20:05		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-12/11:20:15		drop_unnecessary_columns function compiled successfully
+2022-05-12/11:20:05		'data' FUNCTION STARTED
+2022-05-12/11:20:15		data function compiled successfully
