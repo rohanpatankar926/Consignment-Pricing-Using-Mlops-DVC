@@ -153,12 +153,13 @@ class Preprocessing:
             self.logger.log(
                 "Failed to execute the code please check your code and run")
 
-    def data(self, config_path):
+    def data_(self, config_path):
         try:
             log_file = open("logs/preprocessing_logs.log", "a+")
             self.logger.log(log_file, "'data' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.drop_unnecessary_columns(config_path)
+            print(self.data)
             self.data.to_csv(self.config["data"]["processed"])
             self.logger.log(log_file, "data function compiled successfully")
         except Exception as e:
@@ -175,9 +176,9 @@ def main_func(__name__, object_):
     if __name__ == "__main__":
         args = argparse.ArgumentParser()
         args.add_argument(
-            "--config", default="params.yaml")
+            "--config", default="H:/Consignment pricing using mlops/params.yaml")
         parsed_args = args.parse_args()
-        data = object_.data(config_path=parsed_args.config)
+        data = object_.data_(config_path=parsed_args.config)
 
 
 main_func(__name__, object_)

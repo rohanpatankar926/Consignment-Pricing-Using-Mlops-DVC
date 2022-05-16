@@ -1,0 +1,51 @@
+base:
+  project: Consignment-Pricing-Using-MLops-DVC
+  random_state: 180
+  target_data: line_item_quantity
+
+data_source: 
+  local_data: H:/consignment pricing using mlops/data_given/Consignment_pricing_raw.csv
+
+load_data:
+  raw_data_csv: H:/consignment pricing using mlops/data/raw/Consignment_pricing_raw.csv
+data:
+  processed: H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv
+
+final_data:
+  transformed_data: H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_transformed.csv
+
+raw_data:
+  raw: H:/consignment pricing using mlops/consignment_data/Consignment_pricing_raw.csv
+
+columns:
+  select: ["pq_#",'po_/_so_#', 'asn/dn_#','country', 'fulfill_via', 'vendor_inco_term',
+       'sub_classification', 'unit_of_measure_(per_pack)',
+       'line_item_quantity', 'line_item_value', 'pack_price', 'unit_price',
+       'first_line_designation', 'freight_cost_(usd)', 'shipment_mode',
+       'line_item_insurance_(usd)', 'days_to_process']
+
+split_data:
+  train_path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+  test_path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_test.csv
+  split_ratio: 0.20
+
+
+model_dirs: saved_models
+
+estimators: 
+  GradientBoostingRegressor:
+    params:
+      learning_rate: 0.1001
+      n_estimators: 100
+      alpha: 0.8
+      verbose: 0
+      validation_fraction: 0.000001
+      tol: 0.0001
+      ccp_alpha: 0.1
+
+webapp_model_dir: H:/consignment pricing using mlops/prediction_service/model/model.pkl
+
+reports:
+  scores: H:/consignment pricing using mlops/reports/scores.json
+  params: H:/consignment pricing using mlops/reports/params.json
+

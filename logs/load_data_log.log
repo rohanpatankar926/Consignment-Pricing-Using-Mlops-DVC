@@ -1,0 +1,110 @@
+2022-05-14/18:37:26		'load_data' FUNCTION STARTED
+2022-05-14/18:37:26		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-14/18:37:26		Error occured while loading the data
+2022-05-14/18:37:37		'load_data' FUNCTION STARTED
+2022-05-14/18:37:37		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-14/18:37:37		Error occured while loading the data
+2022-05-14/18:38:53		'load_data' FUNCTION STARTED
+2022-05-14/18:38:53		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-14/18:38:53		Error occured while loading the data
+2022-05-14/18:39:48		'load_data' FUNCTION STARTED
+2022-05-14/18:39:48		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-14/18:39:48		Error occured while loading the data
+2022-05-14/19:45:21		'load_data' FUNCTION STARTED
+2022-05-14/19:45:21		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-14/19:45:21		Error occured while loading the data
+2022-05-15/14:33:14		'load_data' FUNCTION STARTED
+2022-05-15/14:33:14		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-15/14:33:14		Error occured while loading the data
+2022-05-15/14:33:46		'load_data' FUNCTION STARTED
+2022-05-15/14:33:46		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-15/14:33:46		Error occured while loading the data
+2022-05-15/14:34:09		'load_data' FUNCTION STARTED
+2022-05-15/14:34:09		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-15/14:34:09		Error occured while loading the data
+2022-05-15/14:37:32		'load_data' FUNCTION STARTED
+2022-05-15/14:37:32		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-15/14:37:32		Error occured while loading the data
+2022-05-16/14:07:48		'load_data' FUNCTION STARTED
+2022-05-16/14:07:48		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:07:48		Error occured while loading the data
+2022-05-16/14:08:25		'load_data' FUNCTION STARTED
+2022-05-16/14:08:25		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:08:25		Error occured while loading the data
+2022-05-16/14:10:39		'load_data' FUNCTION STARTED
+2022-05-16/14:10:39		Data loaded successfully to 'raw' folder
+2022-05-16/14:10:54		'load_data' FUNCTION STARTED
+2022-05-16/14:10:54		Data loaded successfully to 'raw' folder
+2022-05-16/14:11:25		'load_data' FUNCTION STARTED
+2022-05-16/14:11:25		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:11:25		Error occured while loading the data
+2022-05-16/14:11:30		'load_data' FUNCTION STARTED
+2022-05-16/14:11:30		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:11:30		Error occured while loading the data
+2022-05-16/14:11:43		'load_data' FUNCTION STARTED
+2022-05-16/14:11:43		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:11:43		Error occured while loading the data
+2022-05-16/14:12:06		'load_data' FUNCTION STARTED
+2022-05-16/14:12:06		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:12:06		Error occured while loading the data
+2022-05-16/14:12:42		'load_data' FUNCTION STARTED
+2022-05-16/14:12:42		Data loaded successfully to 'raw' folder
+2022-05-16/14:12:53		'load_data' FUNCTION STARTED
+2022-05-16/14:12:53		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:12:53		Error occured while loading the data
+2022-05-16/14:13:50		'load_data' FUNCTION STARTED
+2022-05-16/14:13:50		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:13:50		Error occured while loading the data
+2022-05-16/14:14:04		'load_data' FUNCTION STARTED
+2022-05-16/14:14:04		Exception occured in load_data method'LoadData' object has no attribute 'getdata'
+2022-05-16/14:14:04		Error occured while loading the data
+2022-05-16/14:14:32		'load_data' FUNCTION STARTED
+2022-05-16/14:14:32		Data loaded successfully to 'raw' folder
+2022-05-16/14:15:54		'load_data' FUNCTION STARTED
+2022-05-16/14:15:54		Data loaded successfully to 'raw' folder
+2022-05-16/14:42:15		'load_data' FUNCTION STARTED
+2022-05-16/14:42:15		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:42:15		Error occured while loading the data
+2022-05-16/14:43:40		'load_data' FUNCTION STARTED
+2022-05-16/14:43:40		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:43:40		Error occured while loading the data
+2022-05-16/14:52:25		'load_data' FUNCTION STARTED
+2022-05-16/14:52:25		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:52:25		Error occured while loading the data
+2022-05-16/14:52:27		'load_data' FUNCTION STARTED
+2022-05-16/14:52:27		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:52:27		Error occured while loading the data
+2022-05-16/14:52:30		'load_data' FUNCTION STARTED
+2022-05-16/14:52:31		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:52:31		Error occured while loading the data
+2022-05-16/14:53:29		'load_data' FUNCTION STARTED
+2022-05-16/14:53:29		Exception occured in load_data method'NoneType' object is not subscriptable
+2022-05-16/14:53:29		Error occured while loading the data
+2022-05-16/15:09:48		'load_data' FUNCTION STARTED
+2022-05-16/15:09:48		Data loaded successfully to 'raw' folder
+2022-05-16/15:10:20		'load_data' FUNCTION STARTED
+2022-05-16/15:10:20		Exception occured in load_data method'NoneType' object has no attribute 'to_csv'
+2022-05-16/15:10:20		Error occured while loading the data
+2022-05-16/15:11:00		'load_data' FUNCTION STARTED
+2022-05-16/15:11:00		Exception occured in load_data method'NoneType' object has no attribute 'to_csv'
+2022-05-16/15:11:00		Error occured while loading the data
+2022-05-16/15:11:47		'load_data' FUNCTION STARTED
+2022-05-16/15:11:48		Data loaded successfully to 'raw' folder
+2022-05-16/15:11:57		'load_data' FUNCTION STARTED
+2022-05-16/15:11:58		Data loaded successfully to 'raw' folder
+2022-05-16/16:36:09		'load_data' FUNCTION STARTED
+2022-05-16/16:36:10		Data loaded successfully to 'raw' folder
+2022-05-16/16:36:21		'load_data' FUNCTION STARTED
+2022-05-16/16:36:21		Data loaded successfully to 'raw' folder
+2022-05-16/16:39:18		Exception occured in load_data method[Errno 2] No such file or directory: 'logs/load_data_log.log'
+2022-05-16/16:39:18		Error occured while loading the data
+2022-05-16/16:39:34		Exception occured in load_data method[Errno 2] No such file or directory: 'logs/load_data_log.log'
+2022-05-16/16:39:34		Error occured while loading the data
+2022-05-16/16:40:17		'load_data' FUNCTION STARTED
+2022-05-16/16:40:18		Data loaded successfully to 'raw' folder
+2022-05-16/16:40:48		'load_data' FUNCTION STARTED
+2022-05-16/16:40:49		Data loaded successfully to 'raw' folder
+2022-05-16/16:41:12		'load_data' FUNCTION STARTED
+2022-05-16/16:41:12		Data loaded successfully to 'raw' folder
+2022-05-16/16:42:04		'load_data' FUNCTION STARTED
+2022-05-16/16:42:05		Data loaded successfully to 'raw' folder

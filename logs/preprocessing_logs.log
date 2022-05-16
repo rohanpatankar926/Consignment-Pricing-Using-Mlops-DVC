@@ -34,3 +34,35 @@
 2022-05-12/11:20:15		drop_unnecessary_columns function compiled successfully
 2022-05-12/11:20:05		'data' FUNCTION STARTED
 2022-05-12/11:20:15		data function compiled successfully
+2022-05-14/18:25:26		'column_imputation' FUNCTION STARTED
+2022-05-14/18:25:26		'impute_missing' FUNCTION STARTED
+2022-05-14/18:25:26		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-14/18:25:26		'transform_dates_columns' FUNCTION STARTED
+2022-05-14/18:25:26		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-14/18:25:26		'data' FUNCTION STARTED
+2022-05-14/18:25:26		Exception occurred while compiling the codelog() takes 3 positional arguments but 4 were given
+2022-05-14/18:25:26		Failed to execute the code please check your code and run
+2022-05-16/15:12:50		'column_imputation' FUNCTION STARTED
+2022-05-16/15:12:50		column_imputation function compiled successfully
+2022-05-16/15:12:50		'impute_missing' FUNCTION STARTED
+2022-05-16/15:12:50		impute_missing function compiled successfully
+2022-05-16/15:12:50		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-16/15:12:51		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-16/15:12:50		'transform_dates_columns' FUNCTION STARTED
+2022-05-16/15:12:53		transform_dates_columns function compiled successfully
+2022-05-16/15:12:50		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-16/15:12:53		drop_unnecessary_columns function compiled successfully
+2022-05-16/15:12:50		'data' FUNCTION STARTED
+2022-05-16/15:12:53		data function compiled successfully
+2022-05-16/16:42:21		'column_imputation' FUNCTION STARTED
+2022-05-16/16:42:21		column_imputation function compiled successfully
+2022-05-16/16:42:21		'impute_missing' FUNCTION STARTED
+2022-05-16/16:42:21		impute_missing function compiled successfully
+2022-05-16/16:42:21		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-05-16/16:42:22		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-05-16/16:42:21		'transform_dates_columns' FUNCTION STARTED
+2022-05-16/16:42:25		transform_dates_columns function compiled successfully
+2022-05-16/16:42:21		'drop_unnecessary_columns' FUNCTION STARTED
+2022-05-16/16:42:25		drop_unnecessary_columns function compiled successfully
+2022-05-16/16:42:21		'data' FUNCTION STARTED
+2022-05-16/16:42:25		data function compiled successfully

@@ -22,7 +22,7 @@ class TrainEvaluate:
     def evaluation_metrics(self,act,pred):
         self.r2_score=r2_score(act,pred)
         self.mse=mean_squared_error(act,pred)
-        self.rmse=np.sqrt(self.mse)
+        self.rmse=np.sqrt(mean_squared_error(act,pred))
         return self.r2_score,self.mse,self.rmse
 
     def model_eval(self,config_path):
@@ -45,8 +45,8 @@ class TrainEvaluate:
         GB=GradientBoostingRegressor(learning_rate=self.learning_rate,n_estimators=self.n_estimators,alpha=self.alpha,verbose=self.verbose,validation_fraction=self.val_factor,tol=self.tol,ccp_alpha=self.ccp_alpha)
         GB.fit(self.x_train,self.y_train)
         y_pred=GB.predict(self.x_test)
-        (r2,rmse,mse)=self.evaluation_metrics(self.y_test,y_pred)
-        print(r2*100,rmse,mse)
+        (r2,mse,rmse)=self.evaluation_metrics(self.y_test,y_pred)
+        print(r2*100,mse,rmse)
         
         # normalized_rmse=rmse/(63770.43-1121)
         # print(f"normalized rmse::{normalized_rmse}")
@@ -65,8 +65,7 @@ class TrainEvaluate:
             scores={
             "rmse":rmse,
             "mse":mse,
-            "r2 score":r2,
-            "rmse":rmse,
+            "r2 score":r2*100,
             # "normalized rmse":self.normalized_rmse
                 }
             json.dump(scores,f,indent=4)
@@ -85,7 +84,7 @@ object_=TrainEvaluate()
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
-    args.add_argument("--config", default="params.yaml")
+    args.add_argument("--config", default="H:/consignment pricing using mlops/params.yaml")
     parsed_args = args.parse_args()
     data=object_.model_eval(config_path=parsed_args.config)
 
