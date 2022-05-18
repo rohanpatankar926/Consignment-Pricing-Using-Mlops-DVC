@@ -3,6 +3,8 @@ from get_data import GetData
 from feature_engineering import FeatureEngineering
 import pandas as pd
 import argparse
+import sys
+from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
 
 
@@ -37,7 +39,7 @@ class SplitData:
                 logfile, "'split_data' function failed to compile"+str(e))
             self.logger.log(
                 logfile, "Please check your code and compile again...")
-
+            raise AppException(e, sys) from e
 
 object_ = SplitData()
 

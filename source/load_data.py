@@ -1,6 +1,7 @@
-from distutils.command.config import config
 from get_data import GetData
 import argparse
+import sys
+from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
 
 class LoadData:
@@ -22,6 +23,7 @@ class LoadData:
             log_file=open("H:/consignment pricing using mlops/logs/load_data_log.log", "a+") 
             self.logger.log(log_file, "Exception occured in load_data method"+str(e))
             self.logger.log(log_file, "Error occured while loading the data")
+            raise AppException(e, sys) from e
 
 
 object_ = LoadData()

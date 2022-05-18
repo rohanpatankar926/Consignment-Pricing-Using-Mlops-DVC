@@ -5,6 +5,7 @@ import argparse
 import yaml
 import sys
 sys.path.append("H:/consignment pricing using mlops")
+from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
 
 class GetData:
@@ -19,11 +20,13 @@ class GetData:
                 self.config = yaml.safe_load(file)
                 self.logger.log(log_file, "config file i.e 'params.yaml' loaded successfully")
                 return self.config
+            
 
         except Exception as e:
             self.logger.log(log_file, "Exception occured in read_params method:"+str(e))
             self.logger.log(log_file, "Error occured while reading the yaml file")
             log_file.close()
+            raise AppException(e, sys) from e
 
     def get_data(self,config_path):
         try:
@@ -35,11 +38,13 @@ class GetData:
             self.data = pd.read_csv(self.raw_path)
             self.logger.log(log_file, "Raw data loaded successfully")
             return self.data
+        
 
         except Exception as e:
             self.logger.log(log_file, "Exception occured in get_data method:"+str(e))
             self.logger.log(log_file, "Error occured while reading the data")
             log_file.close()
+            raise AppException(e, sys) from e
 
 object_ = GetData()        
 if __name__ == "__main__":

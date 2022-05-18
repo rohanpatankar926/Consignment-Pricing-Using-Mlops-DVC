@@ -1,9 +1,13 @@
 from load_data import LoadData
 from get_data import GetData
-from application_logging.logger import Applogger
 import pandas as pd
 import numpy as np
 import argparse
+import sys
+sys.path.append("H:/Consignment pricing using mlops")
+from app_exception.app_exception import AppException
+from application_logging.logger import Applogger
+
 
 
 class Preprocessing:
@@ -23,10 +27,9 @@ class Preprocessing:
                 log_file, "column_imputation function compiled successfully")
             return self.data
         except Exception as e:
-            self.logger.log(
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(
-                "Failed to execute the code please check your code and run")
+            self.logger.log(log_file, "Exception occurred while compiling the code", str(e))
+            self.logger.log("Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def impute_missing(self, config_path):
         try:
@@ -44,6 +47,9 @@ class Preprocessing:
                 log_file, "Exception occurred while compiling the code", str(e))
             self.logger.log(
                 "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
+            
+            
 
     def client_dates(self, date):
         if date == "Pre-PQ Process":
@@ -77,6 +83,7 @@ class Preprocessing:
                 log_file, "Exception occurred while compiling the code", str(e))
             self.logger.log(
                 "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def transform_dates(self, data):
         data = data.replace("-", "/")
@@ -106,6 +113,7 @@ class Preprocessing:
                 log_file, "Exception occurred while compiling the code", str(e))
             self.logger.log(
                 "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def trans_freight_cost(self, x):
         if x.find("See") != -1:
@@ -135,6 +143,7 @@ class Preprocessing:
                 log_file, "Exception occurred while compiling the code", str(e))
             self.logger.log(
                 "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def drop_unnecessary_columns(self, config_path):
         try:
@@ -152,6 +161,7 @@ class Preprocessing:
                 log_file, "Exception occurred while compiling the code", str(e))
             self.logger.log(
                 "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def data_(self, config_path):
         try:
@@ -163,10 +173,9 @@ class Preprocessing:
             self.data.to_csv(self.config["data"]["processed"])
             self.logger.log(log_file, "data function compiled successfully")
         except Exception as e:
-            self.logger.log(
-                log_file, "Exception occurred while compiling the code" + str(e))
-            self.logger.log(log_file,
-                            "Failed to execute the code please check your code and run")
+            self.logger.log(log_file,"Exception occurred while compiling the code" ,str(e))
+            self.logger.log(log_file,"Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
 
 object_ = Preprocessing()

@@ -5,6 +5,8 @@ from data_preprocessing import Preprocessing
 from get_data import GetData
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
+import sys
+from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
 
 class FeatureEngineering:
@@ -27,6 +29,8 @@ class FeatureEngineering:
                 logfile, "Exception occurred while loading the data" + str(e))
             self.logger.log(
                 logfile, "Failed to load the data please check your code and run")
+            raise AppException(e, sys) from e
+            
 
     # outlier detection
     def outlier_detection(self, data, colname):
@@ -53,6 +57,7 @@ class FeatureEngineering:
             self.logger.log(
                 logfile, "Exception occured in remove_outliers method"+str(e))
             self.logger.log(logfile, "Error occured while removing outliers")
+            raise AppException(e, sys) from e
 
     def trans_freight_cost(self, x):
         if x.find("See") != -1:
@@ -83,6 +88,7 @@ class FeatureEngineering:
                 logfile, "Exception occurred while compiling the code" + str(e))
             self.logger.log(
                 logfile, "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def feature_engineering(self, config_path):
         try:
@@ -112,6 +118,7 @@ class FeatureEngineering:
                 logfile, "Exception occurred while compiling the code" + str(e))
             self.logger.log(
                 logfile, "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
     def final_data(self, config_path):
         try:
@@ -127,6 +134,7 @@ class FeatureEngineering:
                 logfile, "Exception occurred while compiling the code" + str(e))
             self.logger.log(
                 logfile, "Failed to execute the code please check your code and run")
+            raise AppException(e, sys) from e
 
 
 object_ = FeatureEngineering()
