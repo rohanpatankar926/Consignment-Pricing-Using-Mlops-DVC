@@ -41,13 +41,11 @@ stages:
     - data/split_data/Consignment_pricing_train.csv
     - data/split_data/Consignment_pricing_test.csv
     params:
-    - estimators.GradientBoostingRegressor.params.learning_rate
-    - estimators.GradientBoostingRegressor.params.n_estimators
-    - estimators.GradientBoostingRegressor.params.alpha
-    - estimators.GradientBoostingRegressor.params.verbose
-    - estimators.GradientBoostingRegressor.params.validation_fraction
-    - estimators.GradientBoostingRegressor.params.tol
-    - estimators.GradientBoostingRegressor.params.ccp_alpha
+    - estimators.RandomForestRegressor.params.criterion
+    - estimators.RandomForestRegressor.params.max_deapth
+    - estimators.RandomForestRegressor.params.min_sample_leaf
+    - estimators.RandomForestRegressor.params.n_estimators
+    - estimators.RandomForestRegressor.params.oob_score
     metrics:
     - reports/scores.json:
         cache: false

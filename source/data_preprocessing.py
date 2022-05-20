@@ -4,11 +4,8 @@ import pandas as pd
 import numpy as np
 import argparse
 import sys
-sys.path.append("H:/Consignment pricing using mlops")
 from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
-
-
 
 class Preprocessing:
     def __init__(self):
@@ -169,11 +166,10 @@ class Preprocessing:
             self.logger.log(log_file, "'data' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.drop_unnecessary_columns(config_path)
-            print(self.data)
             self.data.to_csv(self.config["data"]["processed"])
             self.logger.log(log_file, "data function compiled successfully")
         except Exception as e:
-            self.logger.log(log_file,"Exception occurred while compiling the code" ,str(e))
+            self.logger.log(log_file,"Exception occurred while compiling the code")
             self.logger.log(log_file,"Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
@@ -181,13 +177,10 @@ class Preprocessing:
 object_ = Preprocessing()
 
 
-def main_func(__name__, object_):
-    if __name__ == "__main__":
-        args = argparse.ArgumentParser()
-        args.add_argument(
-            "--config", default="H:/Consignment pricing using mlops/params.yaml")
-        parsed_args = args.parse_args()
-        data = object_.data_(config_path=parsed_args.config)
+if __name__ == "__main__":
+    args = argparse.ArgumentParser()
+    args.add_argument(
+    "--config", default="H:/Consignment pricing using mlops/params.yaml")
+    parsed_args = args.parse_args()
+    data = object_.data_(config_path=parsed_args.config)
 
-
-main_func(__name__, object_)

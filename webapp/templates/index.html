@@ -1,0 +1,168 @@
+{% extends "base.html" %} {% block title %} Insurance Premium Detection {%
+endblock title %} {% block custom_css %}
+<!-- Custom CSS -->
+<link rel="stylesheet" href="webapp\static\css\main.css" />
+<link
+  rel="icon"
+  href="https://p.kindpng.com/picc/s/255-2554311_insured-cosmetologist-finance-and-insurance-icon-hd-png.png"
+  type="image/x-icon"
+/>
+
+{% endblock custom_css %} {% block body %}
+<!-- nav bar -->
+
+<nav
+  class="navbar navbar-expand-lg navbar-light shadow fixed-top"
+  style="background-color: #80bde9"
+>
+  <a class="navbar-brand" href="/">Insurance Premium Prediction</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://github.com/rohanpatankar926/internship_project/"
+          >Source Code</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://github.com/rohanpatankar926/internship_project/tree/main/docs"
+          >Docs</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="rohanpatankar.netlify.app">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div>
+  <!-- nav bar ends -->
+
+  <div class="container-fluid masthead">
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form method="POST">
+            <!-- Input block-->
+            <div class="form-group">
+              <label for="translation">
+                <blockquote class="blockquote">
+                  <p class="mb-2">Enter the details as indicated:</p>
+                </blockquote>
+              </label>
+
+              <input
+                type="number"
+                class="form-control"
+                name="age"
+                rows="1"
+                placeholder="age between 18 and 64"
+              />
+              <br />
+              <select
+                aria-placeholder="select"
+                class="form-control"
+                id="sex"
+                name="sex"
+                required="1"
+              >
+                <option hidden selected>Sex</option>
+                {% for type in sex %}
+                <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+              </select>
+              <br />
+              <input
+                type="number"
+                class="form-control"
+                name="bmi"
+                rows="1"
+                placeholder="Enter BMI"
+              />
+              <br />
+              <input
+                type="number"
+                class="form-control"
+                name="children"
+                rows="1"
+                placeholder="Enter how many children?"
+              />
+              <br />
+              <select
+                aria-placeholder="select"
+                class="form-control"
+                id="smoker"
+                name="smoker"
+                required="1"
+              >
+                <option hidden selected>Smoking</option>
+                {% for type in smoker %}
+                <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+              </select>
+              <br />
+              <select
+                aria-placeholder="select"
+                class="form-control"
+                id="region"
+                name="region"
+                required="1"
+              >
+                <option hidden selected>Select Region</option>
+                {% for type in region %}
+                <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <!-- Select output language here. -->
+            <div class="form-group"></div>
+            <button type="submit" class="btn btn-primary mb-2">Predict</button
+            ><br />
+          </form>
+          <!--
+             Translated text returned by the Translate API is rendered here. -->
+        </div>
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="translation-result">
+                <blockquote class="blockquote">
+                  <p class="mb-2">Prediction:</p>
+                </blockquote>
+              </label>
+              <textarea readonly class="form-control" id="exTextarea" rows="5">
+{{ response }}</textarea
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    {% endblock body %}
+  </div>
+</div>

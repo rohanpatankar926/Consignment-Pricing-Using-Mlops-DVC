@@ -33,17 +33,30 @@ split_data:
 model_dirs: saved_models
 
 estimators: 
-  GradientBoostingRegressor:
+  RandomForestRegressor:
     params:
-      learning_rate: 0.1001
-      n_estimators: 100
-      alpha: 0.8
-      verbose: 0
-      validation_fraction: 0.000001
-      tol: 0.0001
-      ccp_alpha: 0.1
+      criterion: mae
+      max_deapth: 10
+      min_sample_leaf: 2
+      min_sample_split: 8
+      n_estimators: 80
+      oob_score: True
 
-webapp_model_dir: H:/consignment pricing using mlops/prediction_service/model/model.pkl
+webapp_model_dir: H:/consignment pricing using mlops/prediction_service/model/model_rf.pkl
+
+RandomizedSearchCV:
+  n_iter: 10
+  scoring: r2
+  verbose: 5
+  cv: 10
+  n_jobs: -1
+  return_train_score:  True
+  params:
+    n_estimators: [5,10,20,40,80]
+    criterion: ['mse','mae']
+    max_depth: [2,5,10]
+    min_samples_split : [2,4,8,12]
+    min_samples_leaf: [2,4,8,10]
 
 reports:
   scores: H:/consignment pricing using mlops/reports/scores.json

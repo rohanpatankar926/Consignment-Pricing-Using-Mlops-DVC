@@ -1,0 +1,91 @@
+2022-05-20/23:58:43		Exception occured in 'train_evaluate' functionlog() missing 1 required positional argument: 'log_message'
+2022-05-20/23:58:43		train_evaluate function reported error in the function
+2022-05-20/23:59:13		Exception occured in 'train_evaluate' functionlog() missing 1 required positional argument: 'log_message'
+2022-05-20/23:59:13		train_evaluate function reported error in the functionlog() missing 1 required positional argument: 'log_message'
+2022-05-20/23:59:42		'train_evaluate' function started
+2022-05-20/23:59:42		Exception occured in 'train_evaluate' function'TrainEvaluate' object has no attribute 'train'
+2022-05-20/23:59:42		train_evaluate function reported error in the function
+2022-05-21/00:00:10		'train_evaluate' function started
+2022-05-21/00:00:10		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/00:00:10		Exception occured in 'train_evaluate' functionNumExpr 2 does not support Unicode as a dtype.
+2022-05-21/00:00:10		train_evaluate function reported error in the function
+2022-05-21/00:00:53		'train_evaluate' function started
+2022-05-21/00:00:53		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/00:00:53		train data read successfully
+2022-05-21/00:00:53		test data read successfully
+2022-05-21/00:00:53		model training started
+2022-05-21/00:00:53		Exception occured in 'train_evaluate' function'max_deapth'
+2022-05-21/00:00:53		train_evaluate function reported error in the function
+2022-05-21/00:08:52		'train_evaluate' function started
+2022-05-21/00:08:52		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/00:08:52		train data read successfully
+2022-05-21/00:08:52		test data read successfully
+2022-05-21/00:08:52		model training started
+2022-05-21/00:10:26		Model Trained successfully
+2022-05-21/00:10:26		Exception occured in 'train_evaluate' functionlog() missing 1 required positional argument: 'log_message'
+2022-05-21/00:10:26		train_evaluate function reported error in the function
+2022-05-21/00:11:42		'train_evaluate' function started
+2022-05-21/00:11:42		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/00:11:42		train data read successfully
+2022-05-21/00:11:42		test data read successfully
+2022-05-21/00:11:42		model training started
+2022-05-21/00:13:00		Model Trained successfully
+2022-05-21/00:13:00		scores written to file
+2022-05-21/00:13:00		Exception occured in 'train_evaluate' functionObject of type function is not JSON serializable
+2022-05-21/00:13:00		train_evaluate function reported error in the function
+2022-05-21/00:14:35		'train_evaluate' function started
+2022-05-21/00:14:35		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/00:14:35		train data read successfully
+2022-05-21/00:14:35		test data read successfully
+2022-05-21/00:14:35		model training started
+2022-05-21/00:15:56		Model Trained successfully
+2022-05-21/00:15:57		scores written to file
+2022-05-21/00:15:57		Exception occured in 'train_evaluate' functionObject of type function is not JSON serializable
+2022-05-21/00:15:57		train_evaluate function reported error in the function
+2022-05-21/00:16:35		'train_evaluate' function started
+2022-05-21/00:16:35		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/00:16:35		train data read successfully
+2022-05-21/00:16:35		test data read successfully
+2022-05-21/00:16:35		model training started
+2022-05-21/00:17:50		Model Trained successfully
+2022-05-21/00:17:50		scores written to file
+2022-05-21/01:01:15		'train_evaluate' function started
+2022-05-21/01:01:15		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/01:01:15		train data read successfully
+2022-05-21/01:01:15		test data read successfully
+2022-05-21/01:01:15		model training started
+2022-05-21/01:01:15		Exception occured in 'train_evaluate' functionlocal variable 'rf' referenced before assignment
+2022-05-21/01:01:15		train_evaluate function reported error in the function
+2022-05-21/01:02:00		'train_evaluate' function started
+2022-05-21/01:02:00		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/01:02:00		train data read successfully
+2022-05-21/01:02:00		test data read successfully
+2022-05-21/01:02:00		model training started
+2022-05-21/01:02:00		Exception occured in 'train_evaluate' functionParameter value is not iterable or distribution (key='oob_score', value=True)
+2022-05-21/01:02:00		train_evaluate function reported error in the function
+2022-05-21/01:07:23		'train_evaluate' function started
+2022-05-21/01:07:23		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/01:07:23		train data read successfully
+2022-05-21/01:07:23		test data read successfully
+2022-05-21/01:07:23		model training started
+2022-05-21/01:07:23		Exception occured in 'train_evaluate' functionParameter value is not iterable or distribution (key='return_train_score', value=True)
+2022-05-21/01:07:23		train_evaluate function reported error in the function
+2022-05-21/01:08:20		'train_evaluate' function started
+2022-05-21/01:08:20		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/01:08:20		train data read successfully
+2022-05-21/01:08:20		test data read successfully
+2022-05-21/01:08:20		model training started
+2022-05-21/01:08:20		Exception occured in 'train_evaluate' functionParameter value is not iterable or distribution (key='return_train_score', value=True)
+2022-05-21/01:08:20		train_evaluate function reported error in the function
+2022-05-21/01:11:07		'train_evaluate' function started
+2022-05-21/01:11:07		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/01:11:07		train data read successfully
+2022-05-21/01:11:07		test data read successfully
+2022-05-21/01:11:07		model training started
+2022-05-21/01:11:07		Exception occured in 'train_evaluate' functionParameter value is not iterable or distribution (key='oob_score', value=True)
+2022-05-21/01:11:07		train_evaluate function reported error in the function
+2022-05-21/01:11:17		'train_evaluate' function started
+2022-05-21/01:11:17		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/01:11:17		train data read successfully
+2022-05-21/01:11:17		test data read successfully
+2022-05-21/01:11:17		model training started

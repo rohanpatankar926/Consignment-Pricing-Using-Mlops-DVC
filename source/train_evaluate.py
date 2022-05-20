@@ -1,11 +1,14 @@
 from statistics import mean
+from sqlalchemy import true
 from get_data import GetData
 from feature_engineering import FeatureEngineering
 import numpy as np
 from sklearn.metrics import mean_absolute_error,r2_score,mean_squared_error
-from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import RandomForestRegressor
 from urllib.parse import urlparse
 import pandas as pd
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import GridSearchCV
 import argparse
 import sys
 from app_exception.app_exception import AppException
@@ -30,30 +33,43 @@ class TrainEvaluate:
     def model_eval(self,config_path):
         try:
             log_file=open("logs/train_evaluate.log","a+")
-            self.logger.log("'train_evaluate' function started")
+            self.logger.log(log_file,"'train_evaluate' function started")
             self.config=self.get_data.read_params(config_path)
             self.test_data=self.config["split_data"]["test_path"]
             self.train_data=self.config["split_data"]["train_path"]
             self.model_dir=self.config["model_dirs"]
             self.target_col=self.config["base"]["target_data"]
-            self.logger.log(log_file,"train data read successfully-->path: "+self.train)
+            self.logger.log(log_file,"train data read successfully-->path: "+self.train_data)
             self.train=pd.read_csv(self.train_data,sep=",")
-            self.logger.log(log_file,"train data read successfully-->path: "+self.train)
+            self.logger.log(log_file,"train data read successfully")
             self.test=pd.read_csv(self.test_data,sep=",")
-            self.logger.log(log_file,"test data read successfully-->path: "+self.test)
+            self.logger.log(log_file,"test data read successfully")
             self.logger.log(log_file,"model training started")
-            self.learning_rate=self.config["estimators"]["GradientBoostingRegressor"]["params"]["learning_rate"]
-            self.n_estimators=self.config["estimators"]["GradientBoostingRegressor"]["params"]["n_estimators"]
-            self.alpha=self.config["estimators"]["GradientBoostingRegressor"]["params"]["alpha"]
-            self.verbose=self.config["estimators"]["GradientBoostingRegressor"]["params"]["verbose"]
-            self.val_factor=self.config["estimators"]["GradientBoostingRegressor"]["params"]["validation_fraction"]
-            self.tol=self.config["estimators"]["GradientBoostingRegressor"]["params"]["tol"]
-            self.ccp_alpha=self.config["estimators"]["GradientBoostingRegressor"]["params"]["ccp_alpha"]
+            self.criterion=self.config["estimators"]["RandomForestRegressor"]["params"]["criterion"]
+            self.max_deapth=self.config["estimators"]["RandomForestRegressor"]["params"]["max_deapth"]
+            self.min_sample_leaf=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_leaf"]
+            self.n_estimators=self.config["estimators"]["RandomForestRegressor"]["params"]["n_estimators"]
+            self.min_sample_split=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_split"]
+            self.oob_score=self.config["estimators"]["RandomForestRegressor"]["params"]["oob_score"]
             self.x_train,self.x_test=self.train.drop(self.target_col,axis=1),self.test.drop(self.target_col,axis=1) 
             self.y_train,self.y_test=self.train[self.target_col],self.test[self.target_col]
-            GB=GradientBoostingRegressor(learning_rate=self.learning_rate,n_estimators=self.n_estimators,alpha=self.alpha,verbose=self.verbose,validation_fraction=self.val_factor,tol=self.tol,ccp_alpha=self.ccp_alpha)
-            GB.fit(self.x_train,self.y_train)
-            y_pred=GB.predict(self.x_test)
+        
+        
+            rf=RandomForestRegressor()
+            RCV = RandomizedSearchCV(estimator = rf, 
+                         param_distributions = self.config["RandomizedSearchCV"]["params"], 
+                         n_iter = self.config["RandomizedSearchCV"]["n_iter"], 
+                         scoring = self.config["RandomizedSearchCV"]["scoring"], 
+                         cv = self.config["RandomizedSearchCV"]["cv"], 
+                         verbose=self.config["RandomizedSearchCV"]["verbose"], 
+                         random_state=42, 
+                         n_jobs=self.config["RandomizedSearchCV"]["n_jobs"], 
+                         return_train_score=self.config["RandomizedSearchCV"]["return_train_score"])
+            RCV.fit(self.x_train,self.y_train)
+        
+            rf=RandomForestRegressor(criterion=self.criterion,max_depth=self.max_deapth,min_samples_leaf=self.min_sample_leaf,n_estimators=self.n_estimators,oob_score=self.oob_score)
+            rf.fit(self.x_train,self.y_train)
+            y_pred=rf.predict(self.x_test)
             self.logger.log(log_file,"Model Trained successfully")
             (r2,mse,rmse)=self.evaluation_metrics(self.y_test,y_pred)
             print(r2*100,mse,rmse)
@@ -62,9 +78,9 @@ class TrainEvaluate:
             # print(f"normalized rmse::{normalized_rmse}")
             
             os.makedirs(self.model_dir,exist_ok=True)
-            self.model_path=os.path.join(self.model_dir,"model.pkl")
+            self.model_path=os.path.join(self.model_dir,"model_rf.pkl")
             
-            joblib.dump(GB,self.model_path)
+            joblib.dump(rf,self.model_path)
             
         #################reports logging###############
 
@@ -79,19 +95,19 @@ class TrainEvaluate:
                 # "normalized rmse":self.normalized_rmse
                     }
                 json.dump(scores,f,indent=4)
-            self.logger.log("scores written to file")
+            self.logger.log(log_file,"scores written to file")
             with open(params_file,"w") as f:
                 params={
-                    "learning_rate":self.learning_rate,
+                    "criterion":self.criterion,
                     "n_estimators":self.n_estimators,
-                    "verbose":self.verbose,
-                    "validation_fraction":self.val_factor,
-                    "tol":self.tol,
-                    "ccp":self.ccp_alpha
+                    "max_deapth":self.max_deapth,
+                    "min_sample_leaf":self.min_sample_leaf,
+                    "min_sample_split":self.min_sample_split,
+                    "oob_score":self.oob_score
                 }
                 json.dump(params,f,indent=4)
         except Exception as e:
-            self.logger.log(log_file,"Exception occured in 'train_evaluate' function",str(e))
+            self.logger.log(log_file,"Exception occured in 'train_evaluate' function"+str(e))
             self.logger.log(log_file,"train_evaluate function reported error in the function")
             raise AppException(e, sys) from e
 
