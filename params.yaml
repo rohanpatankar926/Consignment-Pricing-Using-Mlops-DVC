@@ -32,15 +32,15 @@ split_data:
 
 model_dirs: saved_models
 
-estimators: 
-  RandomForestRegressor:
-    params:
-      criterion: mae
-      max_deapth: 10
-      min_sample_leaf: 2
-      min_sample_split: 8
-      n_estimators: 80
-      oob_score: True
+# estimators: 
+#   RandomForestRegressor:
+#     params:
+#       criterion: mae
+#       max_deapth: 10
+#       min_sample_leaf: 2
+#       min_sample_split: 8
+#       n_estimators: 80
+#       oob_score: True
 
 webapp_model_dir: H:/consignment pricing using mlops/prediction_service/model/model_rf.pkl
 
@@ -57,6 +57,10 @@ RandomizedSearchCV:
     max_depth: [2,5,10]
     min_samples_split : [2,4,8,12]
     min_samples_leaf: [2,4,8,10]
+
+data:
+  training_data: H:/consignment pricing using mlops/prediction_service/data/main_data/train_data.csv
+  test_data:  H:/consignment pricing using mlops/prediction_service/data/main_data/test_data.csv
 
 reports:
   scores: H:/consignment pricing using mlops/reports/scores.json

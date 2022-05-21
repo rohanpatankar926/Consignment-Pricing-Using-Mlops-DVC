@@ -45,12 +45,12 @@ class TrainEvaluate:
             self.test=pd.read_csv(self.test_data,sep=",")
             self.logger.log(log_file,"test data read successfully")
             self.logger.log(log_file,"model training started")
-            self.criterion=self.config["estimators"]["RandomForestRegressor"]["params"]["criterion"]
-            self.max_deapth=self.config["estimators"]["RandomForestRegressor"]["params"]["max_deapth"]
-            self.min_sample_leaf=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_leaf"]
-            self.n_estimators=self.config["estimators"]["RandomForestRegressor"]["params"]["n_estimators"]
-            self.min_sample_split=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_split"]
-            self.oob_score=self.config["estimators"]["RandomForestRegressor"]["params"]["oob_score"]
+            # self.criterion=self.config["estimators"]["RandomForestRegressor"]["params"]["criterion"]
+            # self.max_deapth=self.config["estimators"]["RandomForestRegressor"]["params"]["max_deapth"]
+            # self.min_sample_leaf=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_leaf"]
+            # self.n_estimators=self.config["estimators"]["RandomForestRegressor"]["params"]["n_estimators"]
+            # self.min_sample_split=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_split"]
+            # self.oob_score=self.config["estimators"]["RandomForestRegressor"]["params"]["oob_score"]
             self.x_train,self.x_test=self.train.drop(self.target_col,axis=1),self.test.drop(self.target_col,axis=1) 
             self.y_train,self.y_test=self.train[self.target_col],self.test[self.target_col]
         
@@ -66,11 +66,28 @@ class TrainEvaluate:
                          n_jobs=self.config["RandomizedSearchCV"]["n_jobs"], 
                          return_train_score=self.config["RandomizedSearchCV"]["return_train_score"])
             RCV.fit(self.x_train,self.y_train)
-        
-            rf=RandomForestRegressor(criterion=self.criterion,max_depth=self.max_deapth,min_samples_leaf=self.min_sample_leaf,n_estimators=self.n_estimators,oob_score=self.oob_score)
             rf.fit(self.x_train,self.y_train)
+            # Feature importances
+            self.rf1_feature_imp = pd.DataFrame(rf.feature_importances_, index = self.x_train.columns, columns = ['Feature_importance'])
+
+            self.rf1_feature_imp.sort_values(by = 'Feature_importance', ascending = False, inplace = True)
+
+            print(round(self.rf1_feature_imp,3))
+            self.rf1_feature_imp['Feature_importance'] = self.rf1_feature_imp[self.rf1_feature_imp['Feature_importance'] > 0.001] 
+
+            self.rf1_feature_imp = self.rf1_feature_imp[self.rf1_feature_imp['Feature_importance'].notna()]
+            self.features_by_rf = self.rf1_feature_imp.index
+            
+            self.x_train=self.x_train[self.features_by_rf]
+            self.x_test=self.x_test[self.features_by_rf]
+            
+            self.x_train.to_csv(self.config["data"]["training_data"])
+            self.x_test.to_csv(self.config["data"]["test_data"])
+        
+            rf2=RCV.best_estimator_
+            rf2.fit(self.x_train,self.y_train)
             y_pred=rf.predict(self.x_test)
-            self.logger.log(log_file,"Model Trained successfully")
+            self.logger.log(log_file,"Model Trained on RandomizedSearchCV successfully")
             (r2,mse,rmse)=self.evaluation_metrics(self.y_test,y_pred)
             print(r2*100,mse,rmse)
             

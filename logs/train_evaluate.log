@@ -89,3 +89,22 @@
 2022-05-21/01:11:17		train data read successfully
 2022-05-21/01:11:17		test data read successfully
 2022-05-21/01:11:17		model training started
+2022-05-21/12:25:23		'train_evaluate' function started
+2022-05-21/12:25:23		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/12:25:24		train data read successfully
+2022-05-21/12:25:24		test data read successfully
+2022-05-21/12:25:24		model training started
+2022-05-21/12:26:39		'train_evaluate' function started
+2022-05-21/12:26:39		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/12:26:39		train data read successfully
+2022-05-21/12:26:39		test data read successfully
+2022-05-21/12:26:39		model training started
+2022-05-21/12:44:05		Exception occured in 'train_evaluate' functionThis RandomForestRegressor instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2022-05-21/12:44:05		train_evaluate function reported error in the function
+2022-05-21/12:48:48		'train_evaluate' function started
+2022-05-21/12:48:48		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/12:48:48		train data read successfully
+2022-05-21/12:48:48		test data read successfully
+2022-05-21/12:48:48		model training started
+2022-05-21/13:04:41		Exception occured in 'train_evaluate' function[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/prediction_service/data/main_data/train_data.csv'
+2022-05-21/13:04:41		train_evaluate function reported error in the function

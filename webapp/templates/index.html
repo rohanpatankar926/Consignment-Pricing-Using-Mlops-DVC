@@ -1,21 +1,27 @@
-{% extends "base.html" %} {% block title %} Insurance Premium Detection {%
-endblock title %} {% block custom_css %}
+{% extends "base.html" %}
+
+
+{% block title %} 
+Consignment Pricing 
+{% endblock title %} 
+
+{% block custom_css %}
 <!-- Custom CSS -->
 <link rel="stylesheet" href="webapp\static\css\main.css" />
-<link
-  rel="icon"
-  href="https://p.kindpng.com/picc/s/255-2554311_insured-cosmetologist-finance-and-insurance-icon-hd-png.png"
-  type="image/x-icon"
-/>
+<link rel="icon" href="https://p.kindpng.com/picc/s/255-2554311_insured-cosmetologist-finance-and-insurance-icon-hd-png.png" type="image/x-icon" />
 
-{% endblock custom_css %} {% block body %}
+{% endblock custom_css %} 
+
+{% block body %}
 <!-- nav bar -->
 
 <nav
   class="navbar navbar-expand-lg navbar-light shadow fixed-top"
   style="background-color: #80bde9"
 >
-  <a class="navbar-brand" href="/">Insurance Premium Prediction</a>
+  <a class="navbar-brand" href="/">Consignment Pricing Prediction</a>
+  <br>
+  
   <button
     class="navbar-toggler"
     type="button"
@@ -35,21 +41,14 @@ endblock title %} {% block custom_css %}
         >
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://github.com/rohanpatankar926/internship_project/"
+        <a class="nav-link" href="https://github.com/rohanpatankar926/internship_project/"
           >Source Code</a
         >
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://github.com/rohanpatankar926/internship_project/tree/main/docs"
+        <a class="nav-link" href="https://github.com/rohanpatankar926/internship_project/tree/main/docs"
           >Docs</a
         >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="rohanpatankar.netlify.app">Contact Me</a>
       </li>
     </ul>
   </div>
@@ -74,43 +73,41 @@ endblock title %} {% block custom_css %}
                 </blockquote>
               </label>
 
-              <input
-                type="number"
+              <input type="number"
                 class="form-control"
                 name="age"
                 rows="1"
                 placeholder="age between 18 and 64"
-              />
-              <br />
+              >
+              
+              <br>
               <select
                 aria-placeholder="select"
                 class="form-control"
                 id="sex"
                 name="sex"
                 required="1"
-              >
-                <option hidden selected>Sex</option>
+              > 
+              <option hidden selected>Sex</option>
                 {% for type in sex %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
               </select>
-              <br />
-              <input
-                type="number"
+              <br>
+              <input type="number"
                 class="form-control"
                 name="bmi"
                 rows="1"
                 placeholder="Enter BMI"
-              />
-              <br />
-              <input
-                type="number"
+              >
+              <br>
+              <input type="number"
                 class="form-control"
                 name="children"
                 rows="1"
                 placeholder="Enter how many children?"
-              />
-              <br />
+              >
+              <br>
               <select
                 aria-placeholder="select"
                 class="form-control"
@@ -118,12 +115,12 @@ endblock title %} {% block custom_css %}
                 name="smoker"
                 required="1"
               >
-                <option hidden selected>Smoking</option>
+              <option hidden selected>Smoking</option>
                 {% for type in smoker %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
               </select>
-              <br />
+                <br>
               <select
                 aria-placeholder="select"
                 class="form-control"
@@ -131,17 +128,19 @@ endblock title %} {% block custom_css %}
                 name="region"
                 required="1"
               >
-                <option hidden selected>Select Region</option>
+              <option hidden selected>Select Region</option>
                 {% for type in region %}
                 <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}
               </select>
+
             </div>
 
             <!-- Select output language here. -->
-            <div class="form-group"></div>
+            <div class="form-group">
+           </div>
             <button type="submit" class="btn btn-primary mb-2">Predict</button
-            ><br />
+            ><br/>
           </form>
           <!--
              Translated text returned by the Translate API is rendered here. -->
@@ -163,6 +162,6 @@ endblock title %} {% block custom_css %}
       </div>
     </div>
 
-    {% endblock body %}
+{% endblock body %} 
   </div>
 </div>
