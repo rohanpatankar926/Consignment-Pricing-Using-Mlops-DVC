@@ -78,11 +78,24 @@ class TrainEvaluate:
             self.rf1_feature_imp = self.rf1_feature_imp[self.rf1_feature_imp['Feature_importance'].notna()]
             self.features_by_rf = self.rf1_feature_imp.index
             
-            self.x_train=self.x_train[self.features_by_rf]
-            self.x_test=self.x_test[self.features_by_rf]
+            self.x_train_rf=self.x_train[self.features_by_rf]
+            self.x_test_rf=self.x_test[self.features_by_rf]
             
             self.x_train.to_csv(self.config["data"]["training_data"])
             self.x_test.to_csv(self.config["data"]["test_data"])
+            
+            rf2=RandomForestRegressor()
+            RCV = RandomizedSearchCV(estimator = rf2, 
+                         param_distributions = self.config["RandomizedSearchCV"]["params"], 
+                         n_iter = self.config["RandomizedSearchCV"]["n_iter"], 
+                         scoring = self.config["RandomizedSearchCV"]["scoring"], 
+                         cv = self.config["RandomizedSearchCV"]["cv"], 
+                         verbose=self.config["RandomizedSearchCV"]["verbose"], 
+                         random_state=42, 
+                         n_jobs=self.config["RandomizedSearchCV"]["n_jobs"], 
+                         return_train_score=self.config["RandomizedSearchCV"]["return_train_score"])
+            RCV.fit(self.x_train,self.y_train)
+            
         
             rf2=RCV.best_estimator_
             rf2.fit(self.x_train,self.y_train)
@@ -97,7 +110,7 @@ class TrainEvaluate:
             os.makedirs(self.model_dir,exist_ok=True)
             self.model_path=os.path.join(self.model_dir,"model_rf.pkl")
             
-            joblib.dump(rf,self.model_path)
+            joblib.dump(rf2,self.model_path)
             
         #################reports logging###############
 

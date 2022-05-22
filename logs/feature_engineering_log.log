@@ -38,3 +38,98 @@
 2022-05-21/01:00:37		feature engineering function compiled successfully
 2022-05-21/01:00:36		'data' FUNCTION STARTED
 2022-05-21/01:00:37		data function compiled successfully
+2022-05-22/23:19:21		'data_' FUNCTION STARTED
+2022-05-22/23:19:21		Exception occurred while loading the data'processed'
+2022-05-22/23:19:21		Failed to load the data please check your code and run
+2022-05-22/23:19:21		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:19:21		Exception occured in remove_outliers methodError occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].
+2022-05-22/23:19:21		Error occured while removing outliers
+2022-05-22/23:19:21		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:19:21		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].].
+2022-05-22/23:19:21		Failed to execute the code please check your code and run
+2022-05-22/23:19:21		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:19:21		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [76] error message [Error occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].].].
+2022-05-22/23:19:21		Failed to execute the code please check your code and run
+2022-05-22/23:19:21		'data' FUNCTION STARTED
+2022-05-22/23:19:21		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [98] error message [Error occurred python script name [.\source\feature_engineering.py] line number [76] error message [Error occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].].].].
+2022-05-22/23:19:21		Failed to execute the code please check your code and run
+2022-05-22/23:21:17		'data_' FUNCTION STARTED
+2022-05-22/23:21:17		Exception occurred while loading the data'processed'
+2022-05-22/23:21:17		Failed to load the data please check your code and run
+2022-05-22/23:21:17		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:21:17		Exception occured in remove_outliers methodError occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].
+2022-05-22/23:21:17		Error occured while removing outliers
+2022-05-22/23:21:17		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:21:17		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].].
+2022-05-22/23:21:17		Failed to execute the code please check your code and run
+2022-05-22/23:21:17		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:21:17		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [76] error message [Error occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].].].
+2022-05-22/23:21:17		Failed to execute the code please check your code and run
+2022-05-22/23:21:17		'data' FUNCTION STARTED
+2022-05-22/23:21:17		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [98] error message [Error occurred python script name [.\source\feature_engineering.py] line number [76] error message [Error occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [24] error message ['processed'].].].].
+2022-05-22/23:21:17		Failed to execute the code please check your code and run
+2022-05-22/23:23:57		'data_' FUNCTION STARTED
+2022-05-22/23:23:57		Data loaded successfully
+2022-05-22/23:23:57		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:23:57		removed outliers function compiled successfully
+2022-05-22/23:23:57		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:23:57		freight_cost_transform function compiled successfully
+2022-05-22/23:23:57		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:23:57		feature engineering function compiled successfully
+2022-05-22/23:23:57		'data' FUNCTION STARTED
+2022-05-22/23:23:57		data function compiled successfully
+2022-05-22/23:24:49		'data_' FUNCTION STARTED
+2022-05-22/23:24:49		Data loaded successfully
+2022-05-22/23:24:49		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:24:49		removed outliers function compiled successfully
+2022-05-22/23:24:49		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:24:49		freight_cost_transform function compiled successfully
+2022-05-22/23:24:49		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:24:50		feature engineering function compiled successfully
+2022-05-22/23:24:49		'data' FUNCTION STARTED
+2022-05-22/23:24:50		data function compiled successfully
+2022-05-22/23:25:11		'data_' FUNCTION STARTED
+2022-05-22/23:25:11		Data loaded successfully
+2022-05-22/23:25:11		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:25:11		removed outliers function compiled successfully
+2022-05-22/23:25:11		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:25:11		freight_cost_transform function compiled successfully
+2022-05-22/23:25:11		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:25:11		feature engineering function compiled successfully
+2022-05-22/23:25:11		'data' FUNCTION STARTED
+2022-05-22/23:25:11		data function compiled successfully
+2022-05-22/23:25:22		'data_' FUNCTION STARTED
+2022-05-22/23:25:22		Exception occurred while loading the data[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_processed.csv'
+2022-05-22/23:25:22		Failed to load the data please check your code and run
+2022-05-22/23:25:22		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:25:22		Exception occured in remove_outliers methodError occurred python script name [.\source\feature_engineering.py] line number [25] error message [[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_processed.csv'].
+2022-05-22/23:25:22		Error occured while removing outliers
+2022-05-22/23:25:22		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:25:22		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [25] error message [[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_processed.csv'].].
+2022-05-22/23:25:22		Failed to execute the code please check your code and run
+2022-05-22/23:25:22		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:25:22		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [76] error message [Error occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [25] error message [[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_processed.csv'].].].
+2022-05-22/23:25:22		Failed to execute the code please check your code and run
+2022-05-22/23:25:22		'data' FUNCTION STARTED
+2022-05-22/23:25:22		Exception occurred while compiling the codeError occurred python script name [.\source\feature_engineering.py] line number [98] error message [Error occurred python script name [.\source\feature_engineering.py] line number [76] error message [Error occurred python script name [.\source\feature_engineering.py] line number [46] error message [Error occurred python script name [.\source\feature_engineering.py] line number [25] error message [[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_processed.csv'].].].].
+2022-05-22/23:25:22		Failed to execute the code please check your code and run
+2022-05-22/23:26:29		'data_' FUNCTION STARTED
+2022-05-22/23:26:29		Data loaded successfully
+2022-05-22/23:26:29		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:26:29		removed outliers function compiled successfully
+2022-05-22/23:26:29		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:26:29		freight_cost_transform function compiled successfully
+2022-05-22/23:26:29		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:26:29		feature engineering function compiled successfully
+2022-05-22/23:26:29		'data' FUNCTION STARTED
+2022-05-22/23:26:29		data function compiled successfully
+2022-05-22/23:27:25		'data_' FUNCTION STARTED
+2022-05-22/23:27:25		Data loaded successfully
+2022-05-22/23:27:25		'remove_outliers' FUNCTION STARTED
+2022-05-22/23:27:25		removed outliers function compiled successfully
+2022-05-22/23:27:25		'freight_cost_transform' FUNCTION STARTED
+2022-05-22/23:27:25		freight_cost_transform function compiled successfully
+2022-05-22/23:27:25		'feature_engineering' FUNCTION STARTED
+2022-05-22/23:27:26		feature engineering function compiled successfully
+2022-05-22/23:27:25		'data' FUNCTION STARTED
+2022-05-22/23:27:26		data function compiled successfully

@@ -3,6 +3,7 @@ import numpy as np
 from load_data import LoadData
 from data_preprocessing import Preprocessing
 from get_data import GetData
+from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 import sys
@@ -97,9 +98,8 @@ class FeatureEngineering:
             self.data = self.freight_cost_transform(config_path)
             self.data["po_/_so_#"] = pd.get_dummies(self.data["po_/_so_#"])
             self.data["asn/dn_#"] = pd.get_dummies(self.data["asn/dn_#"])
-            self.data["country"].value_counts()
-            frequency = self.data["country"].value_counts().to_dict()
-            self.data["country"] = self.data["country"].map(frequency)
+            lb=LabelEncoder()
+            self.data["country"]=lb.fit_transform(self.data["country"])
             self.data["fulfill_via"] = pd.get_dummies(self.data["fulfill_via"])
             self.data["vendor_inco_term"] = pd.get_dummies(
                 self.data["vendor_inco_term"])
@@ -109,7 +109,8 @@ class FeatureEngineering:
                 self.data["first_line_designation"])
             self.data["shipment_mode"] = pd.get_dummies(
                 self.data["shipment_mode"])
-            self.data["pq_#"] = pd.get_dummies(self.data["pq_#"])
+            # self.data["pq_#"] = pd.get_dummies(self.data["pq_#"])
+            self.data.drop("pq_#",axis=1,inplace=True)
             self.logger.log(
                 logfile, "feature engineering function compiled successfully")
             # [data for data in self.data if self.data[data].dtypes=="O"]

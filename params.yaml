@@ -1,7 +1,7 @@
 base:
   project: Consignment-Pricing-Using-MLops-DVC
   random_state: 180
-  target_data: line_item_quantity
+  target_data: line_item_value
 
 data_source: 
   local_data: H:/consignment pricing using mlops/data_given/Consignment_pricing_raw.csv
@@ -59,10 +59,10 @@ RandomizedSearchCV:
     min_samples_leaf: [2,4,8,10]
 
 data:
-  training_data: H:/consignment pricing using mlops/prediction_service/data/main_data/train_data.csv
-  test_data:  H:/consignment pricing using mlops/prediction_service/data/main_data/test_data.csv
+  training_data: H:/consignment pricing using mlops/data/main_data/train_data.csv
+  test_data:  H:/consignment pricing using mlops/data/main_data/test_data.csv
+  processed: H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv
 
 reports:
   scores: H:/consignment pricing using mlops/reports/scores.json
   params: H:/consignment pricing using mlops/reports/params.json
-

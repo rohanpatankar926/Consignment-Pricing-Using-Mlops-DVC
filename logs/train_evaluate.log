@@ -108,3 +108,38 @@
 2022-05-21/12:48:48		model training started
 2022-05-21/13:04:41		Exception occured in 'train_evaluate' function[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/prediction_service/data/main_data/train_data.csv'
 2022-05-21/13:04:41		train_evaluate function reported error in the function
+2022-05-21/13:05:08		'train_evaluate' function started
+2022-05-21/13:05:08		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/13:05:08		train data read successfully
+2022-05-21/13:05:08		test data read successfully
+2022-05-21/13:05:08		model training started
+2022-05-21/13:20:45		Exception occured in 'train_evaluate' function[Errno 2] No such file or directory: 'H:/consignment pricing using mlops/prediction_service/data/main_data/train_data.csv'
+2022-05-21/13:20:45		train_evaluate function reported error in the function
+2022-05-21/15:16:18		'train_evaluate' function started
+2022-05-21/15:16:18		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-21/15:16:18		train data read successfully
+2022-05-21/15:16:18		test data read successfully
+2022-05-21/15:16:18		model training started
+2022-05-21/15:35:13		Exception occured in 'train_evaluate' functionNumber of features of the model must match the input. Model n_features is 16 and input n_features is 5 
+2022-05-21/15:35:13		train_evaluate function reported error in the function
+2022-05-22/23:28:01		'train_evaluate' function started
+2022-05-22/23:28:01		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-22/23:28:01		train data read successfully
+2022-05-22/23:28:01		test data read successfully
+2022-05-22/23:28:01		model training started
+2022-05-22/23:51:00		'train_evaluate' function started
+2022-05-22/23:51:00		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-22/23:51:00		train data read successfully
+2022-05-22/23:51:00		test data read successfully
+2022-05-22/23:51:00		model training started
+2022-05-23/00:18:27		Exception occured in 'train_evaluate' functionNumber of features of the model must match the input. Model n_features is 15 and input n_features is 9 
+2022-05-23/00:18:27		train_evaluate function reported error in the function
+2022-05-23/00:24:16		'train_evaluate' function started
+2022-05-23/00:24:17		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-23/00:24:17		train data read successfully
+2022-05-23/00:24:17		test data read successfully
+2022-05-23/00:24:17		model training started
+2022-05-23/00:53:59		Model Trained on RandomizedSearchCV successfully
+2022-05-23/00:53:59		scores written to file
+2022-05-23/00:53:59		Exception occured in 'train_evaluate' function'TrainEvaluate' object has no attribute 'criterion'
+2022-05-23/00:53:59		train_evaluate function reported error in the function
