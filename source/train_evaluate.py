@@ -45,12 +45,12 @@ class TrainEvaluate:
             self.test=pd.read_csv(self.test_data,sep=",")
             self.logger.log(log_file,"test data read successfully")
             self.logger.log(log_file,"model training started")
-            # self.criterion=self.config["estimators"]["RandomForestRegressor"]["params"]["criterion"]
-            # self.max_deapth=self.config["estimators"]["RandomForestRegressor"]["params"]["max_deapth"]
-            # self.min_sample_leaf=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_leaf"]
-            # self.n_estimators=self.config["estimators"]["RandomForestRegressor"]["params"]["n_estimators"]
-            # self.min_sample_split=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_split"]
-            # self.oob_score=self.config["estimators"]["RandomForestRegressor"]["params"]["oob_score"]
+            self.criterion=self.config["estimators"]["RandomForestRegressor"]["params"]["criterion"]
+            self.max_deapth=self.config["estimators"]["RandomForestRegressor"]["params"]["max_deapth"]
+            self.min_sample_leaf=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_leaf"]
+            self.n_estimators=self.config["estimators"]["RandomForestRegressor"]["params"]["n_estimators"]
+            self.min_sample_split=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_split"]
+            self.oob_score=self.config["estimators"]["RandomForestRegressor"]["params"]["oob_score"]
             self.x_train,self.x_test=self.train.drop(self.target_col,axis=1),self.test.drop(self.target_col,axis=1) 
             self.y_train,self.y_test=self.train[self.target_col],self.test[self.target_col]
         
@@ -128,6 +128,7 @@ class TrainEvaluate:
             self.logger.log(log_file,"scores written to file")
             with open(params_file,"w") as f:
                 params={
+                    "best params":RCV.best_params_,
                     "criterion":self.criterion,
                     "n_estimators":self.n_estimators,
                     "max_deapth":self.max_deapth,

@@ -143,3 +143,17 @@
 2022-05-23/00:53:59		scores written to file
 2022-05-23/00:53:59		Exception occured in 'train_evaluate' function'TrainEvaluate' object has no attribute 'criterion'
 2022-05-23/00:53:59		train_evaluate function reported error in the function
+2022-05-23/21:27:14		'train_evaluate' function started
+2022-05-23/21:27:14		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-23/21:27:15		train data read successfully
+2022-05-23/21:27:15		test data read successfully
+2022-05-23/21:27:15		model training started
+2022-05-23/21:27:15		Exception occured in 'train_evaluate' function'estimators'
+2022-05-23/21:27:15		train_evaluate function reported error in the function
+2022-05-23/21:27:54		'train_evaluate' function started
+2022-05-23/21:27:54		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-05-23/21:27:54		train data read successfully
+2022-05-23/21:27:54		test data read successfully
+2022-05-23/21:27:54		model training started
+2022-05-23/22:03:48		Model Trained on RandomizedSearchCV successfully
+2022-05-23/22:03:48		scores written to file
