@@ -1,5 +1,4 @@
 
-
 from flask import Flask,render_template
 import os
 import sys
@@ -14,6 +13,9 @@ app=Flask(__name__,template_folder=template_dir,static_folder=static_dir)
 def home_page():
 	return render_template("index.html")
 
+@app.route("/predict",methods=["POST","GET"])
+def predict_page():
+    return render_template("details.html")
 # @app.route('/logs', defaults={'req_path': 'logs'})
 # @app.route('/logs/<path:req_path>')
 # def render_log_dir(req_path):
@@ -41,4 +43,4 @@ def home_page():
 #     return render_template('log_files.html', result=result)
 
 if __name__=="__main__":
-    app.run(port=5000,debug=True)
+    app.run(port=8000,debug=True)

@@ -120,7 +120,6 @@ class TrainEvaluate:
             with open(scores_file,"w") as f:
                 scores={
                 "rmse":rmse,
-                "mse":mse,
                 "r2 score":r2*100,
                 # "normalized rmse":self.normalized_rmse
                     }
