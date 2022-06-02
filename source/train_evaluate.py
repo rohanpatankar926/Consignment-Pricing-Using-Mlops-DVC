@@ -1,7 +1,7 @@
-from statistics import mean
-from sqlalchemy import true
-from get_data import GetData
-from feature_engineering import FeatureEngineering
+import sys
+sys.path.append("H:/consignment pricing using mlops")
+
+
 import numpy as np
 from sklearn.metrics import mean_absolute_error,r2_score,mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
@@ -17,12 +17,14 @@ import pandas as pd
 import joblib
 import json
 import os
+from get_data import GetData
+
 
 class TrainEvaluate:
     def __init__(self):
         self.get_data=GetData()
         self.logger=Applogger()
-        self.feature_engineering=FeatureEngineering()
+
    
     def evaluation_metrics(self,act,pred):
         self.r2_score=r2_score(act,pred)

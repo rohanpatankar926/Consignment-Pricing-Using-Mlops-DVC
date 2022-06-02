@@ -37,18 +37,24 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="/">Consignment Pricing Prediction</a>
+            <a class="navbar-brand" href="/">Consignment Price Estimation</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
-                    
-                   
-                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logs">View Logs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Consignment Price</a>
+                        <a class="nav-link" href="/saved_models">Saved Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/train">Train Model</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Housing Price</a>
                     </li>
 
                 </ul>
@@ -59,16 +65,20 @@
 
 
 
-   <center> <div class="row" style="margin-left: 5%;margin-right:5%;">
+    <div class="row" style="margin-left: 5%;margin-right:5%;">
        
-        
-                <li class="list-group-item py-1 {% if 'predict' in request.path %} active {% endif %}">
-                    <a style=" text-decoration: none;color:black" href="/predict">Consignment Housing Price using MLOps</a>
+        <div class="col-md-2 col-sm-12 col-lg-2">
+            <ul class=" list-group ">
+                <li class="list-group-item py-1  {% if 'log' in request.path %} active {% endif %}">
+                    <a  style=" text-decoration: none;color:black" href="/logs">View Logs</a>
+                </li>
+                <li class="list-group-item py-1  {% if 'saved_models' in request.path %} active {% endif %}">
+                    <a  style=" text-decoration: none;color:black" href="/saved_models">View Saved Models</a>
                 </li>
                 
             </ul>
 
-        </div></center>
+        </div>
 
         <div class="col-md-8 col-sm-12 col-lg-9" style="margin-top:20px;"> 
             {% block content %}
@@ -120,7 +130,7 @@
         <!-- Copyright -->
         <div class="text-center text-light p-3" style="background-color: rgba(3, 36, 67, 0.504);">
             © 2022 Copyright:
-            <a class="text-light" href="#">Developed by Rohan patankar</a>
+            <a class="text-light" href="https://ineuron.ai/">Rohan Patankar</a>
         </div>
         <!-- Copyright -->
     </footer>

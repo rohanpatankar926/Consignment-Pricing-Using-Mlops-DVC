@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class Applogger:
     def __init__(self):
         pass
