@@ -50,7 +50,7 @@
                         <a class="nav-link" href="/saved_models">Saved Models</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/train">Train Model</a>
+                        <a class="nav-link" href="/train">Retrain Model</a>
                     </li>
                    
                     <li class="nav-item">
@@ -74,6 +74,9 @@
                 </li>
                 <li class="list-group-item py-1  {% if 'saved_models' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/saved_models">View Saved Models</a>
+                </li>
+                <li class="list-group-item py-1  {% if 'train' in request.path %} active {% endif %}">
+                    <a  style=" text-decoration: none;color:black" href="/train">Retrain Model</a>
                 </li>
                 
             </ul>
@@ -100,21 +103,10 @@
         <div class="container pt-4">
             <!-- Section: Social media -->
             <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-                <!-- Twitter -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
                 <!-- Google -->
                 <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-                <!-- Instagram -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
                 <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
@@ -130,7 +122,7 @@
         <!-- Copyright -->
         <div class="text-center text-light p-3" style="background-color: rgba(3, 36, 67, 0.504);">
             © 2022 Copyright:
-            <a class="text-light" href="https://ineuron.ai/">Rohan Patankar</a>
+            <a class="text-light" href="#">Rohan Patankar</a>
         </div>
         <!-- Copyright -->
     </footer>

@@ -194,3 +194,18 @@
 2022-06-02/18:56:10		train data read successfully
 2022-06-02/18:56:10		test data read successfully
 2022-06-02/18:56:10		model training started
+2022-06-02/18:58:33		'train_evaluate' function started
+2022-06-02/18:58:33		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-06-02/18:58:33		train data read successfully
+2022-06-02/18:58:33		test data read successfully
+2022-06-02/18:58:33		model training started
+2022-06-02/18:58:40		'train_evaluate' function started
+2022-06-02/18:58:40		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-06-02/18:58:40		train data read successfully
+2022-06-02/18:58:40		test data read successfully
+2022-06-02/18:58:40		model training started
+2022-06-02/20:37:48		'train_evaluate' function started
+2022-06-02/20:37:48		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-06-02/20:37:48		train data read successfully
+2022-06-02/20:37:48		test data read successfully
+2022-06-02/20:37:48		model training started

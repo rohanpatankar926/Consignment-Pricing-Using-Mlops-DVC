@@ -10,4 +10,3 @@ if __name__=="__main__":
         TrainEvaluate().model_eval(PARAM_FILE)
     except Exception as e:
         print("Error",e)
-        

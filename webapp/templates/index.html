@@ -1,65 +1,53 @@
-{% extends 'header.html' %}
-
-{% block head %}
-
+{% extends 'header.html' %} {% block head %}
 
 <title>Index</title>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 
 <div class="row">
-    <div class="col-md-12 col-lg-12 col-sm-12"  style="margin-bottom:20px;">
-        <div class="row">
-            <div class="col-md-8">
-      
-      
-
-        </div>
-        </div>
-<div class="col-md-4 col-lg-4 col-sm-12">
-<div class="card">
-    <div class="card-header">
-       View Logs
-    </div>
-    <div class="card-body">
-
-        <h5 class="card-title">Log Files</h5>
-        <p class="card-text">All model training log file can be downloaded.</p>
-        <a class="btn btn-primary" href="/logs">Check Logs</a>
+  <div class="col-md-12 col-lg-12 col-sm-12" style="margin-bottom: 20px">
+    <div class="row">
+      <div class="col-md-8"></div>
     </div>
 
-<div class="card-header">
-    View Saved Models
- </div>
+   <div class="card">
+        <div class="card-header">View Training Logs</div>
         <div class="card-body">
-
-        <h5 class="card-title">Saved Model .pkl</h5>
-        <p class="card-text">Check here for saved models.</p>
-        <a class="btn btn-primary" href="/saved_models">Saved Models</a>
+          <h5 class="card-title">Training Logs History</h5>
+          <p class="card-text">All training logs can be downloaded click here..👇👇</p>
+          <a class="btn btn-primary" href="/saved_models">Training Logs</a>
         </div>
+    </div>
+        <div class="card">
+        <div class="card-header">View Saved Models</div>
+        <div class="card-body">
+          <h5 class="card-title">Saved Model .pkl</h5>
+          <p class="card-text">All Saved models can be downloaded click here..👇👇</p>
+          <a class="btn btn-primary" href="/saved_models">Saved Models</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">Estimate Consignment Pricing</div>
+        <div class="card-body">
+          <h5 class="card-title">Model Prediction</h5>
+          <p class="card-text">
+           For model prediction click here..👇👇
+          </p>
+          <a class="btn btn-secondary" href="/predict">Model Prediction</a>
+        </div>
+        <div class="card">
+        <div class="card-header">Retrain the model</div>
+        <div class="card-body">
+          <h5 class="card-title">Model Retraining</h5>
+          <p class="card-text">
+            Please be patient it may take more time than expected...😄😄🥱
+          </p>
+          <a class="btn btn-success" href="/train">retrain model</a>
+        </div>
+    
+    </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="card-header">
-            Retrain the model
-         </div>
-                <div class="card-body">
-        
-                <h5 class="card-title">Model Retraining</h5>
-                <p class="card-text">Please be patient it may take more time than expected </p>
-                <a class="btn btn-primary" href="/train">retrain model</a>
-                </div>
-        
+  {% endblock %}
 </div>
-</div>
-
-
-
-        
-
-
-
-
-            
-</div>
-
-{% endblock %}
