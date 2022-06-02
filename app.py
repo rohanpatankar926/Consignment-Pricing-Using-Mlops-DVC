@@ -70,7 +70,7 @@ def get_logs(req_path):
 @app.route('/train', methods=['GET', 'POST'])
 def train():
     from subprocess import call
-    return_code = call(["python", "source/retrain.py"])
+    return_code = call(["python", "source/retraining_model.py"])
     print(return_code)
     return render_template('train.html')
 
