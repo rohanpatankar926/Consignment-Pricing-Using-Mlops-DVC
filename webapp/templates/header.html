@@ -50,12 +50,16 @@
                         <a class="nav-link" href="/saved_models">Saved Models</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/data">Artifacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Consignment Price</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/train">Retrain Model</a>
                     </li>
                    
-                    <li class="nav-item">
-                        <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Housing Price</a>
-                    </li>
+                    
 
                 </ul>
             </div>
@@ -69,11 +73,20 @@
        
         <div class="col-md-2 col-sm-12 col-lg-2">
             <ul class=" list-group ">
+                <li class="list-group-item py-1">
+                    <a  style=" text-decoration: none;color:black" href="/">Go Home</a>
+                </li>
                 <li class="list-group-item py-1  {% if 'log' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/logs">View Logs</a>
                 </li>
                 <li class="list-group-item py-1  {% if 'saved_models' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/saved_models">View Saved Models</a>
+                </li>
+                <li class="list-group-item py-1  {% if 'data' in request.path %} active {% endif %}">
+                    <a  style=" text-decoration: none;color:black" href="/data">View Artifact</a>
+                </li>
+                <li class="list-group-item py-1  {% if 'predict' in request.path %} active {% endif %}">
+                    <a  style=" text-decoration: none;color:black" href="/predict">Estimate Consignment Price</a>
                 </li>
                 <li class="list-group-item py-1  {% if 'train' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/train">Retrain Model</a>

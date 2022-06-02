@@ -3,15 +3,14 @@
 {% block head %}
 
 
-<title>Housing Estimator</title>
+<title>Performace Status</title>
 {% endblock %}
 
 {% block content %}
-
-
-    
-{% if "housing" in result['parent_folder'] %}
-<a href="/artifact/{{result['parent_folder']}}"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+<br>
+   
+    {% if "reports" in result['parent_folder'] %}
+<a href="/performance/{{result['parent_folder']}}"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
 
 <h4 style="text-align:center;">
 {{result['parent_label']}}
@@ -21,7 +20,7 @@
 <div class="row">
     {% for href,label in result["files"].items() %}
     <div class="col-md-2 text-center">
-        <a href="/data/{{href}}" style="text-decoration: none;">
+        <a href="/performance/{{href}}" style="text-decoration: none;">
 
             <i class="fa {% if '.' in label %} fa-file {% else %} fa-folder {% endif %} fa-8x" aria-hidden="true"></i> <br>{{ label }}
             {% if '.' in label %}
@@ -33,4 +32,5 @@
    
 </div>
 
-    {% endblock %}
+        
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'header.html' %}
+
+{% block title %}
+Error 404
+{% endblock title %}
+
+
+{% block body %}
+
+    <div class="container col-lg-4 col-lg-offset-4 main">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-template">
+                    <h1>Oops!</h1>
+                    <h2> 404 Not Found </h2>
+                    <div class="error-details">
+                        ERROR: {{ error.error }}
+                    </div>
+                    <div class="error-actions go-home">
+                        <a href="/" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
+                            Take Me Home </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        body {
+            font-size: large;
+
+            text-align: center;
+            background-color: #eff8ff;
+
+
+        }
+
+        .btn {
+            background-color: rgba(12, 184, 182, 0.91);
+        }
+
+
+        .main {
+            background-color: #002232c7;
+            color: white;
+            border-radius: 20px;
+            margin-top: 10%;
+            padding: 30px 20px 40px 20px;
+
+        }
+
+        .go-home {
+            color: white;
+            border-radius: 20px;
+            padding: 20px 20px 40px 20px;
+
+        }
+    </style>
+
+    {% endblock body %}

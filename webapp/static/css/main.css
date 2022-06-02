@@ -1,9 +1,13 @@
 body {
-    background-color: #b9c4cc;
+   
+        height: 200px;
+        background-color: #550e0e;
+        background-image: linear-gradient(red, yellow, green);
+     
 }
 *
 {
-    background-color: #cc0000;
+    background-color: #621717;
 }
 .navbar-collapse{
     padding-right: 50%;

@@ -1,12 +1,21 @@
 {% extends 'header.html' %} {% block head %}
 
 <title>Index</title>
-{% endblock %} {% block content %}
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+{% endblock css %}
+
+{% block content %}
 
 <div class="row">
   <div class="col-md-12 col-lg-12 col-sm-12" style="margin-bottom: 20px">
     <div class="row">
       <div class="col-md-8"></div>
+    </div>
+    <div class="header">
+    <h3>
     </div>
 
    <div class="card">
@@ -16,7 +25,10 @@
           <p class="card-text">All training logs can be downloaded click here..👇👇</p>
           <a class="btn btn-primary" href="/saved_models">Training Logs</a>
         </div>
+    
+
     </div>
+    <br>
         <div class="card">
         <div class="card-header">View Saved Models</div>
         <div class="card-body">
@@ -24,7 +36,19 @@
           <p class="card-text">All Saved models can be downloaded click here..👇👇</p>
           <a class="btn btn-primary" href="/saved_models">Saved Models</a>
         </div>
+
     </div>
+    <br>
+    <div class="card">
+        <div class="card-header">View Artifacts</div>
+        <div class="card-body">
+          <h5 class="card-title">Artifacts section</h5>
+          <p class="card-text">To view raw_data,preprocessed_data,trained_data click here..👇👇</p>
+          <a class="btn btn-primary" href="/data">Artifacts</a>
+        </div>
+
+    </div>
+    <br>
     <div class="card">
         <div class="card-header">Estimate Consignment Pricing</div>
         <div class="card-body">
@@ -33,7 +57,10 @@
            For model prediction click here..👇👇
           </p>
           <a class="btn btn-secondary" href="/predict">Model Prediction</a>
-        </div>
+        </div>  
+    </div>
+        <br>
+
         <div class="card">
         <div class="card-header">Retrain the model</div>
         <div class="card-body">
@@ -41,9 +68,10 @@
           <p class="card-text">
             Please be patient it may take more time than expected...😄😄🥱
           </p>
-          <a class="btn btn-success" href="/train">retrain model</a>
+          <a class="btn btn-success" href="/train">Retrain Model</a>
         </div>
-    
+    </div>
+       
     </div>
       </div>
     </div>
