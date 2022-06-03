@@ -5,4 +5,4 @@ scikit_learn
 gunicorn
 argparse
 joblib
-pytest
+pytest==7.1.2

@@ -55,7 +55,7 @@ jobs:
           process_type: web
       - name: Testing with Unittest
         run: |
-          python -m pytest -v Test_cases/test.py
+          pytest -v
           
    
           
