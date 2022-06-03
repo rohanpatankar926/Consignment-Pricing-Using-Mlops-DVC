@@ -1,6 +1,3 @@
-
-from site import abs_paths
-from unittest import result
 from flask import Flask,render_template
 import os
 import sys
@@ -144,4 +141,4 @@ def train():
         return render_template("404.html",error=error)
 port = int(os.environ.get("PORT", 5000))        
 if __name__=="__main__":
-    app.run(debug=True,port=port,host="0.0.0.0")
+    app.run(debug=True,port=port)

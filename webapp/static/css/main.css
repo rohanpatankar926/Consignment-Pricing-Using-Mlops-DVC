@@ -110,3 +110,8 @@ body{
   font-weight: 400;
   margin-left: 8px;
 }
+
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(blue, yellow, blue);
+}
