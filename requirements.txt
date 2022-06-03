@@ -6,4 +6,3 @@ gunicorn
 argparse
 joblib
 pytest
-unittest
