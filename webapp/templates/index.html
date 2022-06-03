@@ -5,7 +5,14 @@
 
 {% block css %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {% endblock css %}
+
 
 {% block content %}
 
@@ -39,7 +46,7 @@
     </div>
     <br>
     <br>
-    <h3></h3>
+    <center><h3>Explore here</h3></center>
    <div class="card">
         <div class="card-header">View Training Logs</div>
         <div class="card-body">
@@ -90,7 +97,20 @@
           <p class="card-text">
             Please be patient it may take more time than expected...😄😄🥱
           </p>
-          <a class="btn btn-success" href="/train">Retrain Model</a>
+
+          <div class="button ">
+            <div class="text-icon">
+              <i class="bx bx-cloud-upload"></i>
+              
+              <a class="text btn btn-success"  href="/train" >Retrain Model</a>
+            
+            </div>
+          </div>
+
+
+
+
+        
         </div>
     </div>
        
@@ -98,6 +118,24 @@
       </div>
     </div>
   </div>
+  
+  <script>
+    const button = document.querySelector(".button"),
+    text = document.querySelector(".text");
+  
+    button.addEventListener("click", ()=>{
+      button.classList.add("progress");
+      text.innerText = "Retraining in progress...";
+  
+      setTimeout(()=>{
+       button.classList.remove("progress"); //remove progress after 6s
+       text.innerText = "Retrained";
+      },120000); //1000ms = 1s (6000 = 6s)
+  
+    });
+  </script>
+  
 
   {% endblock %}
 </div>
+
