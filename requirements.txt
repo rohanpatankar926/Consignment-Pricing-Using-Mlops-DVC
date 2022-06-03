@@ -5,3 +5,5 @@ scikit_learn
 gunicorn
 argparse
 joblib
+pytest
+unittest
