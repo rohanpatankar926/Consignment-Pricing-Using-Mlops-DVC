@@ -2,6 +2,8 @@ import sys
 sys.path.append("H:\consignment pricing using mlops")
 from main import app
 import unittest
+import pytest
+
 
 class TestToPerform(unittest.TestCase):
     def setUp(self):
