@@ -29,6 +29,10 @@ def home_page():
 def predict():
     return render_template("predict.html")
 
+@app.route("/main",methods=["GET"])
+def main():
+    return render_template("main.html")
+
 @app.route("/data",defaults={"req_path":"data"})
 @app.route("/data/<path:req_path>")
 def get_data(req_path):
@@ -140,4 +144,4 @@ def train():
         return render_template("404.html",error=error)
 port = int(os.environ.get("PORT", 5000))        
 if __name__=="__main__":
-    app.run(debug=True,host="0.0.0.0",port=port)
+    app.run(debug=True,port=port)

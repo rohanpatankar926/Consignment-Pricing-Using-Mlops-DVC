@@ -1,0 +1,95 @@
+{% extends  "header.html" %}
+{% block title %}
+<title>Main</title>
+{% endblock %}
+
+{%block content  %}
+<div class="card">
+    <div class="card-header">View Training Logs</div>
+    <div class="card-body">
+      <h5 class="card-title">Training Logs History</h5>
+      <p class="card-text">All training logs can be downloaded click here..👇👇</p>
+      <a class="btn btn-primary" href="/saved_models">Training Logs</a>
+    </div>
+
+
+</div>
+<br>
+    <div class="card">
+    <div class="card-header">View Saved Models</div>
+    <div class="card-body">
+      <h5 class="card-title">Saved Model .pkl</h5>
+      <p class="card-text">All Saved models can be downloaded click here..👇👇</p>
+      <a class="btn btn-primary" href="/saved_models">Saved Models</a>
+    </div>
+
+</div>
+<br>
+<div class="card">
+    <div class="card-header">View Artifacts</div>
+    <div class="card-body">
+      <h5 class="card-title">Artifacts section</h5>
+      <p class="card-text">To view raw_data,preprocessed_data,trained_data click here..👇👇</p>
+      <a class="btn btn-primary" href="/data">Artifacts</a>
+    </div>
+
+</div>
+<br>
+<div class="card">
+    <div class="card-header">Estimate Consignment Pricing</div>
+    <div class="card-body">
+      <h5 class="card-title">Model Prediction</h5>
+      <p class="card-text">
+       For model prediction click here..👇👇
+      </p>
+      <a class="btn btn-secondary" href="/predict">Model Prediction</a>
+    </div>  
+</div>
+    <br>
+
+    <div class="card">
+    <div class="card-header">Retrain the model</div>
+    <div class="card-body">
+      <h5 class="card-title">Model Retraining</h5>
+      <p class="card-text">
+        Please be patient it may take more time than expected...😄😄🥱
+      </p>
+
+      <div class="button ">
+        <div class="text-icon">
+          <i class="bx bx-cloud-upload"></i>
+          
+          <a class="text btn btn-success"  href="/train" >Retrain Model</a>
+        
+        </div>
+      </div>
+
+
+
+
+    
+    </div>
+</div>
+   
+</div>
+  </div>
+</div>
+</div>
+
+<script>
+const button = document.querySelector(".button"),
+text = document.querySelector(".text");
+
+button.addEventListener("click", ()=>{
+  button.classList.add("progress");
+  text.innerText = "Retraining in progress...";
+
+  setTimeout(()=>{
+   button.classList.remove("progress"); //remove progress after 6s
+   text.innerText = "Retrained";
+  },120000); //1000ms = 1s (6000 = 6s)
+
+});
+</script>
+{% endblock %}
+</div>
