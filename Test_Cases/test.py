@@ -1,6 +1,6 @@
 import sys
 sys.path.append("H:\consignment pricing using mlops")
-from main import app
+from app import app
 import unittest
 import pytest
 

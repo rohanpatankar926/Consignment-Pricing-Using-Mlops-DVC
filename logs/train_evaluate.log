@@ -470,3 +470,20 @@
 2022-06-03/19:15:44		train data read successfully
 2022-06-03/19:15:44		test data read successfully
 2022-06-03/19:15:44		model training started
+2022-06-03/22:59:54		'train_evaluate' function started
+2022-06-03/22:59:54		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-06-03/22:59:54		train data read successfully
+2022-06-03/22:59:54		test data read successfully
+2022-06-03/22:59:54		model training started
+2022-06-03/22:59:56		Exception occured in 'train_evaluate' function[Errno 22] Invalid argument
+2022-06-03/22:59:56		train_evaluate function reported error in the function
+2022-06-03/22:59:40		'train_evaluate' function started
+2022-06-03/22:59:40		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-06-03/22:59:40		train data read successfully
+2022-06-03/22:59:40		test data read successfully
+2022-06-03/22:59:40		model training started
+2022-06-03/22:59:45		'train_evaluate' function started
+2022-06-03/22:59:45		train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+2022-06-03/22:59:45		train data read successfully
+2022-06-03/22:59:45		test data read successfully
+2022-06-03/22:59:45		model training started

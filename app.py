@@ -30,6 +30,10 @@ def predict():
 def main():
     return render_template("main.html")
 
+@app.route("/noaccess",methods=["GET"])
+def no_access():
+    return render_template("contact_me.html")
+
 @app.route("/data",defaults={"req_path":"data"})
 @app.route("/data/<path:req_path>")
 def get_data(req_path):
@@ -134,7 +138,7 @@ def train():
     try:
         return_code = call(["python", "source/retraining_model.py"])
         print(return_code)
-        return render_template('train.html')
+        return render_template('contact_me.html')
     except FileNotFoundError as e:
         error="Error occured while retraining 🤔🤔"
         error={"error":error}
