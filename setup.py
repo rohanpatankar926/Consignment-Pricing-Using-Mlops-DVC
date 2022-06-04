@@ -1,10 +1,3 @@
 from setuptools import setup,find_packages
 
-setup(      
-    name='main',
-    version='0.1.0',    
-    description='Main package for this repository',
-    install_requires=['flask','flask_cors','joblib','numpy',],
-    packages=find_packages(),
-    license="MIT"
-    )
+setup(name="source/train_evaluate",version="1.0.0",description="Creating package for my machine learning project",url="https://consignmentpricing.herokuapp.com/",author="Rohan Patankar",license="MIT",packages=find_packages(include=["numpy","scikit-learn","pandas","joblib"]),python_requires='>=3')

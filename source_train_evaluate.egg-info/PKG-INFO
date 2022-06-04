@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: source-train-evaluate
+Version: 1.0.0
+Summary: Creating package for my machine learning project
+Home-page: https://consignmentpricing.herokuapp.com/
+Author: Rohan Patankar
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3

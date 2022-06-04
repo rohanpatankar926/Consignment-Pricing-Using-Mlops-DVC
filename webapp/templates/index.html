@@ -1,6 +1,7 @@
-{% extends 'header.html' %} {% block head %}
+{% extends 'header.html' %} 
 
-<title>Index</title>
+{% block head %}
+<title>Consignment Pricing</title>
 {% endblock %}
 
 {% block css %}
@@ -11,13 +12,14 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="icon" href="{{url_for('static', filename='images/dollar.png')}}">
 <style>
   #grad1 {
     height: 200px;
     background-image: linear-gradient(blue, yellow, blue);
   }
 </style>
-{% endblock css %}
+{% endblock %}
 
 
 {% block content %}
@@ -31,7 +33,7 @@
         <h3>
       </div>
       <center>
-        <h3>Consignment Pricing Using MLops</h3>
+        <marquee><h3>Consignment Pricing Using MLops</h3></marquee>
       </center>
       <center>
         <div class="card">

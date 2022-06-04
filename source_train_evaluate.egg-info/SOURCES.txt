@@ -1,0 +1,5 @@
+setup.py
+source_train_evaluate.egg-info/PKG-INFO
+source_train_evaluate.egg-info/SOURCES.txt
+source_train_evaluate.egg-info/dependency_links.txt
+source_train_evaluate.egg-info/top_level.txt
