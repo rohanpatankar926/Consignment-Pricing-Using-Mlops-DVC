@@ -170,6 +170,4 @@ def train():
 
 port = int(os.getenv("PORT", 5000))
 if __name__=="__main__":
-    host="127.0.0.1"
-    https=simple_server.make_server(host,port,app)
-    https.serve_forever()
+    app.run(host="0.0.0.0",port=port,debug=False)
