@@ -1,4 +1,7 @@
-from flask import Flask,render_template,request,redirect,url_for,flash
+from itertools import count
+import re
+from flask import Flask,render_template,request,redirect,url_for,flash,request
+import sqlalchemy
 import os
 import sys
 from flask import send_file,abort
@@ -6,6 +9,12 @@ from subprocess import call
 from time import sleep
 from wsgiref import simple_server
 from flask_cors import CORS, cross_origin
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.engine import Engine
+from datetime import datetime
+
+
+
 ROOT_DIR=os.getcwd()
 LOGS_FOLDER_NAME="logs"
 LOGS_DIR=os.path.join(ROOT_DIR,LOGS_FOLDER_NAME)
@@ -20,7 +29,13 @@ template_dir=os.path.join(webapp_root,"templates")
 
 app=Flask(__name__,template_folder=template_dir,static_folder=static_dir)
 CORS(app)
+app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///consignment_price.sqlite3"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=0
+app.config["SECRET_KEY"]="consignment_secret_key"
 
+db=SQLAlchemy(app)
+now=datetime.now()
+db.create_all()
 @app.route("/",methods=["GET"])
 @cross_origin()
 def home_page():
@@ -154,11 +169,64 @@ def stream():
                     sleep(0.1)
     return app.response_class(generate(),mimetype="text/plain")
 
+class User(db.Model):
+    __tablename__="Consignment_Prices"
+    id_=db.Column(db.Integer,primary_key=True)
+    pq=db.Column(db.Integer,index=True)
+    Po_SO=db.Column(db.Integer,index=True)
+    Asn_dn=db.Column(db.String(50))
+    country=db.Column(db.String(50))
+    managed_by=db.Column(db.String(50))
+    fullfil_via=db.Column(db.String(50))
+    vendor_inco_term=db.Column(db.String(50))
+    shipment_mode=db.Column(db.String(10))
+    pq_client_date=db.Column(db.DateTime())
+    Scheduled_Delivery_Date=db.Column(db.DateTime())
+    delivered_client_date=db.Column(db.DateTime())
+    delivery_recorded_date=db.Column(db.DateTime())
+    product_group=db.Column(db.String(50))
+    sub_classification=db.Column(db.String(50))
+    vendor=db.Column(db.String(50))
+    item_descr=db.Column(db.String(100))
+    molecular_test=db.Column(db.String(50))
+    brand=db.Column(db.String(50))
+    dosage=db.Column(db.String(40))
+    dosage_form=db.Column(db.String(40))
+    unit_of_measure=db.Column(db.Integer)
+    line_item_quantity=db.Column(db.Integer)
+    line_item_value=db.Column(db.Integer)
+    pack_price=db.Column(db.Integer)
+    unit_price=db.Column(db.Integer)
+    manufacturing_site=db.Column(db.Integer)
+    first_line_designation=db.Column(db.Integer)
+    weight_product=db.Column(db.Integer)
+    freight_cost=db.Column(db.Integer)
+    line_item_insurance=db.Column(db.Integer())
+   
+@app.route("/predict/upload",methods=["POST","GET"])
+def upload():
+   
+    if request.method=="POST":
+        if not request.form["pq"] or not request.form["poso"]:
+            flash("Something Went Wrong While updating data to DataBase!!!")
+        else:
+            upload_to_db=User(pq=request.form["pq"],Po_SO=request.form["poso"])
+            db.session.add(upload_to_db)
+            db.session.commit()
+            flash("Successfully Uploaded Data To DataBase😁😁")
+            return redirect(("/predict/upload"))
+    return render_template("db.html")
+    
+
+
+    
+    
+    
+
 @app.route('/stream/train', methods=['GET', 'POST'])
 @cross_origin()
 def train():
     try:
-       
         return_code = call(["python", "source/run_all_logs_scipt.py"])
         print(return_code)
         return render_template('train.html')
@@ -170,4 +238,5 @@ def train():
 
 port = int(os.getenv("PORT", 5000))
 if __name__=="__main__":
-    app.run(host="0.0.0.0",port=port,debug=True)
+    db.create_all()
+    app.run(port=port,debug=True)

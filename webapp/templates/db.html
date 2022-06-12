@@ -1,0 +1,41 @@
+{% extends 'header.html' %}
+
+
+{% block content %}
+<style>
+  .alert-primary{
+    color:rgb(0, 28, 42);
+    border-color: rgb(16, 63, 91);
+
+  }
+  .alert{
+    position:relative;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+</style>
+<body>
+    <p>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+         <ul class=flashes>
+         {% for message in messages %}
+         <div class ="alert alert-primary">
+           <strong>{{ message }}</strong>
+          </div>
+         {% endfor %}
+         </ul>
+       {% endif %}
+     {% endwith %}
+       </p>
+     
+     <form method="POST" action="/predict/upload" enctype="multipart/form-data">
+
+       <input type="number" name="pq" value="" required>
+       <input type="number" name="poso" value="" required>
+     <input type="submit" value="submit">
+     </form>
+</body>
+</html>
+{% endblock %}

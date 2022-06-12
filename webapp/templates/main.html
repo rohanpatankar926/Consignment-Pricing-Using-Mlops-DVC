@@ -48,9 +48,9 @@
     <br>
 
     <div class="card">
-    <div class="card-header">Retrain the model</div>
+    <div class="card-header">Train the model</div>
     <div class="card-body">
-      <h5 class="card-title">Model Retraining</h5>
+      <h5 class="card-title">Model Training</h5>
       <p class="card-text">
         Please be patient it may take more time than expected...😄😄🥱
       </p>
@@ -59,7 +59,7 @@
         <div class="text-icon">
           <i class="bx bx-cloud-upload"></i>
           
-          <a class="text btn btn-success"  href="/noaccess" >Retrain Model</a>
+          <a class="text btn btn-success"  href="/stream/train" >Train Model</a>
         
         </div>
       </div>
@@ -76,20 +76,6 @@
 </div>
 </div>
 
-<script>
-const button = document.querySelector(".button"),
-text = document.querySelector(".text");
 
-button.addEventListener("click", ()=>{
-  button.classList.add("progress");
-  text.innerText = "Retraining in progress...";
-
-  setTimeout(()=>{
-   button.classList.remove("progress"); //remove progress after 6s
-   text.innerText = "Retrained";
-  },120000); //1000ms = 1s (6000 = 6s)
-
-});
-</script>
 {% endblock %}
 </div>
