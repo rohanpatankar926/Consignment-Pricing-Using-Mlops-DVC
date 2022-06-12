@@ -239,4 +239,4 @@ def train():
 port = int(os.getenv("PORT", 5000))
 if __name__=="__main__":
     db.create_all()
-    app.run(port=port,debug=True)
+    app.run(port=port,debug=True,host="0.0.0.0")
