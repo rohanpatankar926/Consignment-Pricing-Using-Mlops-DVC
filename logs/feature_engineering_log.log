@@ -133,3 +133,1060 @@
 2022-05-22/23:27:26		feature engineering function compiled successfully
 2022-05-22/23:27:25		'data' FUNCTION STARTED
 2022-05-22/23:27:26		data function compiled successfully
+2022-06-05/02:44:37		'data_' FUNCTION STARTED
+2022-06-05/02:44:37		Data loaded successfully
+2022-06-05/02:44:37		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:44:37		removed outliers function compiled successfully
+2022-06-05/02:44:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:44:37		freight_cost_transform function compiled successfully
+2022-06-05/02:44:37		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:44:37		feature engineering function compiled successfully
+2022-06-05/02:44:37		'data' FUNCTION STARTED
+2022-06-05/02:44:37		data function compiled successfully
+2022-06-05/02:44:58		'data_' FUNCTION STARTED
+2022-06-05/02:44:58		Data loaded successfully
+2022-06-05/02:44:58		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:44:58		removed outliers function compiled successfully
+2022-06-05/02:44:58		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:44:58		freight_cost_transform function compiled successfully
+2022-06-05/02:44:58		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:44:58		feature engineering function compiled successfully
+2022-06-05/02:44:58		'data' FUNCTION STARTED
+2022-06-05/02:44:58		data function compiled successfully
+2022-06-05/02:45:18		'data_' FUNCTION STARTED
+2022-06-05/02:45:18		Data loaded successfully
+2022-06-05/02:45:18		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:45:18		removed outliers function compiled successfully
+2022-06-05/02:45:18		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:45:18		freight_cost_transform function compiled successfully
+2022-06-05/02:45:18		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:45:18		feature engineering function compiled successfully
+2022-06-05/02:45:18		'data' FUNCTION STARTED
+2022-06-05/02:45:18		data function compiled successfully
+2022-06-05/02:46:39		'data_' FUNCTION STARTED
+2022-06-05/02:46:39		Data loaded successfully
+2022-06-05/02:46:39		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:46:39		removed outliers function compiled successfully
+2022-06-05/02:46:39		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:46:39		freight_cost_transform function compiled successfully
+2022-06-05/02:46:39		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:46:39		feature engineering function compiled successfully
+2022-06-05/02:46:39		'data' FUNCTION STARTED
+2022-06-05/02:46:39		data function compiled successfully
+2022-06-05/02:46:55		'data_' FUNCTION STARTED
+2022-06-05/02:46:55		Data loaded successfully
+2022-06-05/02:46:55		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:46:55		removed outliers function compiled successfully
+2022-06-05/02:46:55		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:46:55		freight_cost_transform function compiled successfully
+2022-06-05/02:46:55		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:46:55		feature engineering function compiled successfully
+2022-06-05/02:46:55		'data' FUNCTION STARTED
+2022-06-05/02:46:55		data function compiled successfully
+2022-06-05/02:47:25		'data_' FUNCTION STARTED
+2022-06-05/02:47:25		Data loaded successfully
+2022-06-05/02:47:25		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:47:25		removed outliers function compiled successfully
+2022-06-05/02:47:25		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:47:25		freight_cost_transform function compiled successfully
+2022-06-05/02:47:25		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:47:25		feature engineering function compiled successfully
+2022-06-05/02:47:25		'data' FUNCTION STARTED
+2022-06-05/02:47:25		data function compiled successfully
+2022-06-05/02:47:37		'data_' FUNCTION STARTED
+2022-06-05/02:47:37		Data loaded successfully
+2022-06-05/02:47:37		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:47:37		removed outliers function compiled successfully
+2022-06-05/02:47:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:47:37		freight_cost_transform function compiled successfully
+2022-06-05/02:47:37		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:47:37		feature engineering function compiled successfully
+2022-06-05/02:47:37		'data' FUNCTION STARTED
+2022-06-05/02:47:37		data function compiled successfully
+2022-06-05/02:59:12		'data_' FUNCTION STARTED
+2022-06-05/02:59:13		Data loaded successfully
+2022-06-05/02:59:12		'remove_outliers' FUNCTION STARTED
+2022-06-05/02:59:13		removed outliers function compiled successfully
+2022-06-05/02:59:12		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/02:59:13		freight_cost_transform function compiled successfully
+2022-06-05/02:59:12		'feature_engineering' FUNCTION STARTED
+2022-06-05/02:59:13		feature engineering function compiled successfully
+2022-06-05/02:59:12		'data' FUNCTION STARTED
+2022-06-05/02:59:13		data function compiled successfully
+2022-06-05/03:00:42		'data_' FUNCTION STARTED
+2022-06-05/03:00:45		Data loaded successfully
+2022-06-05/03:00:42		'remove_outliers' FUNCTION STARTED
+2022-06-05/03:00:45		removed outliers function compiled successfully
+2022-06-05/03:00:42		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/03:00:45		freight_cost_transform function compiled successfully
+2022-06-05/03:00:42		'feature_engineering' FUNCTION STARTED
+2022-06-05/03:00:45		feature engineering function compiled successfully
+2022-06-05/03:00:42		'data' FUNCTION STARTED
+2022-06-05/03:00:48		data function compiled successfully
+2022-06-05/03:06:10		'data_' FUNCTION STARTED
+2022-06-05/03:06:10		Data loaded successfully
+2022-06-05/03:06:10		'remove_outliers' FUNCTION STARTED
+2022-06-05/03:06:10		removed outliers function compiled successfully
+2022-06-05/03:06:10		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/03:06:10		freight_cost_transform function compiled successfully
+2022-06-05/03:06:10		'feature_engineering' FUNCTION STARTED
+2022-06-05/03:06:10		feature engineering function compiled successfully
+2022-06-05/03:06:10		'data' FUNCTION STARTED
+2022-06-05/03:06:10		data function compiled successfully
+2022-06-05/03:08:54		'data_' FUNCTION STARTED
+2022-06-05/03:08:54		Data loaded successfully
+2022-06-05/03:08:54		'remove_outliers' FUNCTION STARTED
+2022-06-05/03:08:55		removed outliers function compiled successfully
+2022-06-05/03:08:54		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/03:08:55		freight_cost_transform function compiled successfully
+2022-06-05/03:08:54		'feature_engineering' FUNCTION STARTED
+2022-06-05/03:08:55		feature engineering function compiled successfully
+2022-06-05/03:08:54		'data' FUNCTION STARTED
+2022-06-05/03:08:55		data function compiled successfully
+2022-06-05/03:11:25		'data_' FUNCTION STARTED
+2022-06-05/03:11:25		Data loaded successfully
+2022-06-05/03:11:25		'remove_outliers' FUNCTION STARTED
+2022-06-05/03:11:25		removed outliers function compiled successfully
+2022-06-05/03:11:25		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/03:11:25		freight_cost_transform function compiled successfully
+2022-06-05/03:11:25		'feature_engineering' FUNCTION STARTED
+2022-06-05/03:11:25		feature engineering function compiled successfully
+2022-06-05/03:11:25		'data' FUNCTION STARTED
+2022-06-05/03:11:25		data function compiled successfully
+2022-06-05/11:42:56		'data_' FUNCTION STARTED
+2022-06-05/11:42:56		Data loaded successfully
+2022-06-05/11:42:56		'remove_outliers' FUNCTION STARTED
+2022-06-05/11:42:57		removed outliers function compiled successfully
+2022-06-05/11:42:56		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/11:42:57		freight_cost_transform function compiled successfully
+2022-06-05/11:42:56		'feature_engineering' FUNCTION STARTED
+2022-06-05/11:42:57		feature engineering function compiled successfully
+2022-06-05/11:42:56		'data' FUNCTION STARTED
+2022-06-05/11:42:57		data function compiled successfully
+2022-06-05/11:43:35		'data_' FUNCTION STARTED
+2022-06-05/11:43:35		Data loaded successfully
+2022-06-05/11:43:35		'remove_outliers' FUNCTION STARTED
+2022-06-05/11:43:35		removed outliers function compiled successfully
+2022-06-05/11:43:35		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/11:43:35		freight_cost_transform function compiled successfully
+2022-06-05/11:43:35		'feature_engineering' FUNCTION STARTED
+2022-06-05/11:43:35		feature engineering function compiled successfully
+2022-06-05/11:43:35		'data' FUNCTION STARTED
+2022-06-05/11:43:35		data function compiled successfully
+2022-06-05/17:49:10		'data_' FUNCTION STARTED
+2022-06-05/17:49:10		Data loaded successfully
+2022-06-05/17:49:10		'remove_outliers' FUNCTION STARTED
+2022-06-05/17:49:10		removed outliers function compiled successfully
+2022-06-05/17:49:10		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/17:49:11		freight_cost_transform function compiled successfully
+2022-06-05/17:49:10		'feature_engineering' FUNCTION STARTED
+2022-06-05/17:49:11		feature engineering function compiled successfully
+2022-06-05/17:49:10		'data' FUNCTION STARTED
+2022-06-05/17:49:11		data function compiled successfully
+2022-06-05/20:40:42		'data_' FUNCTION STARTED
+2022-06-05/20:40:42		Data loaded successfully
+2022-06-05/20:40:42		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:40:42		removed outliers function compiled successfully
+2022-06-05/20:40:42		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:40:42		freight_cost_transform function compiled successfully
+2022-06-05/20:40:42		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:40:42		feature engineering function compiled successfully
+2022-06-05/20:40:42		'data' FUNCTION STARTED
+2022-06-05/20:40:43		data function compiled successfully
+2022-06-05/20:40:44		'data_' FUNCTION STARTED
+2022-06-05/20:40:44		Data loaded successfully
+2022-06-05/20:40:44		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:40:44		removed outliers function compiled successfully
+2022-06-05/20:40:44		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:40:44		freight_cost_transform function compiled successfully
+2022-06-05/20:40:44		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:40:44		feature engineering function compiled successfully
+2022-06-05/20:40:44		'data' FUNCTION STARTED
+2022-06-05/20:40:44		data function compiled successfully
+2022-06-05/20:40:48		'data_' FUNCTION STARTED
+2022-06-05/20:40:48		Data loaded successfully
+2022-06-05/20:40:48		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:40:48		removed outliers function compiled successfully
+2022-06-05/20:40:48		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:40:48		freight_cost_transform function compiled successfully
+2022-06-05/20:40:48		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:40:48		feature engineering function compiled successfully
+2022-06-05/20:40:48		'data' FUNCTION STARTED
+2022-06-05/20:40:48		data function compiled successfully
+2022-06-05/20:40:52		'data_' FUNCTION STARTED
+2022-06-05/20:40:53		Data loaded successfully
+2022-06-05/20:40:52		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:40:53		removed outliers function compiled successfully
+2022-06-05/20:40:52		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:40:53		freight_cost_transform function compiled successfully
+2022-06-05/20:40:52		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:40:53		feature engineering function compiled successfully
+2022-06-05/20:40:52		'data' FUNCTION STARTED
+2022-06-05/20:40:53		data function compiled successfully
+2022-06-05/20:41:05		'data_' FUNCTION STARTED
+2022-06-05/20:41:05		Data loaded successfully
+2022-06-05/20:41:05		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:41:05		removed outliers function compiled successfully
+2022-06-05/20:41:05		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:41:05		freight_cost_transform function compiled successfully
+2022-06-05/20:41:05		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:41:05		feature engineering function compiled successfully
+2022-06-05/20:41:05		'data' FUNCTION STARTED
+2022-06-05/20:41:05		data function compiled successfully
+2022-06-05/20:41:47		'data_' FUNCTION STARTED
+2022-06-05/20:41:47		Data loaded successfully
+2022-06-05/20:41:47		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:41:47		removed outliers function compiled successfully
+2022-06-05/20:41:47		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:41:47		freight_cost_transform function compiled successfully
+2022-06-05/20:41:47		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:41:48		feature engineering function compiled successfully
+2022-06-05/20:41:47		'data' FUNCTION STARTED
+2022-06-05/20:41:48		data function compiled successfully
+2022-06-05/20:43:05		'data_' FUNCTION STARTED
+2022-06-05/20:43:05		Data loaded successfully
+2022-06-05/20:43:05		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:43:05		removed outliers function compiled successfully
+2022-06-05/20:43:05		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:43:05		freight_cost_transform function compiled successfully
+2022-06-05/20:43:05		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:43:05		feature engineering function compiled successfully
+2022-06-05/20:43:05		'data' FUNCTION STARTED
+2022-06-05/20:43:05		data function compiled successfully
+2022-06-05/20:43:46		'data_' FUNCTION STARTED
+2022-06-05/20:43:46		Data loaded successfully
+2022-06-05/20:43:46		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:43:46		removed outliers function compiled successfully
+2022-06-05/20:43:46		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:43:46		freight_cost_transform function compiled successfully
+2022-06-05/20:43:46		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:43:46		feature engineering function compiled successfully
+2022-06-05/20:43:46		'data' FUNCTION STARTED
+2022-06-05/20:43:46		data function compiled successfully
+2022-06-05/20:44:16		'data_' FUNCTION STARTED
+2022-06-05/20:44:16		Data loaded successfully
+2022-06-05/20:44:16		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:44:16		removed outliers function compiled successfully
+2022-06-05/20:44:16		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:44:17		freight_cost_transform function compiled successfully
+2022-06-05/20:44:16		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:44:17		feature engineering function compiled successfully
+2022-06-05/20:44:16		'data' FUNCTION STARTED
+2022-06-05/20:44:17		data function compiled successfully
+2022-06-05/20:46:26		'data_' FUNCTION STARTED
+2022-06-05/20:46:26		Data loaded successfully
+2022-06-05/20:46:26		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:46:26		removed outliers function compiled successfully
+2022-06-05/20:46:26		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:46:26		freight_cost_transform function compiled successfully
+2022-06-05/20:46:26		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:46:26		feature engineering function compiled successfully
+2022-06-05/20:46:26		'data' FUNCTION STARTED
+2022-06-05/20:46:26		data function compiled successfully
+2022-06-05/20:51:37		'data_' FUNCTION STARTED
+2022-06-05/20:51:37		Data loaded successfully
+2022-06-05/20:51:37		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:51:37		removed outliers function compiled successfully
+2022-06-05/20:51:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:51:37		freight_cost_transform function compiled successfully
+2022-06-05/20:51:37		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:51:37		feature engineering function compiled successfully
+2022-06-05/20:51:37		'data' FUNCTION STARTED
+2022-06-05/20:51:37		data function compiled successfully
+2022-06-05/20:53:05		'data_' FUNCTION STARTED
+2022-06-05/20:53:06		Data loaded successfully
+2022-06-05/20:53:05		'remove_outliers' FUNCTION STARTED
+2022-06-05/20:53:06		removed outliers function compiled successfully
+2022-06-05/20:53:05		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/20:53:06		freight_cost_transform function compiled successfully
+2022-06-05/20:53:05		'feature_engineering' FUNCTION STARTED
+2022-06-05/20:53:06		feature engineering function compiled successfully
+2022-06-05/20:53:05		'data' FUNCTION STARTED
+2022-06-05/20:53:06		data function compiled successfully
+2022-06-05/23:47:42		'data_' FUNCTION STARTED
+2022-06-05/23:47:42		Data loaded successfully
+2022-06-05/23:47:42		'remove_outliers' FUNCTION STARTED
+2022-06-05/23:47:42		removed outliers function compiled successfully
+2022-06-05/23:47:42		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/23:47:42		freight_cost_transform function compiled successfully
+2022-06-05/23:47:42		'feature_engineering' FUNCTION STARTED
+2022-06-05/23:47:42		feature engineering function compiled successfully
+2022-06-05/23:47:42		'data' FUNCTION STARTED
+2022-06-05/23:47:42		data function compiled successfully
+2022-06-05/23:47:44		'data_' FUNCTION STARTED
+2022-06-05/23:47:44		Data loaded successfully
+2022-06-05/23:47:44		'remove_outliers' FUNCTION STARTED
+2022-06-05/23:47:44		removed outliers function compiled successfully
+2022-06-05/23:47:44		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/23:47:44		freight_cost_transform function compiled successfully
+2022-06-05/23:47:44		'feature_engineering' FUNCTION STARTED
+2022-06-05/23:47:45		feature engineering function compiled successfully
+2022-06-05/23:47:44		'data' FUNCTION STARTED
+2022-06-05/23:47:45		data function compiled successfully
+2022-06-05/23:47:47		'data_' FUNCTION STARTED
+2022-06-05/23:47:47		Data loaded successfully
+2022-06-05/23:47:47		'remove_outliers' FUNCTION STARTED
+2022-06-05/23:47:47		removed outliers function compiled successfully
+2022-06-05/23:47:47		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/23:47:47		freight_cost_transform function compiled successfully
+2022-06-05/23:47:47		'feature_engineering' FUNCTION STARTED
+2022-06-05/23:47:47		feature engineering function compiled successfully
+2022-06-05/23:47:47		'data' FUNCTION STARTED
+2022-06-05/23:47:47		data function compiled successfully
+2022-06-05/23:47:51		'data_' FUNCTION STARTED
+2022-06-05/23:47:51		Data loaded successfully
+2022-06-05/23:47:51		'remove_outliers' FUNCTION STARTED
+2022-06-05/23:47:51		removed outliers function compiled successfully
+2022-06-05/23:47:51		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/23:47:51		freight_cost_transform function compiled successfully
+2022-06-05/23:47:51		'feature_engineering' FUNCTION STARTED
+2022-06-05/23:47:51		feature engineering function compiled successfully
+2022-06-05/23:47:51		'data' FUNCTION STARTED
+2022-06-05/23:47:51		data function compiled successfully
+2022-06-05/23:49:54		'data_' FUNCTION STARTED
+2022-06-05/23:49:54		Data loaded successfully
+2022-06-05/23:49:54		'remove_outliers' FUNCTION STARTED
+2022-06-05/23:49:54		removed outliers function compiled successfully
+2022-06-05/23:49:54		'freight_cost_transform' FUNCTION STARTED
+2022-06-05/23:49:54		freight_cost_transform function compiled successfully
+2022-06-05/23:49:54		'feature_engineering' FUNCTION STARTED
+2022-06-05/23:49:55		feature engineering function compiled successfully
+2022-06-05/23:49:54		'data' FUNCTION STARTED
+2022-06-05/23:49:55		data function compiled successfully
+2022-06-07/11:29:21		'data_' FUNCTION STARTED
+2022-06-07/11:29:21		Data loaded successfully
+2022-06-07/11:29:21		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:29:21		removed outliers function compiled successfully
+2022-06-07/11:29:21		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:29:21		freight_cost_transform function compiled successfully
+2022-06-07/11:29:21		'data_' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occurred while loading the dataNo columns to parse from file
+2022-06-07/11:29:21		Failed to load the data please check your code and run
+2022-06-07/11:29:21		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occured in remove_outliers methodError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [25] error message [No columns to parse from file].
+2022-06-07/11:29:21		Error occured while removing outliers
+2022-06-07/11:29:21		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [46] error message [Error occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [25] error message [No columns to parse from file].].
+2022-06-07/11:29:21		Failed to execute the code please check your code and run
+2022-06-07/11:29:21		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [76] error message [Error occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [46] error message [Error occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [25] error message [No columns to parse from file].].].
+2022-06-07/11:29:21		Failed to execute the code please check your code and run
+2022-06-07/11:29:21		'data' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [98] error message [Error occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [76] error message [Error occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [46] error message [Error occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [25] error message [No columns to parse from file].].].].
+2022-06-07/11:29:21		Failed to execute the code please check your code and run
+2022-06-07/11:29:21		'data_' FUNCTION STARTED
+2022-06-07/11:29:21		Data loaded successfully
+2022-06-07/11:29:21		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:29:21		removed outliers function compiled successfully
+2022-06-07/11:29:21		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:29:21		freight_cost_transform function compiled successfully
+2022-06-07/11:29:21		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:29:21		Failed to execute the code please check your code and run
+2022-06-07/11:29:21		'data' FUNCTION STARTED
+2022-06-07/11:29:21		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:29:21		Failed to execute the code please check your code and run
+2022-06-07/11:29:21		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:29:22		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:29:22		Failed to execute the code please check your code and run
+2022-06-07/11:29:21		'data' FUNCTION STARTED
+2022-06-07/11:29:22		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:29:22		Failed to execute the code please check your code and run
+2022-06-07/11:29:23		'data_' FUNCTION STARTED
+2022-06-07/11:29:23		Data loaded successfully
+2022-06-07/11:29:23		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:29:23		removed outliers function compiled successfully
+2022-06-07/11:29:23		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:29:23		freight_cost_transform function compiled successfully
+2022-06-07/11:29:23		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:29:24		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:29:24		Failed to execute the code please check your code and run
+2022-06-07/11:29:23		'data' FUNCTION STARTED
+2022-06-07/11:29:24		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:29:24		Failed to execute the code please check your code and run
+2022-06-07/11:29:31		'data_' FUNCTION STARTED
+2022-06-07/11:29:31		Data loaded successfully
+2022-06-07/11:29:31		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:29:31		removed outliers function compiled successfully
+2022-06-07/11:29:31		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:29:31		freight_cost_transform function compiled successfully
+2022-06-07/11:29:31		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:29:32		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:29:32		Failed to execute the code please check your code and run
+2022-06-07/11:29:31		'data' FUNCTION STARTED
+2022-06-07/11:29:32		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:29:32		Failed to execute the code please check your code and run
+2022-06-07/11:29:37		'data_' FUNCTION STARTED
+2022-06-07/11:29:37		Data loaded successfully
+2022-06-07/11:29:37		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:29:37		removed outliers function compiled successfully
+2022-06-07/11:29:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:29:37		freight_cost_transform function compiled successfully
+2022-06-07/11:29:37		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:29:38		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:29:38		Failed to execute the code please check your code and run
+2022-06-07/11:29:37		'data' FUNCTION STARTED
+2022-06-07/11:29:38		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:29:38		Failed to execute the code please check your code and run
+2022-06-07/11:30:16		'data_' FUNCTION STARTED
+2022-06-07/11:30:16		Data loaded successfully
+2022-06-07/11:30:16		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:30:16		removed outliers function compiled successfully
+2022-06-07/11:30:16		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:30:16		freight_cost_transform function compiled successfully
+2022-06-07/11:30:16		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:30:17		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:30:17		Failed to execute the code please check your code and run
+2022-06-07/11:30:16		'data' FUNCTION STARTED
+2022-06-07/11:30:17		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:30:17		Failed to execute the code please check your code and run
+2022-06-07/11:33:43		'data_' FUNCTION STARTED
+2022-06-07/11:33:43		Data loaded successfully
+2022-06-07/11:33:43		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:33:43		removed outliers function compiled successfully
+2022-06-07/11:33:43		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:33:43		freight_cost_transform function compiled successfully
+2022-06-07/11:33:43		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:33:43		feature engineering function compiled successfully
+2022-06-07/11:33:43		'data' FUNCTION STARTED
+2022-06-07/11:33:43		data function compiled successfully
+2022-06-07/11:34:42		'data_' FUNCTION STARTED
+2022-06-07/11:34:42		Data loaded successfully
+2022-06-07/11:34:42		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:34:42		removed outliers function compiled successfully
+2022-06-07/11:34:42		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:34:42		freight_cost_transform function compiled successfully
+2022-06-07/11:34:42		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:34:43		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:34:43		Failed to execute the code please check your code and run
+2022-06-07/11:34:42		'data' FUNCTION STARTED
+2022-06-07/11:34:43		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:34:43		Failed to execute the code please check your code and run
+2022-06-07/11:39:01		'data_' FUNCTION STARTED
+2022-06-07/11:39:02		Data loaded successfully
+2022-06-07/11:39:01		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:39:02		removed outliers function compiled successfully
+2022-06-07/11:39:01		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:39:02		freight_cost_transform function compiled successfully
+2022-06-07/11:39:01		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:39:02		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:39:02		Failed to execute the code please check your code and run
+2022-06-07/11:39:01		'data' FUNCTION STARTED
+2022-06-07/11:39:02		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:39:02		Failed to execute the code please check your code and run
+2022-06-07/11:42:16		'data_' FUNCTION STARTED
+2022-06-07/11:42:16		Data loaded successfully
+2022-06-07/11:42:16		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:42:17		removed outliers function compiled successfully
+2022-06-07/11:42:16		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:42:17		freight_cost_transform function compiled successfully
+2022-06-07/11:42:16		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:42:17		feature engineering function compiled successfully
+2022-06-07/11:42:16		'data' FUNCTION STARTED
+2022-06-07/11:42:17		data function compiled successfully
+2022-06-07/11:43:12		'data_' FUNCTION STARTED
+2022-06-07/11:43:12		Data loaded successfully
+2022-06-07/11:43:12		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:43:12		removed outliers function compiled successfully
+2022-06-07/11:43:12		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:43:12		freight_cost_transform function compiled successfully
+2022-06-07/11:43:12		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:43:13		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:43:13		Failed to execute the code please check your code and run
+2022-06-07/11:43:12		'data' FUNCTION STARTED
+2022-06-07/11:43:13		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:43:13		Failed to execute the code please check your code and run
+2022-06-07/11:43:58		'data_' FUNCTION STARTED
+2022-06-07/11:43:58		Data loaded successfully
+2022-06-07/11:43:58		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:43:58		removed outliers function compiled successfully
+2022-06-07/11:43:58		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:43:58		freight_cost_transform function compiled successfully
+2022-06-07/11:43:58		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:43:58		feature engineering function compiled successfully
+2022-06-07/11:43:58		'data' FUNCTION STARTED
+2022-06-07/11:43:58		data function compiled successfully
+2022-06-07/11:54:20		'data_' FUNCTION STARTED
+2022-06-07/11:54:20		Data loaded successfully
+2022-06-07/11:54:20		'remove_outliers' FUNCTION STARTED
+2022-06-07/11:54:20		removed outliers function compiled successfully
+2022-06-07/11:54:20		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/11:54:20		freight_cost_transform function compiled successfully
+2022-06-07/11:54:20		'feature_engineering' FUNCTION STARTED
+2022-06-07/11:54:21		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/11:54:21		Failed to execute the code please check your code and run
+2022-06-07/11:54:20		'data' FUNCTION STARTED
+2022-06-07/11:54:21		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/11:54:21		Failed to execute the code please check your code and run
+2022-06-07/22:55:04		'data_' FUNCTION STARTED
+2022-06-07/22:55:05		Data loaded successfully
+2022-06-07/22:55:04		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:55:05		removed outliers function compiled successfully
+2022-06-07/22:55:04		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:55:05		freight_cost_transform function compiled successfully
+2022-06-07/22:55:05		'data_' FUNCTION STARTED
+2022-06-07/22:55:05		Data loaded successfully
+2022-06-07/22:55:05		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:55:05		removed outliers function compiled successfully
+2022-06-07/22:55:05		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:55:05		freight_cost_transform function compiled successfully
+2022-06-07/22:55:04		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:55:05		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:55:05		Failed to execute the code please check your code and run
+2022-06-07/22:55:04		'data' FUNCTION STARTED
+2022-06-07/22:55:05		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/22:55:05		Failed to execute the code please check your code and run
+2022-06-07/22:55:05		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:55:06		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:55:06		Failed to execute the code please check your code and run
+2022-06-07/22:55:05		'data' FUNCTION STARTED
+2022-06-07/22:55:06		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/22:55:06		Failed to execute the code please check your code and run
+2022-06-07/22:55:07		'data_' FUNCTION STARTED
+2022-06-07/22:55:07		Data loaded successfully
+2022-06-07/22:55:07		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:55:07		removed outliers function compiled successfully
+2022-06-07/22:55:07		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:55:07		freight_cost_transform function compiled successfully
+2022-06-07/22:55:07		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:55:07		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:55:07		Failed to execute the code please check your code and run
+2022-06-07/22:55:07		'data' FUNCTION STARTED
+2022-06-07/22:55:07		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/22:55:07		Failed to execute the code please check your code and run
+2022-06-07/22:55:07		'data_' FUNCTION STARTED
+2022-06-07/22:55:07		Data loaded successfully
+2022-06-07/22:55:07		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:55:07		removed outliers function compiled successfully
+2022-06-07/22:55:07		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:55:07		freight_cost_transform function compiled successfully
+2022-06-07/22:55:07		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:55:08		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:55:08		Failed to execute the code please check your code and run
+2022-06-07/22:55:07		'data' FUNCTION STARTED
+2022-06-07/22:55:08		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/22:55:08		Failed to execute the code please check your code and run
+2022-06-07/22:56:21		'data_' FUNCTION STARTED
+2022-06-07/22:56:21		Data loaded successfully
+2022-06-07/22:56:21		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:56:21		removed outliers function compiled successfully
+2022-06-07/22:56:21		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:56:21		freight_cost_transform function compiled successfully
+2022-06-07/22:56:21		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:56:22		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:56:22		Failed to execute the code please check your code and run
+2022-06-07/22:56:21		'data' FUNCTION STARTED
+2022-06-07/22:56:22		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/22:56:22		Failed to execute the code please check your code and run
+2022-06-07/22:56:56		'data_' FUNCTION STARTED
+2022-06-07/22:56:56		Data loaded successfully
+2022-06-07/22:56:56		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:56:56		removed outliers function compiled successfully
+2022-06-07/22:56:56		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:56:56		freight_cost_transform function compiled successfully
+2022-06-07/22:56:56		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:56:57		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:56:57		Failed to execute the code please check your code and run
+2022-06-07/22:56:56		'data' FUNCTION STARTED
+2022-06-07/22:56:57		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [99] error message [Columns must be same length as key].
+2022-06-07/22:56:57		Failed to execute the code please check your code and run
+2022-06-07/22:59:31		'data_' FUNCTION STARTED
+2022-06-07/22:59:31		Data loaded successfully
+2022-06-07/22:59:31		'remove_outliers' FUNCTION STARTED
+2022-06-07/22:59:31		removed outliers function compiled successfully
+2022-06-07/22:59:31		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/22:59:31		freight_cost_transform function compiled successfully
+2022-06-07/22:59:31		'feature_engineering' FUNCTION STARTED
+2022-06-07/22:59:31		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/22:59:31		Failed to execute the code please check your code and run
+2022-06-07/22:59:31		'data' FUNCTION STARTED
+2022-06-07/22:59:31		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-07/22:59:31		Failed to execute the code please check your code and run
+2022-06-07/23:02:03		'data_' FUNCTION STARTED
+2022-06-07/23:02:03		Data loaded successfully
+2022-06-07/23:02:03		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:02:03		removed outliers function compiled successfully
+2022-06-07/23:02:03		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:02:03		freight_cost_transform function compiled successfully
+2022-06-07/23:02:03		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:02:03		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:02:03		Failed to execute the code please check your code and run
+2022-06-07/23:02:23		'data_' FUNCTION STARTED
+2022-06-07/23:02:23		Data loaded successfully
+2022-06-07/23:02:23		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:02:23		removed outliers function compiled successfully
+2022-06-07/23:02:23		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:02:23		freight_cost_transform function compiled successfully
+2022-06-07/23:03:19		'data_' FUNCTION STARTED
+2022-06-07/23:03:19		Data loaded successfully
+2022-06-07/23:03:19		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:03:19		removed outliers function compiled successfully
+2022-06-07/23:03:19		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:03:19		freight_cost_transform function compiled successfully
+2022-06-07/23:03:19		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:03:19		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:03:19		Failed to execute the code please check your code and run
+2022-06-07/23:05:16		'data_' FUNCTION STARTED
+2022-06-07/23:05:16		Data loaded successfully
+2022-06-07/23:05:16		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:05:16		removed outliers function compiled successfully
+2022-06-07/23:05:16		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:05:16		freight_cost_transform function compiled successfully
+2022-06-07/23:07:03		'data_' FUNCTION STARTED
+2022-06-07/23:07:03		Data loaded successfully
+2022-06-07/23:07:03		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:07:03		removed outliers function compiled successfully
+2022-06-07/23:07:03		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:07:03		freight_cost_transform function compiled successfully
+2022-06-07/23:07:03		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:07:04		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:07:04		Failed to execute the code please check your code and run
+2022-06-07/23:08:38		'data_' FUNCTION STARTED
+2022-06-07/23:08:38		Data loaded successfully
+2022-06-07/23:08:38		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:08:38		removed outliers function compiled successfully
+2022-06-07/23:08:38		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:08:38		freight_cost_transform function compiled successfully
+2022-06-07/23:08:38		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:08:39		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:08:39		Failed to execute the code please check your code and run
+2022-06-07/23:09:06		'data_' FUNCTION STARTED
+2022-06-07/23:09:06		Data loaded successfully
+2022-06-07/23:09:06		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:09:06		removed outliers function compiled successfully
+2022-06-07/23:09:06		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:09:06		freight_cost_transform function compiled successfully
+2022-06-07/23:09:06		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:09:06		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:09:06		Failed to execute the code please check your code and run
+2022-06-07/23:14:54		'data_' FUNCTION STARTED
+2022-06-07/23:14:54		Data loaded successfully
+2022-06-07/23:14:54		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:14:54		removed outliers function compiled successfully
+2022-06-07/23:14:54		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:14:54		freight_cost_transform function compiled successfully
+2022-06-07/23:14:54		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:14:54		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:14:54		Failed to execute the code please check your code and run
+2022-06-07/23:17:32		'data_' FUNCTION STARTED
+2022-06-07/23:17:32		Data loaded successfully
+2022-06-07/23:17:32		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:17:32		removed outliers function compiled successfully
+2022-06-07/23:17:32		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:17:32		freight_cost_transform function compiled successfully
+2022-06-07/23:17:32		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:17:33		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:17:33		Failed to execute the code please check your code and run
+2022-06-07/23:18:41		'data_' FUNCTION STARTED
+2022-06-07/23:18:41		Data loaded successfully
+2022-06-07/23:18:41		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:18:41		removed outliers function compiled successfully
+2022-06-07/23:18:41		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:18:41		freight_cost_transform function compiled successfully
+2022-06-07/23:18:41		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:18:42		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:18:42		Failed to execute the code please check your code and run
+2022-06-07/23:23:12		'data_' FUNCTION STARTED
+2022-06-07/23:23:12		Data loaded successfully
+2022-06-07/23:23:12		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:23:12		removed outliers function compiled successfully
+2022-06-07/23:23:12		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:23:12		freight_cost_transform function compiled successfully
+2022-06-07/23:23:12		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:23:12		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:23:12		Failed to execute the code please check your code and run
+2022-06-07/23:26:06		'data_' FUNCTION STARTED
+2022-06-07/23:26:06		Data loaded successfully
+2022-06-07/23:26:06		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:26:06		removed outliers function compiled successfully
+2022-06-07/23:26:06		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:26:06		freight_cost_transform function compiled successfully
+2022-06-07/23:26:05		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:26:17		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:26:19		Failed to execute the code please check your code and run
+2022-06-07/23:27:18		'data_' FUNCTION STARTED
+2022-06-07/23:27:18		Data loaded successfully
+2022-06-07/23:27:18		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:27:18		removed outliers function compiled successfully
+2022-06-07/23:27:15		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:27:25		freight_cost_transform function compiled successfully
+2022-06-07/23:27:09		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:27:29		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:27:33		Failed to execute the code please check your code and run
+2022-06-07/23:28:09		'data_' FUNCTION STARTED
+2022-06-07/23:28:09		Data loaded successfully
+2022-06-07/23:28:09		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:28:09		removed outliers function compiled successfully
+2022-06-07/23:28:09		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:28:17		freight_cost_transform function compiled successfully
+2022-06-07/23:28:02		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:28:37		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:28:39		Failed to execute the code please check your code and run
+2022-06-07/23:31:29		'data_' FUNCTION STARTED
+2022-06-07/23:31:29		Data loaded successfully
+2022-06-07/23:31:29		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:31:29		removed outliers function compiled successfully
+2022-06-07/23:31:29		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:31:29		freight_cost_transform function compiled successfully
+2022-06-07/23:31:29		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:31:29		feature engineering function compiled successfully
+2022-06-07/23:32:01		'data_' FUNCTION STARTED
+2022-06-07/23:32:01		Data loaded successfully
+2022-06-07/23:32:01		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:32:01		removed outliers function compiled successfully
+2022-06-07/23:32:01		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:32:01		freight_cost_transform function compiled successfully
+2022-06-07/23:32:01		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:32:02		feature engineering function compiled successfully
+2022-06-07/23:32:01		'data' FUNCTION STARTED
+2022-06-07/23:32:02		data function compiled successfully
+2022-06-07/23:33:02		'data_' FUNCTION STARTED
+2022-06-07/23:33:02		Data loaded successfully
+2022-06-07/23:33:02		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:33:02		removed outliers function compiled successfully
+2022-06-07/23:33:02		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:33:02		freight_cost_transform function compiled successfully
+2022-06-07/23:33:02		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:33:02		feature engineering function compiled successfully
+2022-06-07/23:33:02		'data' FUNCTION STARTED
+2022-06-07/23:33:02		data function compiled successfully
+2022-06-07/23:33:34		'data_' FUNCTION STARTED
+2022-06-07/23:33:34		Data loaded successfully
+2022-06-07/23:33:34		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:33:34		removed outliers function compiled successfully
+2022-06-07/23:33:34		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:33:34		freight_cost_transform function compiled successfully
+2022-06-07/23:33:34		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:33:34		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:33:34		Failed to execute the code please check your code and run
+2022-06-07/23:33:34		'data' FUNCTION STARTED
+2022-06-07/23:33:34		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-07/23:33:34		Failed to execute the code please check your code and run
+2022-06-07/23:33:42		'data_' FUNCTION STARTED
+2022-06-07/23:33:42		Data loaded successfully
+2022-06-07/23:33:42		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:33:42		removed outliers function compiled successfully
+2022-06-07/23:33:42		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:33:42		freight_cost_transform function compiled successfully
+2022-06-07/23:33:42		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:33:43		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:33:43		Failed to execute the code please check your code and run
+2022-06-07/23:33:42		'data' FUNCTION STARTED
+2022-06-07/23:33:43		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-07/23:33:43		Failed to execute the code please check your code and run
+2022-06-07/23:37:06		'data_' FUNCTION STARTED
+2022-06-07/23:37:06		Data loaded successfully
+2022-06-07/23:37:06		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:37:06		removed outliers function compiled successfully
+2022-06-07/23:37:06		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:37:06		freight_cost_transform function compiled successfully
+2022-06-07/23:37:06		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:37:07		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:37:07		Failed to execute the code please check your code and run
+2022-06-07/23:37:06		'data' FUNCTION STARTED
+2022-06-07/23:37:07		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-07/23:37:07		Failed to execute the code please check your code and run
+2022-06-07/23:47:12		'data_' FUNCTION STARTED
+2022-06-07/23:47:12		Data loaded successfully
+2022-06-07/23:47:12		'remove_outliers' FUNCTION STARTED
+2022-06-07/23:47:12		removed outliers function compiled successfully
+2022-06-07/23:47:12		'freight_cost_transform' FUNCTION STARTED
+2022-06-07/23:47:12		freight_cost_transform function compiled successfully
+2022-06-07/23:47:12		'feature_engineering' FUNCTION STARTED
+2022-06-07/23:47:12		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-07/23:47:12		Failed to execute the code please check your code and run
+2022-06-07/23:47:12		'data' FUNCTION STARTED
+2022-06-07/23:47:12		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-07/23:47:12		Failed to execute the code please check your code and run
+2022-06-08/20:00:59		'data_' FUNCTION STARTED
+2022-06-08/20:00:59		Data loaded successfully
+2022-06-08/20:00:59		'remove_outliers' FUNCTION STARTED
+2022-06-08/20:00:59		removed outliers function compiled successfully
+2022-06-08/20:00:59		'freight_cost_transform' FUNCTION STARTED
+2022-06-08/20:00:59		freight_cost_transform function compiled successfully
+2022-06-08/20:00:59		'feature_engineering' FUNCTION STARTED
+2022-06-08/20:00:59		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-08/20:00:59		Failed to execute the code please check your code and run
+2022-06-08/20:00:59		'data' FUNCTION STARTED
+2022-06-08/20:00:59		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-08/20:00:59		Failed to execute the code please check your code and run
+2022-06-08/20:01:01		'data_' FUNCTION STARTED
+2022-06-08/20:01:01		Data loaded successfully
+2022-06-08/20:01:01		'remove_outliers' FUNCTION STARTED
+2022-06-08/20:01:01		removed outliers function compiled successfully
+2022-06-08/20:01:01		'freight_cost_transform' FUNCTION STARTED
+2022-06-08/20:01:01		freight_cost_transform function compiled successfully
+2022-06-08/20:01:01		'feature_engineering' FUNCTION STARTED
+2022-06-08/20:01:02		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-08/20:01:02		Failed to execute the code please check your code and run
+2022-06-08/20:01:01		'data' FUNCTION STARTED
+2022-06-08/20:01:02		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-08/20:01:02		Failed to execute the code please check your code and run
+2022-06-08/20:01:02		'data_' FUNCTION STARTED
+2022-06-08/20:01:02		Data loaded successfully
+2022-06-08/20:01:02		'remove_outliers' FUNCTION STARTED
+2022-06-08/20:01:02		removed outliers function compiled successfully
+2022-06-08/20:01:02		'freight_cost_transform' FUNCTION STARTED
+2022-06-08/20:01:02		freight_cost_transform function compiled successfully
+2022-06-08/20:01:02		'feature_engineering' FUNCTION STARTED
+2022-06-08/20:01:02		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-08/20:01:02		Failed to execute the code please check your code and run
+2022-06-08/20:01:02		'data' FUNCTION STARTED
+2022-06-08/20:01:02		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-08/20:01:02		Failed to execute the code please check your code and run
+2022-06-08/20:01:12		'data_' FUNCTION STARTED
+2022-06-08/20:01:12		Data loaded successfully
+2022-06-08/20:01:12		'remove_outliers' FUNCTION STARTED
+2022-06-08/20:01:12		removed outliers function compiled successfully
+2022-06-08/20:01:12		'freight_cost_transform' FUNCTION STARTED
+2022-06-08/20:01:12		freight_cost_transform function compiled successfully
+2022-06-08/20:01:12		'feature_engineering' FUNCTION STARTED
+2022-06-08/20:01:13		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-08/20:01:13		Failed to execute the code please check your code and run
+2022-06-08/20:01:12		'data' FUNCTION STARTED
+2022-06-08/20:01:13		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-08/20:01:13		Failed to execute the code please check your code and run
+2022-06-08/20:04:17		'data_' FUNCTION STARTED
+2022-06-08/20:04:18		Data loaded successfully
+2022-06-08/20:04:17		'remove_outliers' FUNCTION STARTED
+2022-06-08/20:04:18		removed outliers function compiled successfully
+2022-06-08/20:04:17		'freight_cost_transform' FUNCTION STARTED
+2022-06-08/20:04:18		freight_cost_transform function compiled successfully
+2022-06-08/20:04:17		'feature_engineering' FUNCTION STARTED
+2022-06-08/20:04:18		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-08/20:04:18		Failed to execute the code please check your code and run
+2022-06-08/20:04:17		'data' FUNCTION STARTED
+2022-06-08/20:04:18		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-08/20:04:18		Failed to execute the code please check your code and run
+2022-06-08/20:04:56		'data_' FUNCTION STARTED
+2022-06-08/20:04:56		Data loaded successfully
+2022-06-08/20:04:56		'remove_outliers' FUNCTION STARTED
+2022-06-08/20:04:56		removed outliers function compiled successfully
+2022-06-08/20:04:56		'freight_cost_transform' FUNCTION STARTED
+2022-06-08/20:04:56		freight_cost_transform function compiled successfully
+2022-06-08/20:04:56		'feature_engineering' FUNCTION STARTED
+2022-06-08/20:04:57		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-08/20:04:57		Failed to execute the code please check your code and run
+2022-06-08/20:04:56		'data' FUNCTION STARTED
+2022-06-08/20:04:57		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-08/20:04:57		Failed to execute the code please check your code and run
+2022-06-09/11:43:32		'data_' FUNCTION STARTED
+2022-06-09/11:43:32		Data loaded successfully
+2022-06-09/11:43:32		'remove_outliers' FUNCTION STARTED
+2022-06-09/11:43:32		removed outliers function compiled successfully
+2022-06-09/11:43:32		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/11:43:32		freight_cost_transform function compiled successfully
+2022-06-09/11:43:32		'feature_engineering' FUNCTION STARTED
+2022-06-09/11:43:33		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/11:43:33		Failed to execute the code please check your code and run
+2022-06-09/11:43:32		'data' FUNCTION STARTED
+2022-06-09/11:43:33		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/11:43:33		Failed to execute the code please check your code and run
+2022-06-09/11:44:37		'data_' FUNCTION STARTED
+2022-06-09/11:44:37		Data loaded successfully
+2022-06-09/11:44:37		'remove_outliers' FUNCTION STARTED
+2022-06-09/11:44:37		removed outliers function compiled successfully
+2022-06-09/11:44:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/11:44:37		freight_cost_transform function compiled successfully
+2022-06-09/11:44:37		'feature_engineering' FUNCTION STARTED
+2022-06-09/11:44:37		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/11:44:37		Failed to execute the code please check your code and run
+2022-06-09/11:44:37		'data' FUNCTION STARTED
+2022-06-09/11:44:37		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/11:44:37		Failed to execute the code please check your code and run
+2022-06-09/11:45:46		'data_' FUNCTION STARTED
+2022-06-09/11:45:46		Data loaded successfully
+2022-06-09/11:45:46		'remove_outliers' FUNCTION STARTED
+2022-06-09/11:45:46		removed outliers function compiled successfully
+2022-06-09/11:45:46		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/11:45:46		freight_cost_transform function compiled successfully
+2022-06-09/11:45:46		'feature_engineering' FUNCTION STARTED
+2022-06-09/11:45:46		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/11:45:46		Failed to execute the code please check your code and run
+2022-06-09/11:45:46		'data' FUNCTION STARTED
+2022-06-09/11:45:46		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/11:45:46		Failed to execute the code please check your code and run
+2022-06-09/11:51:52		'data_' FUNCTION STARTED
+2022-06-09/11:51:52		Data loaded successfully
+2022-06-09/11:51:52		'remove_outliers' FUNCTION STARTED
+2022-06-09/11:51:52		removed outliers function compiled successfully
+2022-06-09/11:51:52		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/11:51:52		freight_cost_transform function compiled successfully
+2022-06-09/11:51:52		'feature_engineering' FUNCTION STARTED
+2022-06-09/11:51:53		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/11:51:53		Failed to execute the code please check your code and run
+2022-06-09/11:51:52		'data' FUNCTION STARTED
+2022-06-09/11:51:53		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/11:51:53		Failed to execute the code please check your code and run
+2022-06-09/18:41:53		'data_' FUNCTION STARTED
+2022-06-09/18:41:53		Data loaded successfully
+2022-06-09/18:41:53		'remove_outliers' FUNCTION STARTED
+2022-06-09/18:41:53		removed outliers function compiled successfully
+2022-06-09/18:41:53		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/18:41:53		freight_cost_transform function compiled successfully
+2022-06-09/18:41:53		'feature_engineering' FUNCTION STARTED
+2022-06-09/18:41:54		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/18:41:54		Failed to execute the code please check your code and run
+2022-06-09/18:41:53		'data' FUNCTION STARTED
+2022-06-09/18:41:54		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/18:41:54		Failed to execute the code please check your code and run
+2022-06-09/21:18:15		'data_' FUNCTION STARTED
+2022-06-09/21:18:15		Data loaded successfully
+2022-06-09/21:18:15		'remove_outliers' FUNCTION STARTED
+2022-06-09/21:18:15		removed outliers function compiled successfully
+2022-06-09/21:18:15		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/21:18:15		freight_cost_transform function compiled successfully
+2022-06-09/21:18:15		'feature_engineering' FUNCTION STARTED
+2022-06-09/21:18:16		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/21:18:16		Failed to execute the code please check your code and run
+2022-06-09/21:18:15		'data' FUNCTION STARTED
+2022-06-09/21:18:16		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/21:18:16		Failed to execute the code please check your code and run
+2022-06-09/21:18:16		'data_' FUNCTION STARTED
+2022-06-09/21:18:16		Data loaded successfully
+2022-06-09/21:18:16		'remove_outliers' FUNCTION STARTED
+2022-06-09/21:18:17		removed outliers function compiled successfully
+2022-06-09/21:18:16		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/21:18:17		freight_cost_transform function compiled successfully
+2022-06-09/21:18:16		'feature_engineering' FUNCTION STARTED
+2022-06-09/21:18:17		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/21:18:17		Failed to execute the code please check your code and run
+2022-06-09/21:18:16		'data' FUNCTION STARTED
+2022-06-09/21:18:17		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/21:18:17		Failed to execute the code please check your code and run
+2022-06-09/21:18:18		'data_' FUNCTION STARTED
+2022-06-09/21:18:18		Data loaded successfully
+2022-06-09/21:18:18		'remove_outliers' FUNCTION STARTED
+2022-06-09/21:18:18		removed outliers function compiled successfully
+2022-06-09/21:18:18		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/21:18:18		freight_cost_transform function compiled successfully
+2022-06-09/21:18:18		'feature_engineering' FUNCTION STARTED
+2022-06-09/21:18:18		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/21:18:18		Failed to execute the code please check your code and run
+2022-06-09/21:18:18		'data' FUNCTION STARTED
+2022-06-09/21:18:18		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/21:18:18		Failed to execute the code please check your code and run
+2022-06-09/21:22:03		'data_' FUNCTION STARTED
+2022-06-09/21:22:03		Data loaded successfully
+2022-06-09/21:22:03		'remove_outliers' FUNCTION STARTED
+2022-06-09/21:22:03		removed outliers function compiled successfully
+2022-06-09/21:22:03		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/21:22:03		freight_cost_transform function compiled successfully
+2022-06-09/21:22:03		'feature_engineering' FUNCTION STARTED
+2022-06-09/21:22:03		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/21:22:03		Failed to execute the code please check your code and run
+2022-06-09/21:22:03		'data' FUNCTION STARTED
+2022-06-09/21:22:03		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/21:22:03		Failed to execute the code please check your code and run
+2022-06-09/21:23:01		'data_' FUNCTION STARTED
+2022-06-09/21:23:01		Data loaded successfully
+2022-06-09/21:23:01		'remove_outliers' FUNCTION STARTED
+2022-06-09/21:23:01		removed outliers function compiled successfully
+2022-06-09/21:23:01		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/21:23:01		freight_cost_transform function compiled successfully
+2022-06-09/21:23:01		'feature_engineering' FUNCTION STARTED
+2022-06-09/21:23:01		feature engineering function compiled successfully
+2022-06-09/21:23:01		'data' FUNCTION STARTED
+2022-06-09/21:23:01		data function compiled successfully
+2022-06-09/21:26:46		'data_' FUNCTION STARTED
+2022-06-09/21:26:46		Data loaded successfully
+2022-06-09/21:26:46		'remove_outliers' FUNCTION STARTED
+2022-06-09/21:26:46		removed outliers function compiled successfully
+2022-06-09/21:26:46		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/21:26:46		freight_cost_transform function compiled successfully
+2022-06-09/21:26:46		'feature_engineering' FUNCTION STARTED
+2022-06-09/21:26:47		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/21:26:47		Failed to execute the code please check your code and run
+2022-06-09/21:26:46		'data' FUNCTION STARTED
+2022-06-09/21:26:47		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/21:26:47		Failed to execute the code please check your code and run
+2022-06-09/22:20:45		'data_' FUNCTION STARTED
+2022-06-09/22:20:45		Data loaded successfully
+2022-06-09/22:20:45		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:20:45		removed outliers function compiled successfully
+2022-06-09/22:20:45		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:20:45		freight_cost_transform function compiled successfully
+2022-06-09/22:20:45		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:20:46		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:20:46		Failed to execute the code please check your code and run
+2022-06-09/22:20:45		'data' FUNCTION STARTED
+2022-06-09/22:20:46		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:20:46		Failed to execute the code please check your code and run
+2022-06-09/22:21:11		'data_' FUNCTION STARTED
+2022-06-09/22:21:11		Data loaded successfully
+2022-06-09/22:21:11		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:21:11		removed outliers function compiled successfully
+2022-06-09/22:21:11		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:21:11		freight_cost_transform function compiled successfully
+2022-06-09/22:21:11		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:21:11		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:21:11		Failed to execute the code please check your code and run
+2022-06-09/22:21:11		'data' FUNCTION STARTED
+2022-06-09/22:21:11		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:21:11		Failed to execute the code please check your code and run
+2022-06-09/22:22:59		'data_' FUNCTION STARTED
+2022-06-09/22:22:59		Data loaded successfully
+2022-06-09/22:22:59		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:23:00		removed outliers function compiled successfully
+2022-06-09/22:22:59		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:23:00		freight_cost_transform function compiled successfully
+2022-06-09/22:22:59		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:23:00		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:23:00		Failed to execute the code please check your code and run
+2022-06-09/22:22:59		'data' FUNCTION STARTED
+2022-06-09/22:23:00		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:23:00		Failed to execute the code please check your code and run
+2022-06-09/22:23:41		'data_' FUNCTION STARTED
+2022-06-09/22:23:41		Data loaded successfully
+2022-06-09/22:23:41		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:23:41		removed outliers function compiled successfully
+2022-06-09/22:23:41		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:23:41		freight_cost_transform function compiled successfully
+2022-06-09/22:23:41		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:23:41		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:23:41		Failed to execute the code please check your code and run
+2022-06-09/22:23:41		'data' FUNCTION STARTED
+2022-06-09/22:23:41		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:23:41		Failed to execute the code please check your code and run
+2022-06-09/22:24:18		'data_' FUNCTION STARTED
+2022-06-09/22:24:18		Data loaded successfully
+2022-06-09/22:24:18		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:24:18		removed outliers function compiled successfully
+2022-06-09/22:24:18		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:24:18		freight_cost_transform function compiled successfully
+2022-06-09/22:24:18		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:24:19		feature engineering function compiled successfully
+2022-06-09/22:24:18		'data' FUNCTION STARTED
+2022-06-09/22:24:19		data function compiled successfully
+2022-06-09/22:25:11		'data_' FUNCTION STARTED
+2022-06-09/22:25:11		Data loaded successfully
+2022-06-09/22:25:11		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:25:11		removed outliers function compiled successfully
+2022-06-09/22:25:11		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:25:11		freight_cost_transform function compiled successfully
+2022-06-09/22:25:11		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:25:12		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:25:12		Failed to execute the code please check your code and run
+2022-06-09/22:25:11		'data' FUNCTION STARTED
+2022-06-09/22:25:12		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:25:12		Failed to execute the code please check your code and run
+2022-06-09/22:25:37		'data_' FUNCTION STARTED
+2022-06-09/22:25:37		Data loaded successfully
+2022-06-09/22:25:37		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:25:37		removed outliers function compiled successfully
+2022-06-09/22:25:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:25:37		freight_cost_transform function compiled successfully
+2022-06-09/22:25:37		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:25:37		feature engineering function compiled successfully
+2022-06-09/22:25:37		'data' FUNCTION STARTED
+2022-06-09/22:25:38		data function compiled successfully
+2022-06-09/22:27:07		'data_' FUNCTION STARTED
+2022-06-09/22:27:07		Data loaded successfully
+2022-06-09/22:27:07		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:27:07		removed outliers function compiled successfully
+2022-06-09/22:27:07		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:27:07		freight_cost_transform function compiled successfully
+2022-06-09/22:27:07		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:27:07		feature engineering function compiled successfully
+2022-06-09/22:27:07		'data' FUNCTION STARTED
+2022-06-09/22:27:07		data function compiled successfully

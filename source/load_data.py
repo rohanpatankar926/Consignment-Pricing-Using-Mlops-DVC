@@ -3,7 +3,7 @@ import argparse
 import sys
 from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
-
+main_log_file=open("H:/consignment pricing using mlops/logs/logs.log", "a+")
 class LoadData:
     def __init__(self):
         self.logger = Applogger()
@@ -12,17 +12,17 @@ class LoadData:
     def load_data(self,config_path):
         try:
             log_file=open("H:/consignment pricing using mlops/logs/load_data_log.log", "a+") 
-            self.logger.log(log_file, "'load_data' FUNCTION STARTED")
+            self.logger.log(main_log_file,log_file, "'load_data' FUNCTION STARTED")
             self.config = self.getdata.read_params(config_path)
             self.data=self.getdata.get_data(config_path)
             self.raw_data = self.config["load_data"]["raw_data_csv"]
             self.data.to_csv(self.raw_data, index=False)
-            self.logger.log(log_file, "Data loaded successfully to 'raw' folder")
+            self.logger.log(main_log_file,log_file, "Data loaded successfully to 'raw' folder")
             return self.data
         except Exception as e:
             log_file=open("H:/consignment pricing using mlops/logs/load_data_log.log", "a+") 
-            self.logger.log(log_file, "Exception occured in load_data method"+str(e))
-            self.logger.log(log_file, "Error occured while loading the data")
+            self.logger.log(main_log_file,log_file, "Exception occured in load_data method"+str(e))
+            self.logger.log(main_log_file,log_file, "Error occured while loading the data")
             raise AppException(e, sys) from e
 
 

@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-    <h3>Re-Training Completed Successfully 😁😁 Go to <a class="btn btn-primary" href="/">Home</a></h3>
+    <h3>Training Completed Successfully 😁😁 Go to <a class="btn btn-primary" href="/">Home</a></h3>
 
     
     <br>
@@ -22,7 +22,29 @@
           <a class="btn btn-success" href="/performance">Training Performance</a>
         </div>
     </div>
-    
+    <br>
+    <br>
+    <div class="Container">
+    <div class="card-header">Training Logs History</div>
+    <div id="container" style="background-color:black">
+      <div id="content" style="color:white">
+        <pre id="output"></pre>
+      </div>
+    </div>
 
+    </div>
+  </div>
+</div>
+  <script>
+      var output = document.getElementById('output');
+  
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', "{{ url_for('stream') }}");
+      xhr.send();
+  
+      setInterval(function() {
+          output.textContent = xhr.responseText;
+      }, 10);
+  </script>
         
 {% endblock %}

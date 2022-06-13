@@ -18,7 +18,6 @@ body {
   clear: both;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -111,7 +110,10 @@ body{
   margin-left: 8px;
 }
 
-#grad1 {
-  height: 200px;
-  background-image: linear-gradient(blue, yellow, blue);
+
+#preloader {
+  position: fixed;
+  height: 100vh;
+  background-color: rgb(2, 2, 2);
+  z-index: 99999;
 }

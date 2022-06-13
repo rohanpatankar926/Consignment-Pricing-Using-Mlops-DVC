@@ -1,0 +1,33 @@
+{% extends "header.html" %}
+
+{% block title %}
+<title>Main</title>
+{% endblock %}
+    {% block content %}'
+    
+    <div class="Container">
+        <div class="card-header">Log History</div>
+        <div id="container" style="background-color:black">
+          <div id="content" style="color:white">
+            <pre id="output"></pre>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+    </div>
+      <script>
+          var output = document.getElementById('output');
+      
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', "{{ url_for('stream') }}");
+          xhr.send();
+      
+          setInterval(function() {
+              output.textContent = xhr.responseText;
+          }, 10);
+      </script>
+    
+        
+    {% endblock %}
+

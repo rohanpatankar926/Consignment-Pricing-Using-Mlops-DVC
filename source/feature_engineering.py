@@ -9,6 +9,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 import sys
 from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
+main_log_file=open("H:/consignment pricing using mlops/logs/logs.log", "a+")
 
 class FeatureEngineering:
     def __init__(self):
@@ -19,16 +20,16 @@ class FeatureEngineering:
     def data_(self, config_path):
         try:
             logfile = open("logs/feature_engineering_log.log", "a+")
-            self.logger.log(logfile, "'data_' FUNCTION STARTED")
+            self.logger.log(logfile,main_log_file, "'data_' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.config["data"]["processed"]
             self.data = pd.read_csv(self.data)
-            self.logger.log(logfile, "Data loaded successfully")
+            self.logger.log(logfile,main_log_file, "Data loaded successfully")
             return self.data
         except Exception as e:
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Exception occurred while loading the data" + str(e))
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Failed to load the data please check your code and run")
             raise AppException(e, sys) from e
             
@@ -42,7 +43,7 @@ class FeatureEngineering:
     def remove_outliers(self, config_path):
         try:
             logfile = open("logs/feature_engineering_log.log", "a+")
-            self.logger.log(logfile, "'remove_outliers' FUNCTION STARTED")
+            self.logger.log(main_log_file,logfile, "'remove_outliers' FUNCTION STARTED")
             self.data = self.data_(config_path)
             self.data0 = self.outlier_detection(self.data, "line_item_value")
             self.data1 = self.outlier_detection(
@@ -51,13 +52,13 @@ class FeatureEngineering:
             self.data3 = self.outlier_detection(self.data2, "unit_price")
             # self.data4=self.outlier_detection(self.data3,"days_to_process")
             self.data = self.data3
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "removed outliers function compiled successfully")
             return self.data
         except Exception as e:
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Exception occured in remove_outliers method"+str(e))
-            self.logger.log(logfile, "Error occured while removing outliers")
+            self.logger.log(logfile,main_log_file, "Error occured while removing outliers")
             raise AppException(e, sys) from e
 
     def trans_freight_cost(self, x):
@@ -71,7 +72,7 @@ class FeatureEngineering:
     def freight_cost_transform(self, config_path):
         try:
             logfile = open("logs/feature_engineering_log.log", "a+")
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "'freight_cost_transform' FUNCTION STARTED")
             self.data = self.remove_outliers(config_path)
             self.data["freight_cost_(usd)"] = self.data["freight_cost_(usd)"].apply(
@@ -81,20 +82,20 @@ class FeatureEngineering:
                 np.nan, self.median_value)
             self.data["freight_cost_(usd)"] = self.data["freight_cost_(usd)"].astype(
                 float)
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "freight_cost_transform function compiled successfully")
             return self.data
         except Exception as e:
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Exception occurred while compiling the code" + str(e))
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
     def feature_engineering(self, config_path):
         try:
             logfile = open("logs/feature_engineering_log.log", "a+")
-            self.logger.log(logfile, "'feature_engineering' FUNCTION STARTED")
+            self.logger.log(logfile, main_log_file,"'feature_engineering' FUNCTION STARTED")
             self.data = self.freight_cost_transform(config_path)
             self.data["po_/_so_#"] = pd.get_dummies(self.data["po_/_so_#"])
             self.data["asn/dn_#"] = pd.get_dummies(self.data["asn/dn_#"])
@@ -111,29 +112,33 @@ class FeatureEngineering:
                 self.data["shipment_mode"])
             # self.data["pq_#"] = pd.get_dummies(self.data["pq_#"])
             self.data.drop("pq_#",axis=1,inplace=True)
-            self.logger.log(
+            
+            self.logger.log(main_log_file,
                 logfile, "feature engineering function compiled successfully")
+            return self.data
             # [data for data in self.data if self.data[data].dtypes=="O"]
         except Exception as e:
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Exception occurred while compiling the code" + str(e))
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
-    def final_data(self, config_path):
+
+    def final_data(self,config_path):
         try:
             logfile = open("logs/feature_engineering_log.log", "a+")
-            self.logger.log(logfile, "'data' FUNCTION STARTED")
+            self.logger.log(logfile, main_log_file,"'data' FUNCTION STARTED")
             self.finaldata = self.feature_engineering(config_path)
             self.config = self.get_data.read_params(config_path)
             self.data.drop("Unnamed: 0", axis=1, inplace=True)
             self.data.to_csv(self.config["final_data"]["transformed_data"])
-            self.logger.log(logfile, "data function compiled successfully")
+            print(self.data)
+            self.logger.log(main_log_file,logfile, "data function compiled successfully")
         except Exception as e:
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Exception occurred while compiling the code" + str(e))
-            self.logger.log(
+            self.logger.log(main_log_file,
                 logfile, "Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 

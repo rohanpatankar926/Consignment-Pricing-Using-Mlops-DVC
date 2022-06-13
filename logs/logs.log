@@ -1,0 +1,298 @@
+2022-06-09/22:18:36		'get_data' FUNCTION STARTED
+2022-06-09/22:18:36		'read_params' FUNCTION STARTED
+2022-06-09/22:18:36		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:18:37		Raw data loaded successfully
+2022-06-09/22:18:37		'read_params' FUNCTION STARTED
+2022-06-09/22:18:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:18:37		'get_data' FUNCTION STARTED
+2022-06-09/22:18:37		'read_params' FUNCTION STARTED
+2022-06-09/22:18:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:18:37		Raw data loaded successfully
+2022-06-09/22:18:37		'read_params' FUNCTION STARTED
+2022-06-09/22:18:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:18:37		'read_params' FUNCTION STARTED
+2022-06-09/22:18:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:18:37		'get_data' FUNCTION STARTED
+2022-06-09/22:18:37		'read_params' FUNCTION STARTED
+2022-06-09/22:18:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:18:37		Raw data loaded successfully
+2022-06-09/22:18:37		'load_data' FUNCTION STARTED
+2022-06-09/22:18:37		Data loaded successfully to 'raw' folder
+2022-06-09/22:18:37		'data' FUNCTION STARTED
+2022-06-09/22:18:37		'drop_unnecessary_columns' FUNCTION STARTED
+2022-06-09/22:18:37		'transform_dates_columns' FUNCTION STARTED
+2022-06-09/22:18:37		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-06-09/22:18:37		'impute_missing' FUNCTION STARTED
+2022-06-09/22:18:37		'column_imputation' FUNCTION STARTED
+2022-06-09/22:18:37		column_imputation function compiled successfully
+2022-06-09/22:18:37		impute_missing function compiled successfully
+2022-06-09/22:18:40		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-06-09/22:19:04		'get_data' FUNCTION STARTED
+2022-06-09/22:19:04		'read_params' FUNCTION STARTED
+2022-06-09/22:19:04		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:19:04		Raw data loaded successfully
+2022-06-09/22:19:04		'read_params' FUNCTION STARTED
+2022-06-09/22:19:04		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:19:04		'get_data' FUNCTION STARTED
+2022-06-09/22:19:04		'read_params' FUNCTION STARTED
+2022-06-09/22:19:04		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:19:04		Raw data loaded successfully
+2022-06-09/22:19:05		'read_params' FUNCTION STARTED
+2022-06-09/22:19:05		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:19:05		'read_params' FUNCTION STARTED
+2022-06-09/22:19:05		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:19:05		'get_data' FUNCTION STARTED
+2022-06-09/22:19:05		'read_params' FUNCTION STARTED
+2022-06-09/22:19:05		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:19:05		Raw data loaded successfully
+2022-06-09/22:19:04		'load_data' FUNCTION STARTED
+2022-06-09/22:19:05		Data loaded successfully to 'raw' folder
+2022-06-09/22:19:05		'data' FUNCTION STARTED
+2022-06-09/22:19:05		'drop_unnecessary_columns' FUNCTION STARTED
+2022-06-09/22:19:05		'transform_dates_columns' FUNCTION STARTED
+2022-06-09/22:19:05		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-06-09/22:19:05		'impute_missing' FUNCTION STARTED
+2022-06-09/22:19:05		'column_imputation' FUNCTION STARTED
+2022-06-09/22:19:05		column_imputation function compiled successfully
+2022-06-09/22:19:05		impute_missing function compiled successfully
+2022-06-09/22:19:07		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-06-09/22:20:37		'get_data' FUNCTION STARTED
+2022-06-09/22:20:37		'read_params' FUNCTION STARTED
+2022-06-09/22:20:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:37		Raw data loaded successfully
+2022-06-09/22:20:37		'read_params' FUNCTION STARTED
+2022-06-09/22:20:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:37		'get_data' FUNCTION STARTED
+2022-06-09/22:20:37		'read_params' FUNCTION STARTED
+2022-06-09/22:20:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:38		Raw data loaded successfully
+2022-06-09/22:20:38		'read_params' FUNCTION STARTED
+2022-06-09/22:20:38		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:38		'read_params' FUNCTION STARTED
+2022-06-09/22:20:38		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:38		'get_data' FUNCTION STARTED
+2022-06-09/22:20:38		'read_params' FUNCTION STARTED
+2022-06-09/22:20:38		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:38		Raw data loaded successfully
+2022-06-09/22:20:45		'read_params' FUNCTION STARTED
+2022-06-09/22:20:45		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:20:37		'load_data' FUNCTION STARTED
+2022-06-09/22:20:38		Data loaded successfully to 'raw' folder
+2022-06-09/22:20:38		'data' FUNCTION STARTED
+2022-06-09/22:20:38		'drop_unnecessary_columns' FUNCTION STARTED
+2022-06-09/22:20:38		'transform_dates_columns' FUNCTION STARTED
+2022-06-09/22:20:38		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-06-09/22:20:38		'impute_missing' FUNCTION STARTED
+2022-06-09/22:20:38		'column_imputation' FUNCTION STARTED
+2022-06-09/22:20:38		column_imputation function compiled successfully
+2022-06-09/22:20:38		impute_missing function compiled successfully
+2022-06-09/22:20:40		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-06-09/22:20:45		transform_dates_columns function compiled successfully
+2022-06-09/22:20:45		drop_unnecessary_columns function compiled successfully
+2022-06-09/22:20:45		data function compiled successfully
+2022-06-09/22:20:45		'data' FUNCTION STARTED
+2022-06-09/22:20:45		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:20:45		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:20:45		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:20:45		'data_' FUNCTION STARTED
+2022-06-09/22:20:45		Data loaded successfully
+2022-06-09/22:20:45		removed outliers function compiled successfully
+2022-06-09/22:20:45		freight_cost_transform function compiled successfully
+2022-06-09/22:20:46		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:20:46		Failed to execute the code please check your code and run
+2022-06-09/22:20:46		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:20:46		Failed to execute the code please check your code and run
+2022-06-09/22:21:02		'get_data' FUNCTION STARTED
+2022-06-09/22:21:02		'read_params' FUNCTION STARTED
+2022-06-09/22:21:02		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		Raw data loaded successfully
+2022-06-09/22:21:03		'read_params' FUNCTION STARTED
+2022-06-09/22:21:03		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		'get_data' FUNCTION STARTED
+2022-06-09/22:21:03		'read_params' FUNCTION STARTED
+2022-06-09/22:21:03		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		Raw data loaded successfully
+2022-06-09/22:21:03		'read_params' FUNCTION STARTED
+2022-06-09/22:21:03		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		'read_params' FUNCTION STARTED
+2022-06-09/22:21:03		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		'get_data' FUNCTION STARTED
+2022-06-09/22:21:03		'read_params' FUNCTION STARTED
+2022-06-09/22:21:03		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		Raw data loaded successfully
+2022-06-09/22:21:11		'read_params' FUNCTION STARTED
+2022-06-09/22:21:11		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:21:03		'load_data' FUNCTION STARTED
+2022-06-09/22:21:03		Data loaded successfully to 'raw' folder
+2022-06-09/22:21:03		'data' FUNCTION STARTED
+2022-06-09/22:21:03		'drop_unnecessary_columns' FUNCTION STARTED
+2022-06-09/22:21:03		'transform_dates_columns' FUNCTION STARTED
+2022-06-09/22:21:03		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-06-09/22:21:03		'impute_missing' FUNCTION STARTED
+2022-06-09/22:21:03		'column_imputation' FUNCTION STARTED
+2022-06-09/22:21:03		column_imputation function compiled successfully
+2022-06-09/22:21:03		impute_missing function compiled successfully
+2022-06-09/22:21:05		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-06-09/22:21:11		transform_dates_columns function compiled successfully
+2022-06-09/22:21:11		drop_unnecessary_columns function compiled successfully
+2022-06-09/22:21:11		data function compiled successfully
+2022-06-09/22:21:11		'data' FUNCTION STARTED
+2022-06-09/22:21:11		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:21:11		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:21:11		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:21:11		'data_' FUNCTION STARTED
+2022-06-09/22:21:11		Data loaded successfully
+2022-06-09/22:21:11		removed outliers function compiled successfully
+2022-06-09/22:21:11		freight_cost_transform function compiled successfully
+2022-06-09/22:21:11		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:21:11		Failed to execute the code please check your code and run
+2022-06-09/22:21:11		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:21:11		Failed to execute the code please check your code and run
+2022-06-09/22:22:46		'get_data' FUNCTION STARTED
+2022-06-09/22:22:46		'read_params' FUNCTION STARTED
+2022-06-09/22:22:46		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		Raw data loaded successfully
+2022-06-09/22:22:46		'read_params' FUNCTION STARTED
+2022-06-09/22:22:46		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		'get_data' FUNCTION STARTED
+2022-06-09/22:22:46		'read_params' FUNCTION STARTED
+2022-06-09/22:22:46		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		Raw data loaded successfully
+2022-06-09/22:22:46		'read_params' FUNCTION STARTED
+2022-06-09/22:22:46		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		'read_params' FUNCTION STARTED
+2022-06-09/22:22:46		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		'get_data' FUNCTION STARTED
+2022-06-09/22:22:46		'read_params' FUNCTION STARTED
+2022-06-09/22:22:46		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		Raw data loaded successfully
+2022-06-09/22:22:59		'read_params' FUNCTION STARTED
+2022-06-09/22:22:59		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:22:46		'load_data' FUNCTION STARTED
+2022-06-09/22:22:46		Data loaded successfully to 'raw' folder
+2022-06-09/22:22:46		'data' FUNCTION STARTED
+2022-06-09/22:22:46		'drop_unnecessary_columns' FUNCTION STARTED
+2022-06-09/22:22:46		'transform_dates_columns' FUNCTION STARTED
+2022-06-09/22:22:46		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-06-09/22:22:46		'impute_missing' FUNCTION STARTED
+2022-06-09/22:22:46		'column_imputation' FUNCTION STARTED
+2022-06-09/22:22:46		column_imputation function compiled successfully
+2022-06-09/22:22:46		impute_missing function compiled successfully
+2022-06-09/22:22:49		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-06-09/22:22:59		transform_dates_columns function compiled successfully
+2022-06-09/22:22:59		drop_unnecessary_columns function compiled successfully
+2022-06-09/22:22:59		data function compiled successfully
+2022-06-09/22:22:59		'data' FUNCTION STARTED
+2022-06-09/22:22:59		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:22:59		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:22:59		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:22:59		'data_' FUNCTION STARTED
+2022-06-09/22:22:59		Data loaded successfully
+2022-06-09/22:23:00		removed outliers function compiled successfully
+2022-06-09/22:23:00		freight_cost_transform function compiled successfully
+2022-06-09/22:23:00		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:23:00		Failed to execute the code please check your code and run
+2022-06-09/22:23:00		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:23:00		Failed to execute the code please check your code and run
+2022-06-09/22:23:41		'read_params' FUNCTION STARTED
+2022-06-09/22:23:41		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:23:41		'data' FUNCTION STARTED
+2022-06-09/22:23:41		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:23:41		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:23:41		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:23:41		'data_' FUNCTION STARTED
+2022-06-09/22:23:41		Data loaded successfully
+2022-06-09/22:23:41		removed outliers function compiled successfully
+2022-06-09/22:23:41		freight_cost_transform function compiled successfully
+2022-06-09/22:23:41		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:23:41		Failed to execute the code please check your code and run
+2022-06-09/22:23:41		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:23:41		Failed to execute the code please check your code and run
+2022-06-09/22:24:18		'read_params' FUNCTION STARTED
+2022-06-09/22:24:18		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:24:19		'read_params' FUNCTION STARTED
+2022-06-09/22:24:19		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:24:18		'data' FUNCTION STARTED
+2022-06-09/22:24:18		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:24:18		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:24:18		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:24:18		'data_' FUNCTION STARTED
+2022-06-09/22:24:18		Data loaded successfully
+2022-06-09/22:24:18		removed outliers function compiled successfully
+2022-06-09/22:24:18		freight_cost_transform function compiled successfully
+2022-06-09/22:24:19		feature engineering function compiled successfully
+2022-06-09/22:24:19		data function compiled successfully
+2022-06-09/22:25:01		'get_data' FUNCTION STARTED
+2022-06-09/22:25:01		'read_params' FUNCTION STARTED
+2022-06-09/22:25:01		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:01		Raw data loaded successfully
+2022-06-09/22:25:01		'read_params' FUNCTION STARTED
+2022-06-09/22:25:01		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:01		'get_data' FUNCTION STARTED
+2022-06-09/22:25:01		'read_params' FUNCTION STARTED
+2022-06-09/22:25:01		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:01		Raw data loaded successfully
+2022-06-09/22:25:01		'read_params' FUNCTION STARTED
+2022-06-09/22:25:01		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:01		'read_params' FUNCTION STARTED
+2022-06-09/22:25:01		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:01		'get_data' FUNCTION STARTED
+2022-06-09/22:25:01		'read_params' FUNCTION STARTED
+2022-06-09/22:25:01		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:02		Raw data loaded successfully
+2022-06-09/22:25:11		'read_params' FUNCTION STARTED
+2022-06-09/22:25:11		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:01		'load_data' FUNCTION STARTED
+2022-06-09/22:25:01		Data loaded successfully to 'raw' folder
+2022-06-09/22:25:01		'data' FUNCTION STARTED
+2022-06-09/22:25:01		'drop_unnecessary_columns' FUNCTION STARTED
+2022-06-09/22:25:01		'transform_dates_columns' FUNCTION STARTED
+2022-06-09/22:25:01		'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+2022-06-09/22:25:01		'impute_missing' FUNCTION STARTED
+2022-06-09/22:25:01		'column_imputation' FUNCTION STARTED
+2022-06-09/22:25:02		column_imputation function compiled successfully
+2022-06-09/22:25:02		impute_missing function compiled successfully
+2022-06-09/22:25:05		transform_pq_first_sent_to_client_date_columns function compiled successfully
+2022-06-09/22:25:11		transform_dates_columns function compiled successfully
+2022-06-09/22:25:11		drop_unnecessary_columns function compiled successfully
+2022-06-09/22:25:11		data function compiled successfully
+2022-06-09/22:25:11		'data' FUNCTION STARTED
+2022-06-09/22:25:11		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:25:11		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:25:11		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:25:11		'data_' FUNCTION STARTED
+2022-06-09/22:25:11		Data loaded successfully
+2022-06-09/22:25:11		removed outliers function compiled successfully
+2022-06-09/22:25:11		freight_cost_transform function compiled successfully
+2022-06-09/22:25:12		Exception occurred while compiling the codeColumns must be same length as key
+2022-06-09/22:25:12		Failed to execute the code please check your code and run
+2022-06-09/22:25:12		Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\source\feature_engineering.py] line number [100] error message [Columns must be same length as key].
+2022-06-09/22:25:12		Failed to execute the code please check your code and run
+2022-06-09/22:25:37		'read_params' FUNCTION STARTED
+2022-06-09/22:25:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:37		'read_params' FUNCTION STARTED
+2022-06-09/22:25:37		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:25:37		'data' FUNCTION STARTED
+2022-06-09/22:25:37		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:25:37		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:25:37		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:25:37		'data_' FUNCTION STARTED
+2022-06-09/22:25:37		Data loaded successfully
+2022-06-09/22:25:37		removed outliers function compiled successfully
+2022-06-09/22:25:37		freight_cost_transform function compiled successfully
+2022-06-09/22:25:37		feature engineering function compiled successfully
+2022-06-09/22:25:38		data function compiled successfully
+2022-06-09/22:27:07		'read_params' FUNCTION STARTED
+2022-06-09/22:27:07		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:27:07		'read_params' FUNCTION STARTED
+2022-06-09/22:27:07		config file i.e 'params.yaml' loaded successfully
+2022-06-09/22:27:07		'data' FUNCTION STARTED
+2022-06-09/22:27:07		'feature_engineering' FUNCTION STARTED
+2022-06-09/22:27:07		'freight_cost_transform' FUNCTION STARTED
+2022-06-09/22:27:07		'remove_outliers' FUNCTION STARTED
+2022-06-09/22:27:07		'data_' FUNCTION STARTED
+2022-06-09/22:27:07		Data loaded successfully
+2022-06-09/22:27:07		removed outliers function compiled successfully
+2022-06-09/22:27:07		freight_cost_transform function compiled successfully
+2022-06-09/22:27:07		feature engineering function compiled successfully
+2022-06-09/22:27:07		data function compiled successfully

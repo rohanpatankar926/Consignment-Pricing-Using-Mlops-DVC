@@ -1,9 +1,9 @@
-echo "Create conda environment."
+echo "Creating conda environment.."
 conda create -p venv python==3.7 -y
 echo "Conda environment created successfully."
 
 echo "Activate conda environment."
-conda activate ./consignment_pricing
+conda activate consignment_pricing
 echo "Environment Activated"
 
 echo "Creating project structure."

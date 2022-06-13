@@ -1,7 +1,5 @@
 import sys
 sys.path.append("H:/consignment pricing using mlops")
-
-
 import numpy as np
 from sklearn.metrics import mean_absolute_error,r2_score,mean_squared_error
 from sklearn.ensemble import RandomForestRegressor

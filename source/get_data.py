@@ -5,9 +5,10 @@ import argparse
 import yaml
 import sys
 sys.path.append("H:/consignment pricing using mlops")
+from time import sleep
 from app_exception.app_exception import AppException
 from application_logging.logger import Applogger
-
+main_log_file=open("H:/consignment pricing using mlops/logs/logs.log", "a+")
 class GetData:
     def __init__(self):
         self.logger = Applogger()
@@ -15,15 +16,15 @@ class GetData:
     def read_params(self,config_path):
         try:
             log_file = open("H:/consignment pricing using mlops/logs/get_data_log.log", "a+")
-            self.logger.log(log_file, "'read_params' FUNCTION STARTED")
+            self.logger.log(main_log_file,log_file, "'read_params' FUNCTION STARTED")
             with open(config_path) as file:
                 self.config = yaml.safe_load(file)
-                self.logger.log(log_file, "config file i.e 'params.yaml' loaded successfully")
+                self.logger.log(main_log_file,log_file, "config file i.e 'params.yaml' loaded successfully")
                 return self.config
             
 
         except Exception as e:
-            self.logger.log(log_file, "Exception occured in read_params method:"+str(e))
+            self.logger.log(main_log_file,log_file, "Exception occured in read_params method:"+str(e))
             self.logger.log(log_file, "Error occured while reading the yaml file")
             log_file.close()
             raise AppException(e, sys) from e
@@ -31,18 +32,18 @@ class GetData:
     def get_data(self,config_path):
         try:
             log_file = open("H:/consignment pricing using mlops/logs/get_data_log.log", "a+")
-            self.logger.log(log_file, "'get_data' FUNCTION STARTED")
+            self.logger.log(main_log_file,log_file, "'get_data' FUNCTION STARTED")
             self.config = self.read_params(config_path)
             self.data_path = self.config["data_source"]["local_data"]
             self.raw_path = self.config["raw_data"]["raw"]
             self.data = pd.read_csv(self.raw_path)
-            self.logger.log(log_file, "Raw data loaded successfully")
+            self.logger.log(main_log_file,log_file, "Raw data loaded successfully")
             return self.data
         
 
         except Exception as e:
-            self.logger.log(log_file, "Exception occured in get_data method:"+str(e))
-            self.logger.log(log_file, "Error occured while reading the data")
+            self.logger.log(main_log_file,log_file, "Exception occured in get_data method:"+str(e))
+            self.logger.log(main_log_file,log_file, "Error occured while reading the data")
             log_file.close()
             raise AppException(e, sys) from e
 
