@@ -1,5 +1,4 @@
-from itertools import count
-import re
+import pyrebase
 from flask import Flask, render_template, request, redirect, url_for, flash, request
 import sqlalchemy
 import os
@@ -25,6 +24,18 @@ SAVED_MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_FOLDER_NAME)
 webapp_root = "webapp"
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
+
+#firebase credentials
+config= {
+  "apiKey": "AIzaSyCC2_6DhJNzDo-ZbXWjxEedjlhm5OF42Iw",
+  "authDomain": "consignmentpricing-1d67d.firebaseapp.com",
+  "databaseURL":"https://consignmentpricing-1d67d-default-rtdb.firebaseio.com",
+  "projectId": "consignmentpricing-1d67d",
+  "storageBucket": "consignmentpricing-1d67d.appspot.com",
+  "messagingSenderId": "56086969545",
+  "appId": "1:56086969545:web:4c71167bc4821c28b5e118",
+  "measurementId": "G-7WWLJ9W8JM"
+}
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 CORS(app)
@@ -222,10 +233,17 @@ def upload():
         if not request.form["pq"] or not request.form["poso"]:
             flash("Something Went Wrong While updating data to DataBase!!!")
         else:
-            upload_to_db = User(
-                pq=request.form["pq"], Po_SO=request.form["poso"], Asn_dn=request.form.get("asndn"), country=request.form.get("country"), managed_by=request.form.get("managedby"), fullfil_via=request.form.get("fulfil_via"), vendor_inco_term=request.form.get("vendor"), shipment_mode=request.form.get("shipment_mode"), pq_client_date=request.form.get("pqdate"), Scheduled_Delivery_Date=request.form.get("scheduled_delivery_date"), delivered_client_date=request.form.get("delivery_client_date"), delivery_recorded_date=request.form.get("delivery_recorded_date"), product_group=request.form.get("product_group"), sub_classification=request.form.get("sub_classification"), vendor=request.form.get("vendor"), item_descr=request.form.get("item_desc"), molecular_test=request.form.get("molecular_test"), brand=request.form.get("brand"), dosage=request.form.get("dosage"), dosage_form=request.form.get("dosage_form"), unit_of_measure=request.form.get("unit_of_measure"), line_item_quantity=request.form.get("line_item_quantity"), line_item_value=request.form.get("line_item_value"), pack_price=request.form.get("pack_price"), unit_price=request.form.get("unit_price"), manufacturing_site=request.form.get("manufacturing_site"), first_line_designation=request.form.get("first_line_designation"), weight_product=request.form.get("weight_product"), freight_cost=request.form.get("freight_cost"), line_item_insurance=request.form.get("line_item_insurance"))
-            db.session.add(upload_to_db)
-            db.session.commit()
+            # upload_to_db = User(
+            #     pq=request.form["pq"], Po_SO=request.form["poso"], Asn_dn=request.form.get("asndn"), country=request.form.get("country"), managed_by=request.form.get("managedby"), fullfil_via=request.form.get("fulfil_via"), vendor_inco_term=request.form.get("vendor"), shipment_mode=request.form.get("shipment_mode"), pq_client_date=request.form.get("pqdate"), Scheduled_Delivery_Date=request.form.get("scheduled_delivery_date"), delivered_client_date=request.form.get("delivery_client_date"), delivery_recorded_date=request.form.get("delivery_recorded_date"), product_group=request.form.get("product_group"), sub_classification=request.form.get("sub_classification"), vendor=request.form.get("vendor"), item_descr=request.form.get("item_desc"), molecular_test=request.form.get("molecular_test"), brand=request.form.get("brand"), dosage=request.form.get("dosage"), dosage_form=request.form.get("dosage_form"), unit_of_measure=request.form.get("unit_of_measure"), line_item_quantity=request.form.get("line_item_quantity"), line_item_value=request.form.get("line_item_value"), pack_price=request.form.get("pack_price"), unit_price=request.form.get("unit_price"), manufacturing_site=request.form.get("manufacturing_site"), first_line_designation=request.form.get("first_line_designation"), weight_product=request.form.get("weight_product"), freight_cost=request.form.get("freight_cost"), line_item_insurance=request.form.get("line_item_insurance"))
+            # db.session.add(upload_to_db)
+            # db.session.commit()
+            
+            firebase=pyrebase.initialize_app(config)
+            database=firebase.database()
+            data={"pq":request.form["pq"], "Po_SO":request.form["poso"], "Asn_dn":request.form.get("asndn"), "country":request.form.get("country"), "managed_by":request.form.get("managedby"), "fullfil_via":request.form.get("fulfil_via"), "vendor_inco_term":request.form.get("vendor"), "shipment_mode":request.form.get("shipment_mode"), "pq_client_date":request.form.get("pqdate"), "Scheduled_Delivery_Date":request.form.get("scheduled_delivery_date"), "delivered_client_date":request.form.get("delivery_client_date"), "delivery_recorded_date":request.form.get("delivery_recorded_date"), "product_group":request.form.get("product_group"), "sub_classification":request.form.get("sub_classification"), "vendor":request.form.get("vendor"), "item_descr":request.form.get("item_desc"), "molecular_test":request.form.get("molecular_test"), "brand":request.form.get("brand"), "dosage":request.form.get("dosage"), "dosage_form":request.form.get("dosage_form"), "unit_of_measure":request.form.get("unit_of_measure"), "line_item_quantity":request.form.get("line_item_quantity"), "line_item_value":request.form.get("line_item_value"), "pack_price":request.form.get("pack_price"), "unit_price":request.form.get("unit_price"), "manufacturing_site":request.form.get("manufacturing_site"), "first_line_designation":request.form.get("first_line_designation"), "weight_product":request.form.get("weight_product"), "freight_cost":request.form.get("freight_cost"), "line_item_insurance":request.form.get("line_item_insurance")}
+            database.push(data)
+            
+
             flash("Successfully Uploaded Data To DataBase😁😁")
             return redirect(("/predict/upload"))
     return render_template("db.html")
@@ -246,5 +264,5 @@ def train():
 
 port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
-    db.create_all()
+    # db.create_all()
     app.run(port=port, debug=True, host="0.0.0.0")
