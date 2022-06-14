@@ -2,27 +2,25 @@ from get_data import GetData
 import argparse
 import sys
 from app_exception.app_exception import AppException
-from application_logging.logger import Applogger
+
 main_log_file=open("H:/consignment pricing using mlops/logs/logs.log", "a+")
+from application_logging import logging
+
 class LoadData:
     def __init__(self):
-        self.logger = Applogger()
         self.getdata=GetData()
         
     def load_data(self,config_path):
         try:
-            log_file=open("H:/consignment pricing using mlops/logs/load_data_log.log", "a+") 
-            self.logger.log(main_log_file,log_file, "'load_data' FUNCTION STARTED")
+            logging.info(f"Loading data from the source")
             self.config = self.getdata.read_params(config_path)
             self.data=self.getdata.get_data(config_path)
             self.raw_data = self.config["load_data"]["raw_data_csv"]
             self.data.to_csv(self.raw_data, index=False)
-            self.logger.log(main_log_file,log_file, "Data loaded successfully to 'raw' folder")
+            logging.info(f"Data Loaded from the source Successfully !!!")
             return self.data
         except Exception as e:
-            log_file=open("H:/consignment pricing using mlops/logs/load_data_log.log", "a+") 
-            self.logger.log(main_log_file,log_file, "Exception occured in load_data method"+str(e))
-            self.logger.log(main_log_file,log_file, "Error occured while loading the data")
+            logging.info(f"Exception Occurred while loading data from the source -->{e}")
             raise AppException(e, sys) from e
 
 

@@ -41,10 +41,9 @@
       var xhr = new XMLHttpRequest();
       xhr.open('GET', "{{ url_for('stream') }}");
       xhr.send();
-  
       setInterval(function() {
           output.textContent = xhr.responseText;
-      }, 10);
+      }, 1000);
   </script>
         
 {% endblock %}

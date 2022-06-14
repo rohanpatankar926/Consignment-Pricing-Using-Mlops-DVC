@@ -5,45 +5,38 @@ import numpy as np
 import argparse
 import sys
 from app_exception.app_exception import AppException
-from application_logging.logger import Applogger
-main_log_file=open("logs/logs.log", "a+")
+from application_logging import logging
+
 class Preprocessing:
     def __init__(self):
-        self.logger = Applogger()
         self.load_data = LoadData()
         self.get_data = GetData()
 
     def column_imputation(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(main_log_file,log_file, "'column_imputation' FUNCTION STARTED")
+            logging.info("'column_imputation' FUNCTION STARTED")
             self.data = self.get_data.get_data(config_path)
             self.data.columns = self.data.columns.str.lower()
             self.data.columns = self.data.columns.str.replace(" ", "_")
-            self.logger.log(main_log_file,
-                log_file, "column_imputation function compiled successfully")
+            logging.info("'column_imputation' FUNCTION COMPILED SUCCESSFULLY")
             return self.data
         except Exception as e:
-            self.logger.log(log_file,main_log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log("Failed to execute the code please check your code and run")
+            logging.info(f"Exception occurred while compiling the code {str(e)}")
+            logging.info("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
     def impute_missing(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(log_file, main_log_file,"'impute_missing' FUNCTION STARTED")
+            logging.info("'impute_missing' FUNCTION STARTED")
             self.data = self.column_imputation(config_path)
             self.data = self.data.drop("dosage", axis=1)
             self.data["shipment_mode"].fillna("Air", inplace=True)
             self.data["line_item_insurance_(usd)"].fillna(47.04, inplace=True)
-            self.logger.log(main_log_file,
-                log_file, "impute_missing function compiled successfully")
+            logging.info("'impute_missing' FUNCTION COMPILED SUCCESSFULLY")
             return self.data
         except Exception as e:
-            self.logger.log(main_log_file,
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(main_log_file,main_log_file,
-                "Failed to execute the code please check your code and run")
+            logging.info(f"Exception occurred while compiling the code {str(e)}")
+            logging.info("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
             
             
@@ -64,22 +57,17 @@ class Preprocessing:
 
     def transform_pq_first_sent_to_client_date_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(
-                log_file, main_log_file,"'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED")
+            logging.info("'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED")
             self.data = self.impute_missing(config_path)
             self.data["pq_first_sent_to_client_date"] = self.data["pq_first_sent_to_client_date"].apply(
                 self.client_dates)
             self.data = self.data.drop(
                 self.data.index[self.data["pq_first_sent_to_client_date"] == "Date Not Captured"])
-            self.logger.log(main_log_file,
-                log_file, "transform_pq_first_sent_to_client_date_columns function compiled successfully")
+            logging.info("'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY")
             return self.data
         except Exception as e:
-            self.logger.log(main_log_file,
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(main_log_file,log_file,
-                "Failed to execute the code please check your code and run")
+            logging.info("Exception occurred while compiling the code", str(e))
+            logging.info("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
     def transform_dates(self, data):
@@ -89,9 +77,8 @@ class Preprocessing:
 
     def transform_dates_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(
-                log_file, main_log_file,"'transform_dates_columns' FUNCTION STARTED")
+            
+            logging.info("'transform_dates_columns' FUNCTION STARTED")
             self.data = self.transform_pq_first_sent_to_client_date_columns(
                 config_path)
             self.data["delivery_recorded_date"] = self.data["delivery_recorded_date"].apply(
@@ -102,14 +89,11 @@ class Preprocessing:
                 self.data["pq_first_sent_to_client_date"]
             self.data['days_to_process'] = self.data['days_to_process'].dt.days.astype(
                 'int64')
-            self.logger.log(
-                log_file, main_log_file,"transform_dates_columns function compiled successfully")
+            logging.info("transform_dates_columns function compiled successfully")
             return self.data
         except Exception as e:
-            self.logger.log(main_log_file,
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(main_log_file,log_file,
-                "Failed to execute the code please check your code and run")
+            logging.info("Exception occurred while compiling the code", str(e))
+            logging.info("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
     def trans_freight_cost(self, x):
@@ -122,9 +106,7 @@ class Preprocessing:
 
     def transform_freight_cost_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(
-                log_file, main_log_file,"'transform_freight_cost_columns' FUNCTION STARTED")
+            logging.info("'transform_freight_cost_columns' FUNCTION STARTED")
             self.data = self.transform_dates_columns(config_path)
             self.data["freight_cost_(usd)"] = self.data["freight_cost_(usd)"].apply(
                 self.trans_freight_cost)
@@ -132,45 +114,36 @@ class Preprocessing:
             self.median_value = self.data["freight_cost_(usd)"].median()
             self.data["freight_cost_(usd)"] = self.data["freight_cost_(usd)"].replace(
                 np.nan, self.median_value)
-            self.logger.log(
-                log_file, main_log_file,"transform_freight_cost_columns function compiled successfully")
+            logging.info("transform_freight_cost_columns function compiled successfully")
             return self.data
         except Exception as e:
-            self.logger.log(main_log_file,
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(main_log_file,log_file,
-                "Failed to execute the code please check your code and run")
+            logging.info("Exception occurred while compiling the code", str(e))
+            logging.info("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
     def drop_unnecessary_columns(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(
-                log_file, main_log_file,"'drop_unnecessary_columns' FUNCTION STARTED")
+            logging.info("'drop_unnecessary_columns' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.transform_dates_columns(config_path)
             self.data = self.data[self.config["columns"]["select"]]
-            self.logger.log(
-                log_file, main_log_file,"drop_unnecessary_columns function compiled successfully")
+            logging.info("drop_unnecessary_columns function compiled successfully")
             return self.data
         except Exception as e:
-            self.logger.log(main_log_file,
-                log_file, "Exception occurred while compiling the code", str(e))
-            self.logger.log(main_log_file,log_file,
-                "Failed to execute the code please check your code and run")
+            logging.info("Exception occurred while compiling the code", str(e))
+            self.logger.log("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
     def data_(self, config_path):
         try:
-            log_file = open("logs/preprocessing_logs.log", "a+")
-            self.logger.log(log_file,main_log_file, "'data' FUNCTION STARTED")
+            logging.info("'data' FUNCTION STARTED")
             self.config = self.get_data.read_params(config_path)
             self.data = self.drop_unnecessary_columns(config_path)
             self.data.to_csv(self.config["data"]["processed"])
-            self.logger.log(log_file, main_log_file,"data function compiled successfully")
+            logging.info("data function compiled successfully")
         except Exception as e:
-            self.logger.log(log_file,main_log_file,"Exception occurred while compiling the code")
-            self.logger.log(log_file,main_log_file,"Failed to execute the code please check your code and run")
+            logging.info("Exception occurred while compiling the code")
+            logging.info("Failed to execute the code please check your code and run")
             raise AppException(e, sys) from e
 
 

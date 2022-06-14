@@ -1,6 +1,5 @@
 import pyrebase
 from flask import Flask, render_template, request, redirect, url_for, flash, request
-import sqlalchemy
 import os
 import sys
 from flask import send_file, abort
@@ -176,16 +175,36 @@ def get_logs(req_path):
         return render_template("404.html", error=error)
 
 
-@app.route('/stream', methods=['GET', 'POST'])
+
+@app.route('/stream/train', methods=['GET', 'POST'])
+@cross_origin()
+def train():
+    try:
+        return_code = call(["python", "source/run_all_logs_scipt.py"])
+        print(return_code)
+        return render_template('train.html')
+    except FileNotFoundError as e:
+        error = "Error occured while retraining 🤔🤔"
+        error = {"error": error}
+        return render_template("404.html", error=error)
+
+LOG_DIR = "logs"
+LOG_DIR = os.path.join(os.getcwd(), LOG_DIR)
+CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y_%m_%d_%H_%M')}"
+file_name = f"log_{CURRENT_TIME_STAMP}.log"
+log_file_path = os.path.join(LOG_DIR, file_name)
+
+@app.route('/stream', methods=['POST', 'GET'])
 @cross_origin()
 def stream():
-    def generate():
-        with open('logs/logs.log') as f:
-            while 1:
-                yield f.read()
-                sleep(0.1)
-    return app.response_class(generate(), mimetype="text/plain")
-
+    try:
+        def generate():
+            with open(log_file_path) as f:
+                while 1:
+                    yield f.read()
+        return app.response_class(generate(), mimetype="text/plain")
+    except Exception as e:
+        print(e)
 
 # class User(db.Model):
 #     __tablename__ = "Consignment_Prices"
@@ -243,20 +262,10 @@ def upload():
     return render_template("db.html")
 
 
-@app.route('/stream/train', methods=['GET', 'POST'])
-@cross_origin()
-def train():
-    try:
-        return_code = call(["python", "source/run_all_logs_scipt.py"])
-        print(return_code)
-        return render_template('train.html')
-    except FileNotFoundError as e:
-        error = "Error occured while retraining 🤔🤔"
-        error = {"error": error}
-        return render_template("404.html", error=error)
 
 
 port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
     # db.create_all()
+    train
     app.run(port=port, debug=True, host="0.0.0.0")
