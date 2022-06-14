@@ -16,6 +16,7 @@
   }
 </style>
 <body>
+  <div id="database-container">
     <p>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -30,7 +31,7 @@
      {% endwith %}
        </p>
        <center> <h3>Fill Data To DataBase For Future Predictions</h3></center>
-       <center>
+       <di>
        <div class="form-group">
      <form method="POST" action="/predict/upload" enctype="multipart/form-data">
        <input type="text"
@@ -209,6 +210,7 @@
      <input class="btn btn-secondary" type="submit" value="submit">
      </form>
     </div>
+  </div>
     </center>
 <br>
 </body>
