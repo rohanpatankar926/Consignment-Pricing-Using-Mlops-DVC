@@ -8,8 +8,8 @@ from subprocess import call
 from time import sleep
 from wsgiref import simple_server
 from flask_cors import CORS, cross_origin
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.engine import Engine
+# from flask_sqlalchemy import SQLAlchemy
+# from sqlalchemy.engine import Engine
 from datetime import datetime
 
 
@@ -25,16 +25,16 @@ webapp_root = "webapp"
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
 
-#firebase credentials
-config= {
-  "apiKey": "AIzaSyCC2_6DhJNzDo-ZbXWjxEedjlhm5OF42Iw",
-  "authDomain": "consignmentpricing-1d67d.firebaseapp.com",
-  "databaseURL":"https://consignmentpricing-1d67d-default-rtdb.firebaseio.com",
-  "projectId": "consignmentpricing-1d67d",
-  "storageBucket": "consignmentpricing-1d67d.appspot.com",
-  "messagingSenderId": "56086969545",
-  "appId": "1:56086969545:web:4c71167bc4821c28b5e118",
-  "measurementId": "G-7WWLJ9W8JM"
+# firebase credentials
+config = {
+    "apiKey": "AIzaSyCC2_6DhJNzDo-ZbXWjxEedjlhm5OF42Iw",
+    "authDomain": "consignmentpricing-1d67d.firebaseapp.com",
+    "databaseURL": "https://consignmentpricing-1d67d-default-rtdb.firebaseio.com",
+    "projectId": "consignmentpricing-1d67d",
+    "storageBucket": "consignmentpricing-1d67d.appspot.com",
+    "messagingSenderId": "56086969545",
+    "appId": "1:56086969545:web:4c71167bc4821c28b5e118",
+    "measurementId": "G-7WWLJ9W8JM"
 }
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
@@ -43,9 +43,9 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///consignment_price.sqlite3"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = 0
 app.config["SECRET_KEY"] = "consignment_secret_key"
 
-db = SQLAlchemy(app)
-now = datetime.now()
-db.create_all()
+# db = SQLAlchemy(app)
+# now = datetime.now()
+# db.create_all()
 
 
 @app.route("/", methods=["GET"])
@@ -85,8 +85,7 @@ def get_data(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file): file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -112,8 +111,7 @@ def saved_models(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file): file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -139,8 +137,7 @@ def performance(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file): file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -166,8 +163,7 @@ def get_logs(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file): file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -191,39 +187,39 @@ def stream():
     return app.response_class(generate(), mimetype="text/plain")
 
 
-class User(db.Model):
-    __tablename__ = "Consignment_Prices"
-    id_ = db.Column(db.Integer, primary_key=True)
-    pq = db.Column(db.String(50), index=True)
-    Po_SO = db.Column(db.String(50), index=True)
-    Asn_dn = db.Column(db.String(50), index=True)
-    country = db.Column(db.String(50), index=True)
-    managed_by = db.Column(db.String(50), index=True)
-    fullfil_via = db.Column(db.String(50), index=True)
-    vendor_inco_term = db.Column(db.String(50), index=True)
-    shipment_mode = db.Column(db.String(10), index=True)
-    pq_client_date = db.Column(db.String, index=True)
-    Scheduled_Delivery_Date = db.Column(db.String, index=True)
-    delivered_client_date = db.Column(db.String, index=True)
-    delivery_recorded_date = db.Column(db.String, index=True)
-    product_group = db.Column(db.String(50), index=True)
-    sub_classification = db.Column(db.String(50), index=True)
-    vendor = db.Column(db.String(50), index=True)
-    item_descr = db.Column(db.String(100), index=True)
-    molecular_test = db.Column(db.String(50), index=True)
-    brand = db.Column(db.String(50), index=True)
-    dosage = db.Column(db.String(40), index=True)
-    dosage_form = db.Column(db.String(40), index=True)
-    unit_of_measure = db.Column(db.Integer, index=True)
-    line_item_quantity = db.Column(db.Integer, index=True)
-    line_item_value = db.Column(db.Integer, index=True)
-    pack_price = db.Column(db.Integer, index=True)
-    unit_price = db.Column(db.Integer, index=True)
-    manufacturing_site = db.Column(db.Integer, index=True)
-    first_line_designation = db.Column(db.Integer, index=True)
-    weight_product = db.Column(db.Integer, index=True)
-    freight_cost = db.Column(db.Integer, index=True)
-    line_item_insurance = db.Column(db.Integer, index=True)
+# class User(db.Model):
+#     __tablename__ = "Consignment_Prices"
+#     id_ = db.Column(db.Integer, primary_key=True)
+#     pq = db.Column(db.String(50), index=True)
+#     Po_SO = db.Column(db.String(50), index=True)
+#     Asn_dn = db.Column(db.String(50), index=True)
+#     country = db.Column(db.String(50), index=True)
+#     managed_by = db.Column(db.String(50), index=True)
+#     fullfil_via = db.Column(db.String(50), index=True)
+#     vendor_inco_term = db.Column(db.String(50), index=True)
+#     shipment_mode = db.Column(db.String(10), index=True)
+#     pq_client_date = db.Column(db.String, index=True)
+#     Scheduled_Delivery_Date = db.Column(db.String, index=True)
+#     delivered_client_date = db.Column(db.String, index=True)
+#     delivery_recorded_date = db.Column(db.String, index=True)
+#     product_group = db.Column(db.String(50), index=True)
+#     sub_classification = db.Column(db.String(50), index=True)
+#     vendor = db.Column(db.String(50), index=True)
+#     item_descr = db.Column(db.String(100), index=True)
+#     molecular_test = db.Column(db.String(50), index=True)
+#     brand = db.Column(db.String(50), index=True)
+#     dosage = db.Column(db.String(40), index=True)
+#     dosage_form = db.Column(db.String(40), index=True)
+#     unit_of_measure = db.Column(db.Integer, index=True)
+#     line_item_quantity = db.Column(db.Integer, index=True)
+#     line_item_value = db.Column(db.Integer, index=True)
+#     pack_price = db.Column(db.Integer, index=True)
+#     unit_price = db.Column(db.Integer, index=True)
+#     manufacturing_site = db.Column(db.Integer, index=True)
+#     first_line_designation = db.Column(db.Integer, index=True)
+#     weight_product = db.Column(db.Integer, index=True)
+#     freight_cost = db.Column(db.Integer, index=True)
+#     line_item_insurance = db.Column(db.Integer, index=True)
 
 
 @app.route("/predict/upload", methods=["POST", "GET"])
@@ -237,14 +233,12 @@ def upload():
             #     pq=request.form["pq"], Po_SO=request.form["poso"], Asn_dn=request.form.get("asndn"), country=request.form.get("country"), managed_by=request.form.get("managedby"), fullfil_via=request.form.get("fulfil_via"), vendor_inco_term=request.form.get("vendor"), shipment_mode=request.form.get("shipment_mode"), pq_client_date=request.form.get("pqdate"), Scheduled_Delivery_Date=request.form.get("scheduled_delivery_date"), delivered_client_date=request.form.get("delivery_client_date"), delivery_recorded_date=request.form.get("delivery_recorded_date"), product_group=request.form.get("product_group"), sub_classification=request.form.get("sub_classification"), vendor=request.form.get("vendor"), item_descr=request.form.get("item_desc"), molecular_test=request.form.get("molecular_test"), brand=request.form.get("brand"), dosage=request.form.get("dosage"), dosage_form=request.form.get("dosage_form"), unit_of_measure=request.form.get("unit_of_measure"), line_item_quantity=request.form.get("line_item_quantity"), line_item_value=request.form.get("line_item_value"), pack_price=request.form.get("pack_price"), unit_price=request.form.get("unit_price"), manufacturing_site=request.form.get("manufacturing_site"), first_line_designation=request.form.get("first_line_designation"), weight_product=request.form.get("weight_product"), freight_cost=request.form.get("freight_cost"), line_item_insurance=request.form.get("line_item_insurance"))
             # db.session.add(upload_to_db)
             # db.session.commit()
-            
-            firebase=pyrebase.initialize_app(config)
-            database=firebase.database()
-            data={"pq":request.form["pq"], "Po_SO":request.form["poso"], "Asn_dn":request.form.get("asndn"), "country":request.form.get("country"), "managed_by":request.form.get("managedby"), "fullfil_via":request.form.get("fulfil_via"), "vendor_inco_term":request.form.get("vendor"), "shipment_mode":request.form.get("shipment_mode"), "pq_client_date":request.form.get("pqdate"), "Scheduled_Delivery_Date":request.form.get("scheduled_delivery_date"), "delivered_client_date":request.form.get("delivery_client_date"), "delivery_recorded_date":request.form.get("delivery_recorded_date"), "product_group":request.form.get("product_group"), "sub_classification":request.form.get("sub_classification"), "vendor":request.form.get("vendor"), "item_descr":request.form.get("item_desc"), "molecular_test":request.form.get("molecular_test"), "brand":request.form.get("brand"), "dosage":request.form.get("dosage"), "dosage_form":request.form.get("dosage_form"), "unit_of_measure":request.form.get("unit_of_measure"), "line_item_quantity":request.form.get("line_item_quantity"), "line_item_value":request.form.get("line_item_value"), "pack_price":request.form.get("pack_price"), "unit_price":request.form.get("unit_price"), "manufacturing_site":request.form.get("manufacturing_site"), "first_line_designation":request.form.get("first_line_designation"), "weight_product":request.form.get("weight_product"), "freight_cost":request.form.get("freight_cost"), "line_item_insurance":request.form.get("line_item_insurance")}
-            database.push(data)
-            
 
-            flash("Successfully Uploaded Data To DataBase😁😁")
+            firebase = pyrebase.initialize_app(config)
+            database = firebase.database()
+            data = {"pq": request.form["pq"], "Po_SO": request.form["poso"], "Asn_dn": request.form.get("asndn"), "country": request.form.get("country"), "managed_by": request.form.get("managedby"), "fullfil_via": request.form.get("fulfil_via"), "vendor_inco_term": request.form.get("vendor"), "shipment_mode": request.form.get("shipment_mode"), "pq_client_date": request.form.get("pqdate"), "Scheduled_Delivery_Date": request.form.get("scheduled_delivery_date"), "delivered_client_date": request.form.get("delivery_client_date"), "delivery_recorded_date": request.form.get("delivery_recorded_date"), "product_group": request.form.get("product_group"), "sub_classification": request.form.get("sub_classification"), "vendor": request.form.get("vendor"), "item_descr": request.form.get("item_desc"), "molecular_test": request.form.get("molecular_test"), "brand": request.form.get("brand"), "dosage": request.form.get("dosage"), "dosage_form": request.form.get("dosage_form"), "unit_of_measure": request.form.get("unit_of_measure"), "line_item_quantity": request.form.get("line_item_quantity"), "line_item_value": request.form.get("line_item_value"), "pack_price": request.form.get("pack_price"), "unit_price": request.form.get("unit_price"), "manufacturing_site": request.form.get("manufacturing_site"), "first_line_designation": request.form.get("first_line_designation"), "weight_product": request.form.get("weight_product"), "freight_cost": request.form.get("freight_cost"), "line_item_insurance": request.form.get("line_item_insurance")}
+            database.push(data)
+            flash("Successfully Uploaded Data To DataBase!!!")
             return redirect(("/predict/upload"))
     return render_template("db.html")
 
