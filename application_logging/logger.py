@@ -24,7 +24,7 @@ os.makedirs(LOG_DIR, exist_ok=True)
 
 
 # Creating file name for log file based on current timestamp
-CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y_%m_%d_%H_%M')}"
+CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y_%m_%d_%H')}"
 file_name = f"log_{CURRENT_TIME_STAMP}.log"
 
 #Creating file path for projects.
