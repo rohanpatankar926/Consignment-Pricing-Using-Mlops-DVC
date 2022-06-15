@@ -261,9 +261,6 @@ def upload():
             return redirect(("/upload"))
     return render_template("db.html")
 
-
-
-
 port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
     # db.create_all()
