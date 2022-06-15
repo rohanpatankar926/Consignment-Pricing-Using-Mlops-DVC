@@ -241,7 +241,7 @@ def stream():
 #     line_item_insurance = db.Column(db.Integer, index=True)
 
 
-@app.route("/predict/upload", methods=["POST", "GET"])
+@app.route("/upload", methods=["POST", "GET"])
 def upload():
 
     if request.method == "POST":

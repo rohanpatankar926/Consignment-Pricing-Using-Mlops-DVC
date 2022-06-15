@@ -1,0 +1,43 @@
+[2022-06-14 23:39:30,153] root - INFO - Getting the data from the source
+[2022-06-14 23:39:30,154] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:39:30,180] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:39:30,937] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-14 23:39:30,937] root - INFO - Loading data from the source
+[2022-06-14 23:39:30,937] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:39:31,069] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:39:31,069] root - INFO - Getting the data from the source
+[2022-06-14 23:39:31,069] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:39:31,177] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:39:31,909] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-14 23:39:34,094] root - INFO - Data Loaded from the source Successfully !!!
+[2022-06-14 23:39:34,094] root - INFO - 'data' FUNCTION STARTED
+[2022-06-14 23:39:34,095] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:39:34,224] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:39:34,224] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-06-14 23:39:34,224] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:39:34,253] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:39:34,253] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-06-14 23:39:34,253] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-06-14 23:39:34,253] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-06-14 23:39:34,253] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-06-14 23:39:34,254] root - INFO - Getting the data from the source
+[2022-06-14 23:39:34,254] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:39:34,379] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:39:35,190] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-14 23:39:35,192] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-14 23:39:35,200] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-14 23:39:48,563] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-14 23:40:26,726] root - INFO - transform_dates_columns function compiled successfully
+[2022-06-14 23:40:26,732] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-06-14 23:40:27,057] root - INFO - data function compiled successfully
+[2022-06-14 23:40:27,061] root - INFO - 'split_data' function started
+[2022-06-14 23:40:27,061] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:40:27,091] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:40:27,322] root - INFO - 'split_data' function successfully compiled
+[2022-06-14 23:40:27,325] root - INFO - 'train_evaluate' function started
+[2022-06-14 23:40:27,325] root - INFO - Reading all parameters from config_path
+[2022-06-14 23:40:27,352] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 23:40:27,353] root - INFO - train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+[2022-06-14 23:40:27,584] root - INFO - train data read successfully
+[2022-06-14 23:40:27,709] root - INFO - test data read successfully
+[2022-06-14 23:40:27,709] root - INFO - model training started

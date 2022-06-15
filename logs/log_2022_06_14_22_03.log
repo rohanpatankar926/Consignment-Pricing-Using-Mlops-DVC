@@ -1,0 +1,32 @@
+[2022-06-14 22:03:30,773] root - INFO - Getting the data from the source
+[2022-06-14 22:03:30,773] root - INFO - Reading all parameters from config_path
+[2022-06-14 22:03:30,795] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 22:03:30,927] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-14 22:03:30,927] root - INFO - Loading data from the source
+[2022-06-14 22:03:30,927] root - INFO - Reading all parameters from config_path
+[2022-06-14 22:03:30,943] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 22:03:30,943] root - INFO - Getting the data from the source
+[2022-06-14 22:03:30,943] root - INFO - Reading all parameters from config_path
+[2022-06-14 22:03:30,957] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 22:03:31,068] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-14 22:03:31,325] root - INFO - Data Loaded from the source Successfully !!!
+[2022-06-14 22:03:31,326] root - INFO - 'data' FUNCTION STARTED
+[2022-06-14 22:03:31,326] root - INFO - Reading all parameters from config_path
+[2022-06-14 22:03:31,345] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 22:03:31,345] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-06-14 22:03:31,345] root - INFO - Reading all parameters from config_path
+[2022-06-14 22:03:31,359] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 22:03:31,359] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-06-14 22:03:31,359] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-06-14 22:03:31,359] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-06-14 22:03:31,359] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-06-14 22:03:31,359] root - INFO - Getting the data from the source
+[2022-06-14 22:03:31,359] root - INFO - Reading all parameters from config_path
+[2022-06-14 22:03:31,376] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-14 22:03:31,516] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-14 22:03:31,518] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-14 22:03:31,523] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-14 22:03:34,825] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-14 22:03:41,915] root - INFO - transform_dates_columns function compiled successfully
+[2022-06-14 22:03:41,920] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-06-14 22:03:42,048] root - INFO - data function compiled successfully

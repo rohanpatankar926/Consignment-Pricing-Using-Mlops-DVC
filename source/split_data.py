@@ -5,19 +5,18 @@ import pandas as pd
 import argparse
 import sys
 from app_exception.app_exception import AppException
-from application_logging.logger import Applogger
+from application_logging import logging
 
 
 class SplitData:
     def __init__(self):
-        self.logger = Applogger()
         self.get_data = GetData()
         self.feature_engineering = FeatureEngineering()
 
     def split_data(self, config_path):
         try:
-            logfile = open("logs/split_data.log", "a+")
-            self.logger.log(logfile, "'split_data' function started")
+            
+            logging.info( "'split_data' function started")
             self.config = self.get_data.read_params(config_path)
             self.data = self.config["final_data"]["transformed_data"]
             self.train_data = self.config["split_data"]["train_path"]
@@ -32,13 +31,13 @@ class SplitData:
                               index=False, encoding="UTF-8")
             self.test.to_csv(self.test_data, sep=",",
                              index=False, encoding="UTF-8")
-            self.logger.log(
-                logfile, "'split_data' function successfully compiled")
+            logging.info(
+                 "'split_data' function successfully compiled")
         except Exception as e:
-            self.logger.log(
-                logfile, "'split_data' function failed to compile"+str(e))
-            self.logger.log(
-                logfile, "Please check your code and compile again...")
+            logging.info(
+                 "'split_data' function failed to compile"+str(e))
+            logging.info(
+                 "Please check your code and compile again...")
             raise AppException(e, sys) from e
 
 object_ = SplitData()

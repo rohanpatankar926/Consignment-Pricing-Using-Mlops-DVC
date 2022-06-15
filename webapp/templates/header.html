@@ -44,19 +44,22 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logs">View Logs</a>
+                        <a class="nav-link {% if 'logs' in request.path %} active {% endif %}"href="/logs">View Logs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/saved_models">Saved Models</a>
+                        <a class="nav-link {% if 'saved_models' in request.path %} active {% endif %}" href="/saved_models">Saved Models</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/data">Artifacts</a>
+                        <a class="nav-link {% if 'data' in request.path %} active {% endif %}"href="/data">Artifacts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if 'predict' in request.path %} active {% endif %}" href="/predict">Estimate Consignment Price</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/noaccess">Retrain Model</a>
+                        <a class="nav-link {% if 'upload' in request.path %} active {% endif %}" href="/upload">Database</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="/stream/train">Retrain Model</a>
                     </li>
                    
                     
@@ -87,6 +90,9 @@
                 </li>
                 <li class="list-group-item py-1  {% if 'predict' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/predict">Estimate Consignment Price</a>
+                </li>
+                <li class="list-group-item py-1  {% if 'upload' in request.path %} active {% endif %}">
+                    <a  style=" text-decoration: none;color:black" href="/upload">Data To Database</a>
                 </li>
                 <li class="list-group-item py-1  {% if 'train' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/noaccess">Retrain Model</a>

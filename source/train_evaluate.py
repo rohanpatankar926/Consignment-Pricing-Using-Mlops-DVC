@@ -10,7 +10,7 @@ from sklearn.model_selection import GridSearchCV
 import argparse
 import sys
 from app_exception.app_exception import AppException
-from application_logging.logger import Applogger
+from application_logging import logging
 import pandas as pd
 import joblib
 import json
@@ -21,7 +21,6 @@ from get_data import GetData
 class TrainEvaluate:
     def __init__(self):
         self.get_data=GetData()
-        self.logger=Applogger()
 
    
     def evaluation_metrics(self,act,pred):
@@ -32,19 +31,20 @@ class TrainEvaluate:
 
     def model_eval(self,config_path):
         try:
-            log_file=open("logs/train_evaluate.log","a+")
-            self.logger.log(log_file,"'train_evaluate' function started")
+            
+            logging.info(
+"'train_evaluate' function started")
             self.config=self.get_data.read_params(config_path)
             self.test_data=self.config["split_data"]["test_path"]
             self.train_data=self.config["split_data"]["train_path"]
             self.model_dir=self.config["model_dirs"]
             self.target_col=self.config["base"]["target_data"]
-            self.logger.log(log_file,"train data read successfully-->path: "+self.train_data)
+            logging.info("train data read successfully-->path: "+self.train_data)
             self.train=pd.read_csv(self.train_data,sep=",")
-            self.logger.log(log_file,"train data read successfully")
+            logging.info("train data read successfully")
             self.test=pd.read_csv(self.test_data,sep=",")
-            self.logger.log(log_file,"test data read successfully")
-            self.logger.log(log_file,"model training started")
+            logging.info("test data read successfully")
+            logging.info("model training started")
             self.criterion=self.config["estimators"]["RandomForestRegressor"]["params"]["criterion"]
             self.max_deapth=self.config["estimators"]["RandomForestRegressor"]["params"]["max_deapth"]
             self.min_sample_leaf=self.config["estimators"]["RandomForestRegressor"]["params"]["min_sample_leaf"]
@@ -100,7 +100,7 @@ class TrainEvaluate:
             rf2=RCV.best_estimator_
             rf2.fit(self.x_train,self.y_train)
             y_pred=rf.predict(self.x_test)
-            self.logger.log(log_file,"Model Trained on RandomizedSearchCV successfully")
+            logging.info("Model Trained on RandomizedSearchCV successfully")
             (r2,mse,rmse)=self.evaluation_metrics(self.y_test,y_pred)
             print(r2*100,mse,rmse)
             
@@ -124,7 +124,7 @@ class TrainEvaluate:
                 # "normalized rmse":self.normalized_rmse
                     }
                 json.dump(scores,f,indent=4)
-            self.logger.log(log_file,"scores written to file")
+            logging.info("scores written to file")
             with open(params_file,"w") as f:
                 params={
                     "best params":RCV.best_params_,
@@ -137,8 +137,9 @@ class TrainEvaluate:
                 }
                 json.dump(params,f,indent=4)
         except Exception as e:
-            self.logger.log(log_file,"Exception occured in 'train_evaluate' function"+str(e))
-            self.logger.log(log_file,"train_evaluate function reported error in the function")
+            logging.info("Exception occured in 'train_evaluate' function"+str(e))
+            logging.info(
+"train_evaluate function reported error in the function")
             raise AppException(e, sys) from e
 
 object_=TrainEvaluate()
