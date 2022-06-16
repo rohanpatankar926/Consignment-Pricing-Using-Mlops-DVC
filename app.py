@@ -1,4 +1,4 @@
-
+import pyrebase
 from flask import Flask, render_template, request, redirect, flash, request
 import os
 import sys
@@ -23,6 +23,7 @@ webapp_root = "webapp"
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
 
+
 # firebase credentials
 config = {
     "apiKey": "AIzaSyCC2_6DhJNzDo-ZbXWjxEedjlhm5OF42Iw",
@@ -37,10 +38,10 @@ config = {
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 CORS(app)
-
+app.config["SECRET_KEY"] = "consignment_secret_key"
 # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///consignment_price.sqlite3"
 # app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = 0
-# app.config["SECRET_KEY"] = "consignment_secret_key"
+
 # db = SQLAlchemy(app)
 # now = datetime.now()
 # db.create_all()
@@ -245,27 +246,29 @@ def stream():
 #     freight_cost = db.Column(db.Integer, index=True)
 #     line_item_insurance = db.Column(db.Integer, index=True)
 
+import pyrebase
+@app.route("/upload", methods=["POST", "GET"])
+def upload():
+    try:
+        if request.method == "POST":
+        
+            # upload_to_db = User(
+            #     pq=request.form["pq"], Po_SO=request.form["poso"], Asn_dn=request.form.get("asndn"), country=request.form.get("country"), managed_by=request.form.get("managedby"), fullfil_via=request.form.get("fulfil_via"), vendor_inco_term=request.form.get("vendor"), shipment_mode=request.form.get("shipment_mode"), pq_client_date=request.form.get("pqdate"), Scheduled_Delivery_Date=request.form.get("scheduled_delivery_date"), delivered_client_date=request.form.get("delivery_client_date"), delivery_recorded_date=request.form.get("delivery_recorded_date"), product_group=request.form.get("product_group"), sub_classification=request.form.get("sub_classification"), vendor=request.form.get("vendor"), item_descr=request.form.get("item_desc"), molecular_test=request.form.get("molecular_test"), brand=request.form.get("brand"), dosage=request.form.get("dosage"), dosage_form=request.form.get("dosage_form"), unit_of_measure=request.form.get("unit_of_measure"), line_item_quantity=request.form.get("line_item_quantity"), line_item_value=request.form.get("line_item_value"), pack_price=request.form.get("pack_price"), unit_price=request.form.get("unit_price"), manufacturing_site=request.form.get("manufacturing_site"), first_line_designation=request.form.get("first_line_designation"), weight_product=request.form.get("weight_product"), freight_cost=request.form.get("freight_cost"), line_item_insurance=request.form.get("line_item_insurance"))
+            # db.session.add(upload_to_db)
+            # db.session.commit()
 
-# @app.route("/upload", methods=["POST", "GET"])
-# def upload():
-#     if request.method == "POST":
-#         if not request.form["pq"] or not request.form["poso"]:
-#             flash("Something Went Wrong While updating data to DataBase!!!")
-#         else:
-#             # upload_to_db = User(
-#             #     pq=request.form["pq"], Po_SO=request.form["poso"], Asn_dn=request.form.get("asndn"), country=request.form.get("country"), managed_by=request.form.get("managedby"), fullfil_via=request.form.get("fulfil_via"), vendor_inco_term=request.form.get("vendor"), shipment_mode=request.form.get("shipment_mode"), pq_client_date=request.form.get("pqdate"), Scheduled_Delivery_Date=request.form.get("scheduled_delivery_date"), delivered_client_date=request.form.get("delivery_client_date"), delivery_recorded_date=request.form.get("delivery_recorded_date"), product_group=request.form.get("product_group"), sub_classification=request.form.get("sub_classification"), vendor=request.form.get("vendor"), item_descr=request.form.get("item_desc"), molecular_test=request.form.get("molecular_test"), brand=request.form.get("brand"), dosage=request.form.get("dosage"), dosage_form=request.form.get("dosage_form"), unit_of_measure=request.form.get("unit_of_measure"), line_item_quantity=request.form.get("line_item_quantity"), line_item_value=request.form.get("line_item_value"), pack_price=request.form.get("pack_price"), unit_price=request.form.get("unit_price"), manufacturing_site=request.form.get("manufacturing_site"), first_line_designation=request.form.get("first_line_designation"), weight_product=request.form.get("weight_product"), freight_cost=request.form.get("freight_cost"), line_item_insurance=request.form.get("line_item_insurance"))
-#             # db.session.add(upload_to_db)
-#             # db.session.commit()
-
-#             # Firebase database setup
-#             firebase = pyrebase.initialize_app(config)
-#             database = firebase.database()
-#             data = {"pq": request.form["pq"], "Po_SO": request.form["poso"], "Asn_dn": request.form.get("asndn"), "country": request.form.get("country"), "managed_by": request.form.get("managedby"), "fullfil_via": request.form.get("fulfil_via"), "vendor_inco_term": request.form.get("vendor"), "shipment_mode": request.form.get("shipment_mode"), "pq_client_date": request.form.get("pqdate"), "Scheduled_Delivery_Date": request.form.get("scheduled_delivery_date"), "delivered_client_date": request.form.get("delivery_client_date"), "delivery_recorded_date": request.form.get("delivery_recorded_date"), "product_group": request.form.get("product_group"), "sub_classification": request.form.get("sub_classification"), "vendor": request.form.get("vendor"), "item_descr": request.form.get(
-#                 "item_desc"), "molecular_test": request.form.get("molecular_test"), "brand": request.form.get("brand"), "dosage": request.form.get("dosage"), "dosage_form": request.form.get("dosage_form"), "unit_of_measure": request.form.get("unit_of_measure"), "line_item_quantity": request.form.get("line_item_quantity"), "line_item_value": request.form.get("line_item_value"), "pack_price": request.form.get("pack_price"), "unit_price": request.form.get("unit_price"), "manufacturing_site": request.form.get("manufacturing_site"), "first_line_designation": request.form.get("first_line_designation"), "weight_product": request.form.get("weight_product"), "freight_cost": request.form.get("freight_cost"), "line_item_insurance": request.form.get("line_item_insurance")}
-#             database.push(data)
-#             flash("Successfully Uploaded Data To DataBase!!!")
-#             return redirect(("/upload"))
-#     return render_template("db.html")
+            # Firebase database setup
+            firebase = pyrebase.initialize_app(config)
+            database = firebase.database()
+            data = {"pq": request.form["pq"], "Po_SO": request.form["poso"], "Asn_dn": request.form.get("asndn"), "country": request.form.get("country"), "managed_by": request.form.get("managedby"), "fullfil_via": request.form.get("fulfil_via"), "vendor_inco_term": request.form.get("vendor"), "shipment_mode": request.form.get("shipment_mode"), "pq_client_date": request.form.get("pqdate"), "Scheduled_Delivery_Date": request.form.get("scheduled_delivery_date"), "delivered_client_date": request.form.get("delivery_client_date"), "delivery_recorded_date": request.form.get("delivery_recorded_date"), "product_group": request.form.get("product_group"), "sub_classification": request.form.get("sub_classification"), "vendor": request.form.get("vendor"), "item_descr": request.form.get(
+                "item_desc"), "molecular_test": request.form.get("molecular_test"), "brand": request.form.get("brand"), "dosage": request.form.get("dosage"), "dosage_form": request.form.get("dosage_form"), "unit_of_measure": request.form.get("unit_of_measure"), "line_item_quantity": request.form.get("line_item_quantity"), "line_item_value": request.form.get("line_item_value"), "pack_price": request.form.get("pack_price"), "unit_price": request.form.get("unit_price"), "manufacturing_site": request.form.get("manufacturing_site"), "first_line_designation": request.form.get("first_line_designation"), "weight_product": request.form.get("weight_product"), "freight_cost": request.form.get("freight_cost"), "line_item_insurance": request.form.get("line_item_insurance")}
+            database.push(data)
+            flash("Successfully Uploaded Data To DataBase!!!")
+            return redirect(("/upload"))
+        return render_template("db.html")
+    except Exception as e:
+        flash("Something went wrong")
+        
 
 
 port = int(os.getenv("PORT", 1000))
@@ -273,4 +276,4 @@ if __name__ == "__main__":
     # db.create_all()
     train
     stream
-    app.run(port=port, debug=True,host="192.168.40.124")
+    app.run(port=port, debug=True,host="0.0.0.0")
