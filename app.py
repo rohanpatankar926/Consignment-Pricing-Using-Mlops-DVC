@@ -12,6 +12,7 @@ from flask_cors import CORS, cross_origin
 # from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.engine import Engine
 from datetime import datetime
+from flask_ngrok import run_with_ngrok
 
 ROOT_DIR = os.getcwd()
 LOGS_FOLDER_NAME = "logs"
@@ -39,6 +40,7 @@ config = {
 }
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
+
 CORS(app)
 app.config["SECRET_KEY"] = "consignment_secret_key"
 app.config["MONGO_DBNAME"] = "ConsignmentPricing"
@@ -51,6 +53,8 @@ app.config["MONGO_URI"] = "mongodb://127.0.0.1:27017/ConsignmentPricing"
 # now = datetime.now()
 # db.create_all()
 mongo_ = PyMongo(app)
+
+
 
 # LOGIN SYSTEM
 @app.route("/")
@@ -315,10 +319,10 @@ def upload():
         return render_template("db.html")
 
 
-port = int(os.getenv("PORT", 1000))
+port = int(os.getenv("PORT", 8100))
 if __name__ == "__main__":
     app.config["SECRET_KEY"] = "!@##$#!#EDS#@!df"
     # db.create_all()
     stream
     train
-    app.run(port=port, debug=True, host="192.168.40.124")
+    app.run(port=port,host="0.0.0.0",debug=True)
