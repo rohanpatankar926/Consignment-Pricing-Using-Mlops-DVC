@@ -43,7 +43,7 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 CORS(app)
 app.config["SECRET_KEY"] = "consignment_secret_key"
 app.config["MONGO_DBNAME"] = "ConsignmentPricing"
-app.config["MONGO_URI"] = "mongodb://127.0.0.1:27017/ConsignmentPricing"
+app.config["MONGO_URI"] = "mongodb+srv://rohan:sAx4GTTSPKXcvTfY@consignment.blgtz.mongodb.net/ConsignmentPricing"
 
 # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///consignment_price.sqlite3"
 # app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = 0
@@ -68,7 +68,7 @@ def index():
 
 @app.route('/login', methods=['POST'])
 def login():
-    users = mongo_.db.users
+    users = mongo_.db.consignmentdata
     login_user = users.find_one({'email' : request.form['email']})
     if login_user:
         email=request.form['email']
@@ -86,13 +86,14 @@ def login():
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == 'POST':
-        users = mongo_.db.users
+        users = mongo_.db.consignmentdata
         existing_user = users.find_one({'email' : request.form['email']})
 
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert_one({'email' : request.form['email'], 'password' : hashpass})
             session['email'] = request.form['email']
+            flash("Registered Successfully")
             return redirect(url_for('index'))
         flash("Email already exists")
         return redirect(url_for('register'))
@@ -329,4 +330,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,debug=True)
+    app.run(port=port,debug=True,host='192.168.40.124')

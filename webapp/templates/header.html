@@ -37,11 +37,11 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="/">Consignment Price Estimation</a>
+            <a class="navbar-brand" href="/home">Consignment Price Estimation</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if 'home' in request.path %} active {% endif %}" aria-current="page" href="/">Home</a>
+                        <a class="nav-link {% if 'home' in request.path %} active {% endif %}" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if 'logs' in request.path %} active {% endif %}"href="/logs">View Logs</a>
@@ -82,7 +82,7 @@
         <div class="col-md-2 col-sm-12 col-lg-2">
             <ul class=" list-group ">
                 <li class="list-group-item py-1">
-                    <a  style=" text-decoration: none;color:black" href="/">Go Home</a>
+                    <a  style=" text-decoration: none;color:black" href="/home">Go Home</a>
                 </li>
                 <li class="list-group-item py-1  {% if 'log' in request.path %} active {% endif %}">
                     <a  style=" text-decoration: none;color:black" href="/logs">View Logs</a>
@@ -100,7 +100,7 @@
                     <a  style=" text-decoration: none;color:black" href="/upload">Data To Database</a>
                 </li>
                 <li class="list-group-item py-1  {% if 'train' in request.path %} active {% endif %}">
-                    <a  style=" text-decoration: none;color:black" href="/noaccess">Retrain Model</a>
+                    <a  style=" text-decoration: none;color:black" href="/stream/train">Retrain Model</a>
                 </li>
              
             </ul>
