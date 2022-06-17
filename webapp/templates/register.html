@@ -4,31 +4,59 @@
 <title>Register</title>
 {% endblock %}
 
-
 {% block body %}
-<body>
+<style>
+  .alert-primary{
+    color:rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    width: 420px;;
+  }
+  .alert{
+    position:left;
+    padding: .7rem 0.25rem;
+    border: .2px transparent;
+    border-radius: .25rem;
+  }
+</style>
+<body style="background-color: hsl(0, 10%, 92%);">
     <!-- Section: Design Block -->
 <section class="">
+ 
     <!-- Jumbotron -->
-    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color:  hsl(0, 10%, 92%)">
       <div class="container">
         <div class="row gx-lg-5 align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="card">
               <div class="card-body py-5 px-md-5">
+                <p>
+                  {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                   <ul class=flashes>
+                   {% for message in messages %}
+                   <div class ="alert alert-primary">
+                     <center><strong>{{ message }}</strong></center>
+                    </div>
+                   {% endfor %}
+                   </ul>
+                 {% endif %}
+               {% endwith %}
+                 </p>
                 <form method="POST" action="{{url_for('register')}}">  
                     <h4>Register Page</h4>
                   <!-- Email input -->
                   <div class="form-outline mb-4">
                     <label for="email" for="emailinput" class="form-label" for="form3Example3">Email address</label>
-                    <input type="email" name="email" id="form3Example3" class="form-control" onkeyup="return forceLower(this);"/>
+                    <input type="email" name="email" id="form3Example3" class="form-control" onkeyup="return forceLower(this);" required/>
                   </div>
   
                   <!-- Password input -->
                   <div class="form-outline mb-4">
                     <label for="passwordinput" class="form-label" for="form3Example4">Password</label>
-                    <input type="password" name="password" id="form3Example4" class="form-control" />
+                    <input type="password" name="password" id="form3Example4" class="form-control" required/>
+                    <p>Password Must be atleast 6 characters</p>
                   </div>
+                  
                   <!-- Submit button -->
                   <button type="submit" class="btn btn-primary btn-block mb-4">
                     Register

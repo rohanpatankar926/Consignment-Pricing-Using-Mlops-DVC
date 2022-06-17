@@ -60,8 +60,9 @@ mongo_ = PyMongo(app)
 @cross_origin()
 def index():
     if "username" in session:
-        return flash(f"You are logged in as {session['username']}")
-    return render_template("login.html")
+        return (f"You are logged in as {session['username']}")
+    else:
+        return render_template("login.html")
 
 
 
@@ -69,13 +70,18 @@ def index():
 def login():
     users = mongo_.db.users
     login_user = users.find_one({'email' : request.form['email']})
-
     if login_user:
         email=request.form['email']
         if bcrypt.hashpw(request.form['password'].encode("utf-8"), login_user['password']) == login_user['password']:
             session['email']= email
             return redirect(url_for('home_page'))
-    return 'Invalid username/password combination'
+        
+    if  request.form["email"]=="" and request.form["password"]=="":
+        flash("Please Fill your username/password")
+        return redirect(url_for('index'))
+    else:
+        flash("Invalid username/password")
+        return redirect(url_for('index'))
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
@@ -88,9 +94,8 @@ def register():
             users.insert_one({'email' : request.form['email'], 'password' : hashpass})
             session['email'] = request.form['email']
             return redirect(url_for('index'))
-        
-        return 'That username already exists!'
-
+        flash("Email already exists")
+        return redirect(url_for('register'))
     return render_template('register.html')
 
 @app.route('/logout')
@@ -324,4 +329,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,host="0.0.0.0",debug=True)
+    app.run(port=port,debug=True)

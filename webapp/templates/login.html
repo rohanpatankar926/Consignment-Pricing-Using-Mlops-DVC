@@ -4,20 +4,26 @@
 <title>Login</title>
 {% endblock %}
 
-  
-  {% block css %}
-<style>
-  body{
-    background-color: hsl(0, 10%, 92%);
-  }
-</style>
-{% endblock %}
 
 
 
 {% block body %}
+<style>
+  .alert-primary{
+    color:rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    width: 420px;;
+  }
+  .alert{
+    position:left;
+    padding: .7rem 0.25rem;
+    border: .2px transparent;
+    border-radius: .25rem;
+  }
+</style>
     <!-- Section: Design Block -->
-<body>
+<body style="background-color:hsl(0, 10%, 92%)">
+
 <section class="">
     <!-- Jumbotron -->
     <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 10%, 92%)">
@@ -36,12 +42,24 @@
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="card">
               <div class="card-body py-5 px-md-5">
-                
+                <p>
+                  {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                   <ul class=flashes>
+                   {% for message in messages %}
+                   <div class ="alert alert-primary">
+                     <center><strong>{{ message }}</strong></center>
+                    </div>
+                   {% endfor %}
+                   </ul>
+                 {% endif %}
+               {% endwith %}
+                 </p>
                 <form method="POST" action="{{url_for('login')}}">  
                
                   <!-- Email input -->
                   <div class="form-outline mb-4">
-                    <label for="email" for="emailinput" class="form-label" for="form3Example3">Email address</label>
+                    <label for="email" for="emailinput" class="form-label" for="form3Example3" required>Email address</label>
                     <input type="email" name="email" id="form3Example3" class="form-control" onkeyup="return forceLower(this);"/>
                   </div>
   
