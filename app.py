@@ -12,7 +12,6 @@ from flask_cors import CORS, cross_origin
 # from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.engine import Engine
 from datetime import datetime
-from flask_ngrok import run_with_ngrok
 
 ROOT_DIR = os.getcwd()
 LOGS_FOLDER_NAME = "logs"

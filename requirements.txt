@@ -9,3 +9,5 @@ pytest==7.1.2
 flask_cors
 flask_sqlalchemy
 pyrebase4
+flask_pymongo
+bcrypt
