@@ -11,3 +11,5 @@ flask_sqlalchemy
 pyrebase4
 flask_pymongo
 bcrypt
+dnspython
+pymongo[srv]
