@@ -74,8 +74,7 @@ def login():
         email=request.form['email']
         if bcrypt.hashpw(request.form['password'].encode("utf-8"), login_user['password']) == login_user['password']:
             session['email']= email
-            return redirect(url_for('home_page'))
-        
+            return redirect(url_for('home_page')) 
     if  request.form["email"]=="" and request.form["password"]=="":
         flash("Please Fill your username/password")
         return redirect(url_for('index'))
@@ -88,10 +87,9 @@ def register():
     if request.method == 'POST':
         users = mongo_.db.consignmentdata
         existing_user = users.find_one({'email' : request.form['email']})
-
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
-            users.insert_one({'email' : request.form['email'], 'password' : hashpass})
+            users.insert_one({'email' : request.form['email'], 'username': request.form['username'],'password' : hashpass})
             session['email'] = request.form['email']
             flash("Registered Successfully")
             return redirect(url_for('index'))
@@ -330,4 +328,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,debug=True,host='0.0.0.0')
+    app.run(port=port,debug=True)

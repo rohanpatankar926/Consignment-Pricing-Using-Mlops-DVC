@@ -43,11 +43,21 @@
                {% endwith %}
                  </p>
                 <form method="POST" action="{{url_for('register')}}">  
-                    <h4>Register Page</h4>
+                  <div>
+                    <h4>Welcome to ConsignmentPricing</h4>
+                      Create an account or <a href="/">Login</a>.
+                </div>
+                <br>
                   <!-- Email input -->
                   <div class="form-outline mb-4">
                     <label for="email" for="emailinput" class="form-label" for="form3Example3">Email address</label>
                     <input type="email" name="email" id="form3Example3" class="form-control" onkeyup="return forceLower(this);" required/>
+                  </div>
+
+                  <!-- USername input -->
+                  <div class="form-outline mb-4">
+                    <label for="username" for="useranameinput" class="form-label" for="form3Example3">Username</label>
+                    <input type="text" name="username" id="form3Example3" class="form-control" required/>
                   </div>
   
                   <!-- Password input -->
@@ -61,9 +71,7 @@
                   <button type="submit" class="btn btn-primary btn-block mb-4">
                     Register
                   </button>
-                  <div>
-                    Already have an account <a href="/">Login Here</a>.
-                </div>
+                 
                 </form>
               </div>
             </div>
