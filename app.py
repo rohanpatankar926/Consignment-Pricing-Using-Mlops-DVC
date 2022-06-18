@@ -87,6 +87,12 @@ def register():
     if request.method == 'POST':
         users = mongo_.db.consignmentdata
         existing_user = users.find_one({'email' : request.form['email']})
+        if len(request.form["password"])<6:
+            flash("Please Enter a password of atleast 6 characters")
+            return redirect(url_for('register'))
+        if request.form["password"]!=request.form["cpassword"]:
+            flash("Passwords do not match")
+            return redirect(url_for('register'))
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert_one({'email' : request.form['email'], 'username': request.form['username'],'password' : hashpass})
@@ -95,6 +101,7 @@ def register():
             return redirect(url_for('index'))
         flash("Email already exists")
         return redirect(url_for('register'))
+
     return render_template('register.html')
 
 @app.route('/logout')
