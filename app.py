@@ -79,11 +79,11 @@ def login():
             session['email']= email
             return redirect(url_for('home_page')) 
     if  request.form["email"]=="" and request.form["password"]=="":
-        flash("Please Fill your username/password")
-        return redirect(url_for('index'))
+        flash("alert: Please Fill your username/password")
+        return redirect(url_for("index"))
     else:
         flash("Invalid username/password")
-        return redirect(url_for('index'))
+        return redirect(url_for("index"))
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
@@ -91,18 +91,18 @@ def register():
         users = mongo_.db.consignmentdata
         existing_user = users.find_one({'email' : request.form['email']})
         if len(request.form["password"])<6:
-            flash("Please Enter a password of atleast 6 characters")
-            return redirect(url_for('register'))
+            custom_msg=flash("Please Enter a password of atleast 6 characters")
+            return render_template("register.html",custom_msg=custom_msg)
         if request.form["password"]!=request.form["cpassword"]:
-            flash("Passwords do not match")
-            return redirect(url_for('register'))
+            flash("pwd: Passwords do not match!","alert")
+            return redirect(url_for("register"))
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert_one({'email' : request.form['email'], 'username': request.form['username'],'password' : hashpass})
             session['email'] = request.form['email']
-            flash("Registered Successfully")
+            flash("Registered Successfully","success")
             return redirect(url_for('index'))
-        flash("Email already exists")
+        flash("alert: Email already exists","success")
         return redirect(url_for('register'))
 
     return render_template('register.html')
@@ -110,13 +110,13 @@ def register():
 @app.route('/logout')
 def logout():
     session.clear()
-    flash("logged out successfully")
+    flash("logged out successfully","success")
     return redirect(url_for('index'))
 
 @app.route("/home", methods=["GET"])
 @cross_origin()
 def home_page():
-    return render_template("index.html")
+    return redirect(url_for("index"))
 
 
 # @app.route("/predict", methods=["POST", "GET"])
@@ -368,4 +368,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,debug=True,host="0.0.0.0")
+    app.run(port=port,debug=False,host="0.0.0.0")

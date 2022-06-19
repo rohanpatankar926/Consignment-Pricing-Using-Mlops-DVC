@@ -30,17 +30,17 @@
             <div class="card">
               <div class="card-body py-5 px-md-5">
                 <p>
-                  {% with messages = get_flashed_messages() %}
-                  {% if messages %}
-                   <ul class=flashes>
-                   {% for message in messages %}
-                   <div class ="alert alert-primary">
-                     <center><strong>{{ message }}</strong></center>
-                    </div>
-                   {% endfor %}
-                   </ul>
-                 {% endif %}
-               {% endwith %}
+                  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% if 'alert' in message %}
+                <div class="alert alert-{{ category }}" role="alert">
+                    <center>{{ message|replace('alert: ', '') }}</center>
+                </div>
+            {% endif %}
+        {% endfor %}   
+    {% endif %}
+{% endwith %}
                  </p>
                 <form method="POST" action="{{url_for('register')}}">  
                   <div>
@@ -63,7 +63,20 @@
                   <!-- Password input -->
                   <div class="form-outline mb-4">
                     <label for="passwordinput" class="form-label" for="form3Example4">Password</label>
+                    <div>
                     <input type="password" name="password" id="form3Example4" class="form-control" required/>
+                      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                {% if 'pwd' in message %}
+                    <p class="alert alert-{{ category }}" role="alert" style="color:red;">
+                        {{ message|replace('pwd: ', '') }}
+                    </p>
+                {% endif %}
+            {% endfor %}   
+        {% endif %}
+    {% endwith %}
+                     <div>
                   </div>
                   <div class="form-outline mb-4">
                     <label for="passwordinput" class="form-label" for="form3Example4">Confirm Password</label>
