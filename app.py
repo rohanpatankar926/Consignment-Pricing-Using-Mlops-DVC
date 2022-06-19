@@ -79,7 +79,7 @@ def login():
             session['email']= email
             return redirect(url_for('home_page')) 
     if  request.form["email"]=="" and request.form["password"]=="":
-        flash("alert: Please Fill your username/password")
+        flash("Please Fill your username/password")
         return redirect(url_for("index"))
     else:
         flash("Invalid username/password")
