@@ -91,7 +91,7 @@ def register():
         users = mongo_.db.consignmentdata
         existing_user = users.find_one({'email' : request.form['email']})
         if len(request.form["password"])<6:
-            flash("alert: Please Enter a password of atleast 6 characters")
+            flash("alert: Please Enter a password of atleast 6 characters","success")
             return redirect(url_for("register"))
         if request.form["password"]!=request.form["cpassword"]:
             flash("pwd: Passwords do not match!","alert")
@@ -368,4 +368,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,debug=False,host="0.0.0.0")
+    app.run(port=port,debug=True)
