@@ -91,8 +91,8 @@ def register():
         users = mongo_.db.consignmentdata
         existing_user = users.find_one({'email' : request.form['email']})
         if len(request.form["password"])<6:
-            custom_msg=flash("Please Enter a password of atleast 6 characters")
-            return render_template("register.html",custom_msg=custom_msg)
+            flash("Please Enter a password of atleast 6 characters")
+            return redirect(url_for("register"))
         if request.form["password"]!=request.form["cpassword"]:
             flash("pwd: Passwords do not match!","alert")
             return redirect(url_for("register"))
