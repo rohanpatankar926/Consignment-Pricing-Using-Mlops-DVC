@@ -8,17 +8,20 @@ from time import sleep
 from wsgiref import simple_server
 from flask_pymongo import PyMongo
 import bcrypt
+from predictor.predictor import ConsignmentData,ConsignmentPredictor
 from flask_cors import CORS, cross_origin
 # from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.engine import Engine
 from datetime import datetime
 
+ROOT_DIR=os.getcwd()
+SAVED_MODELS_DIR_NAME="H:/consignment pricing using mlops/saved_models/"
+CONSIGNMENT_DATA_KEY = "consignment_data"
+LINE_ITEM_VALUE_KEY = "line_item_value"
+MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_DIR_NAME)
 ROOT_DIR = os.getcwd()
 LOGS_FOLDER_NAME = "logs"
 LOGS_DIR = os.path.join(ROOT_DIR, LOGS_FOLDER_NAME)
-
-SAVED_MODELS_FOLDER_NAME = "saved_models"
-SAVED_MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_FOLDER_NAME)
 
 
 webapp_root = "webapp"
@@ -116,10 +119,10 @@ def home_page():
     return render_template("index.html")
 
 
-@app.route("/predict", methods=["POST", "GET"])
-@cross_origin()
-def predict():
-    return render_template("predict.html")
+# @app.route("/predict", methods=["POST", "GET"])
+# @cross_origin()
+# def predict():
+#     return render_template("predict.html")
 
 
 @app.route("/main", methods=["GET"])
@@ -128,6 +131,35 @@ def main():
     return render_template("main.html")
 
 
+@app.route("/predict",methods=["POST","GET"])
+@cross_origin()
+def predict():
+    context={
+    CONSIGNMENT_DATA_KEY:None,
+    LINE_ITEM_VALUE_KEY:None}
+    if request.method=="POST":
+        line_item_insurance=float(request.form.get("line_item_insurance"))
+        line_item_quantity=float(request.form.get("line_item_quantity"))
+        pack_price=float(request.form.get("pack_price"))
+        days_to_process=float(request.form.get("days_to_process"))
+        unit_price=float(request.form.get("unit_price"))
+        freight_cost=float(request.form.get("freight_cost"))
+        country=(request.form.get("country"))
+        unit_of_measure=float(request.form.get("unit_of_measure"))
+        
+        consignment_data=ConsignmentData(
+            line_item_insurance=line_item_insurance,line_item_quantity=line_item_quantity,pack_price=pack_price,days_to_process=days_to_process,unit_price=unit_price,freight_cost=freight_cost,country=country,unit_of_measure=unit_of_measure
+        )
+        consignment_dataframe=consignment_data.get_housing_input_data_frame()
+        consignment_predictor=ConsignmentPredictor(model_dir=MODEL_DIR)
+        line_item_value=consignment_predictor.pred(X=consignment_dataframe)
+        context={
+            CONSIGNMENT_DATA_KEY:consignment_data.get_housing_data_as_dict(),
+            LINE_ITEM_VALUE_KEY:line_item_value
+        }
+        return render_template("predict.html",context=context)
+    return render_template("predict.html",context=context)
+        
 @app.route("/noaccess", methods=["GET"])
 @cross_origin()
 def no_access():
@@ -246,6 +278,7 @@ def get_logs(req_path):
 @cross_origin()
 def train():
     try:
+        from subprocess import call
         return_code = call(["python", "src/run_all_scipts.py"])
         print(return_code)
         return render_template('train.html')
@@ -329,10 +362,10 @@ def upload():
         return render_template("db.html")
 
 
-port = int(os.getenv("PORT", 8100))
+port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
     app.config["SECRET_KEY"] = "!@##$#!#EDS#@!df"
     # db.create_all()
     stream
     train
-    app.run(port=port,debug=True,host="0.0.0.0")
+    app.run(port=port,debug=True)
