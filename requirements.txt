@@ -13,3 +13,4 @@ flask_pymongo
 bcrypt
 dnspython
 pymongo[srv]
+dill
