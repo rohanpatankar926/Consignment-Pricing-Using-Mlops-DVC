@@ -1,5 +1,5 @@
 import pyrebase
-from flask import Flask, render_template, request, redirect, flash, request, session, url_for
+from flask import Flask, render_template, request, redirect, flash, request, session,url_for
 import os
 import sys
 from flask import send_file, abort
@@ -8,14 +8,15 @@ from time import sleep
 from wsgiref import simple_server
 from flask_pymongo import PyMongo
 import bcrypt
-from predictor.predictor import ConsignmentData,ConsignmentPredictor
+from functools import wraps
+from predictor.predictor import ConsignmentData, ConsignmentPredictor
 from flask_cors import CORS, cross_origin
 # from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.engine import Engine
 from datetime import datetime
 
-ROOT_DIR=os.getcwd()
-SAVED_MODELS_DIR_NAME="H:/consignment pricing using mlops/saved_models/"
+ROOT_DIR = os.getcwd()
+SAVED_MODELS_DIR_NAME = "H:/consignment pricing using mlops/saved_models/"
 CONSIGNMENT_DATA_KEY = "consignment_data"
 LINE_ITEM_VALUE_KEY = "line_item_value"
 MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_DIR_NAME)
@@ -57,67 +58,82 @@ app.config["MONGO_URI"] = "mongodb+srv://rohan:sAx4GTTSPKXcvTfY@consignment.blgt
 mongo_ = PyMongo(app)
 
 
+# def login_required(f):
+#     @wraps(f)
+#     def not_to_redirect(*args, **kwargs):
+#         if "email" not in session:
+#             return redirect(url_for("login"), next=request.url)
+#         return f(*args, **kwargs)
+#     return not_to_redirect
+
 
 # LOGIN SYSTEM
 @app.route("/")
 @cross_origin()
 def index():
-    if "username" in session:
-        return (f"You are logged in as {session['username']}")
+    if "email" in session:
+        return render_template("index.html")
     else:
         return render_template("login.html")
-
 
 
 @app.route('/login', methods=['POST'])
 def login():
     users = mongo_.db.consignmentdata
-    login_user = users.find_one({'email' : request.form['email']})
+    login_user = users.find_one({'email': request.form['email']})
     if login_user:
-        email=request.form['email']
+        next_url = request.form.get("next")
+        email = request.form['email']
         if bcrypt.hashpw(request.form['password'].encode("utf-8"), login_user['password']) == login_user['password']:
-            session['email']= email
-            return redirect(url_for('home_page')) 
-    if  request.form["email"]=="" and request.form["password"]=="":
+            session['email'] = email
+            if next_url:
+                return redirect(next_url)
+            return redirect(url_for('home_page'))
+    if request.form["email"] == "" and request.form["password"] == "":
         flash("Please Fill your username/password")
         return redirect(url_for("index"))
     else:
         flash("Invalid username/password")
         return redirect(url_for("index"))
 
+
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == 'POST':
         users = mongo_.db.consignmentdata
-        existing_user = users.find_one({'email' : request.form['email']})
-        if len(request.form["password"])<6:
-            flash("alert: Please Enter a password of atleast 6 characters","success")
+        existing_user = users.find_one({'email': request.form['email']})
+        if len(request.form["password"]) < 6:
+            flash("alert: Please Enter a password of atleast 6 characters", "success")
             return redirect(url_for("register"))
-        if request.form["password"]!=request.form["cpassword"]:
-            flash("pwd: Passwords do not match!","alert")
+        if request.form["password"] != request.form["cpassword"]:
+            flash("pwd: Passwords do not match!", "alert")
             return redirect(url_for("register"))
         if existing_user is None:
-            hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
-            users.insert_one({'email' : request.form['email'], 'username': request.form['username'],'password' : hashpass})
+            hashpass = bcrypt.hashpw(
+                request.form['password'].encode('utf-8'), bcrypt.gensalt())
+            users.insert_one(
+                {'email': request.form['email'], 'username': request.form['username'], 'password': hashpass})
             session['email'] = request.form['email']
-            flash("Registered Successfully","success")
+            flash("Registered Successfully", "success")
             return redirect(url_for('index'))
-        flash("alert: Email already exists","success")
+        flash("alert: Email already exists", "success")
         return redirect(url_for('register'))
 
     return render_template('register.html')
 
+
 @app.route('/logout')
 def logout():
     session.clear()
-    flash("logged out successfully","success")
+    flash("logged out successfully", "success")
     return redirect(url_for('index'))
 
+
 @app.route("/home", methods=["GET"])
+
 @cross_origin()
 def home_page():
-    return redirect(url_for("index"))
-
+    return render_template("index.html")
 
 # @app.route("/predict", methods=["POST", "GET"])
 # @cross_origin()
@@ -127,47 +143,52 @@ def home_page():
 
 @app.route("/main", methods=["GET"])
 @cross_origin()
+
 def main():
     return render_template("main.html")
 
 
-@app.route("/predict",methods=["POST","GET"])
+@app.route("/predict", methods=["POST", "GET"])
+
 @cross_origin()
 def predict():
-    context={
-    CONSIGNMENT_DATA_KEY:None,
-    LINE_ITEM_VALUE_KEY:None}
-    if request.method=="POST":
-        line_item_insurance=float(request.form.get("line_item_insurance"))
-        line_item_quantity=float(request.form.get("line_item_quantity"))
-        pack_price=float(request.form.get("pack_price"))
-        days_to_process=float(request.form.get("days_to_process"))
-        unit_price=float(request.form.get("unit_price"))
-        freight_cost=float(request.form.get("freight_cost"))
-        country=(request.form.get("country"))
-        unit_of_measure=float(request.form.get("unit_of_measure"))
-        
-        consignment_data=ConsignmentData(
-            line_item_insurance=line_item_insurance,line_item_quantity=line_item_quantity,pack_price=pack_price,days_to_process=days_to_process,unit_price=unit_price,freight_cost=freight_cost,country=country,unit_of_measure=unit_of_measure
+    context = {
+        CONSIGNMENT_DATA_KEY: None,
+        LINE_ITEM_VALUE_KEY: None}
+    if request.method == "POST":
+        line_item_insurance = float(request.form.get("line_item_insurance"))
+        line_item_quantity = float(request.form.get("line_item_quantity"))
+        pack_price = float(request.form.get("pack_price"))
+        days_to_process = float(request.form.get("days_to_process"))
+        unit_price = float(request.form.get("unit_price"))
+        freight_cost = float(request.form.get("freight_cost"))
+        country = (request.form.get("country"))
+        unit_of_measure = float(request.form.get("unit_of_measure"))
+
+        consignment_data = ConsignmentData(
+            line_item_insurance=line_item_insurance, line_item_quantity=line_item_quantity, pack_price=pack_price, days_to_process=days_to_process, unit_price=unit_price, freight_cost=freight_cost, country=country, unit_of_measure=unit_of_measure
         )
-        consignment_dataframe=consignment_data.get_housing_input_data_frame()
-        consignment_predictor=ConsignmentPredictor(model_dir=MODEL_DIR)
-        line_item_value=consignment_predictor.pred(X=consignment_dataframe)
-        context={
-            CONSIGNMENT_DATA_KEY:consignment_data.get_housing_data_as_dict(),
-            LINE_ITEM_VALUE_KEY:line_item_value
+        consignment_dataframe = consignment_data.get_housing_input_data_frame()
+        consignment_predictor = ConsignmentPredictor(model_dir=MODEL_DIR)
+        line_item_value = consignment_predictor.pred(X=consignment_dataframe)
+        context = {
+            CONSIGNMENT_DATA_KEY: consignment_data.get_housing_data_as_dict(),
+            LINE_ITEM_VALUE_KEY: line_item_value
         }
-        return render_template("predict.html",context=context)
-    return render_template("predict.html",context=context)
-        
+        return render_template("predict.html", context=context)
+    return render_template("predict.html", context=context)
+
+
 @app.route("/noaccess", methods=["GET"])
 @cross_origin()
+
 def no_access():
     return render_template("contact_me.html")
 
 
 @app.route("/data", defaults={"req_path": "data"})
 @app.route("/data/<path:req_path>")
+
 @cross_origin()
 def get_data(req_path):
     try:
@@ -179,8 +200,7 @@ def get_data(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file): file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -195,6 +215,7 @@ def get_data(req_path):
 
 @app.route("/saved_models", defaults={"req_path": "saved_models"})
 @app.route("/saved_models/<path:req_path>")
+
 @cross_origin()
 def saved_models(req_path):
     try:
@@ -206,8 +227,7 @@ def saved_models(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file)                 : file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -222,6 +242,7 @@ def saved_models(req_path):
 
 @app.route("/performance", defaults={"req_path": "reports"})
 @app.route("/performance/<path:req_path>")
+
 @cross_origin()
 def performance(req_path):
     try:
@@ -233,8 +254,7 @@ def performance(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file)                 : file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -249,6 +269,7 @@ def performance(req_path):
 
 @app.route("/logs", defaults={"req_path": "logs"})
 @app.route("/logs/<path:req_path>")
+
 @cross_origin()
 def get_logs(req_path):
     try:
@@ -260,8 +281,7 @@ def get_logs(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)
-                              : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file)                 : file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -276,10 +296,11 @@ def get_logs(req_path):
 
 @app.route('/stream/train', methods=['GET', 'POST'])
 @cross_origin()
+
 def train():
     try:
         from subprocess import call
-        return_code = call(["python", "src/run_all_scipts.py"])
+        return_code = call(["python", "source/run_all_scipts.py"])
         print(return_code)
         return render_template('train.html')
     except FileNotFoundError as e:
@@ -297,6 +318,7 @@ log_file_path = os.path.join(LOG_DIR, file_name)
 
 @app.route('/stream', methods=['POST', 'GET'])
 @cross_origin()
+
 def stream():
     try:
         def generate():
@@ -344,6 +366,8 @@ def stream():
 
 
 @app.route("/upload", methods=["POST", "GET"])
+@cross_origin()
+
 def upload():
     if request.method == "POST":
         if not request.form["pq"] or not request.form["poso"]:
@@ -368,4 +392,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,debug=False,host="0.0.0.0")
+    app.run(port=port, debug=False)
