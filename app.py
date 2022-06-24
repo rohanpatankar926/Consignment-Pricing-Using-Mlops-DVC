@@ -67,12 +67,13 @@ def login_required(f):
     return not_to_redirect
 
 
+
 # LOGIN SYSTEM
 @app.route("/")
 @login_required
 @cross_origin()
 def index():
-    if "email" in session:
+    if "email" not in session:
         return render_template("index.html")
     else:
         return render_template("login.html")
@@ -216,6 +217,7 @@ def get_data(req_path):
 
 @app.route("/saved_models", defaults={"req_path": "saved_models"})
 @app.route("/saved_models/<path:req_path>")
+@login_required
 @cross_origin()
 def saved_models(req_path):
     try:
@@ -242,6 +244,7 @@ def saved_models(req_path):
 
 @app.route("/performance", defaults={"req_path": "reports"})
 @app.route("/performance/<path:req_path>")
+@login_required
 @cross_origin()
 def performance(req_path):
     try:
@@ -268,6 +271,7 @@ def performance(req_path):
 
 @app.route("/logs", defaults={"req_path": "logs"})
 @app.route("/logs/<path:req_path>")
+@login_required
 @cross_origin()
 def get_logs(req_path):
     try:
@@ -390,4 +394,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port, debug=False,host="0.0.0.0")
+    app.run(port=port, debug=False)
