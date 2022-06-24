@@ -92,7 +92,7 @@ def login():
             return redirect(url_for('home_page'))
     if request.form["email"] == "" and request.form["password"] == "":
         flash("Please Fill your username/password")
-        return redirect(url_for("index"))
+        return render_template("login.html")
     else:
         flash("Invalid username/password")
         return redirect(url_for("index"))
