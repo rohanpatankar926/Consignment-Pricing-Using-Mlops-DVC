@@ -394,4 +394,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port, debug=False)
+    app.run(port=port, debug=False,host="0.0.0.0")
