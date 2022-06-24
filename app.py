@@ -58,17 +58,18 @@ app.config["MONGO_URI"] = "mongodb+srv://rohan:sAx4GTTSPKXcvTfY@consignment.blgt
 mongo_ = PyMongo(app)
 
 
-# def login_required(f):
-#     @wraps(f)
-#     def not_to_redirect(*args, **kwargs):
-#         if "email" not in session:
-#             return redirect(url_for("login"), next=request.url)
-#         return f(*args, **kwargs)
-#     return not_to_redirect
+def login_required(f):
+    @wraps(f)
+    def not_to_redirect(*args, **kwargs):
+        if "email" not in session:
+            return render_template("login.html")
+        return f(*args, **kwargs)
+    return not_to_redirect
 
 
 # LOGIN SYSTEM
 @app.route("/")
+@login_required
 @cross_origin()
 def index():
     if "email" in session:
@@ -130,7 +131,7 @@ def logout():
 
 
 @app.route("/home", methods=["GET"])
-
+@login_required
 @cross_origin()
 def home_page():
     return render_template("index.html")
@@ -142,14 +143,14 @@ def home_page():
 
 
 @app.route("/main", methods=["GET"])
+@login_required
 @cross_origin()
-
 def main():
     return render_template("main.html")
 
 
 @app.route("/predict", methods=["POST", "GET"])
-
+@login_required
 @cross_origin()
 def predict():
     context = {
@@ -180,6 +181,7 @@ def predict():
 
 
 @app.route("/noaccess", methods=["GET"])
+@login_required
 @cross_origin()
 
 def no_access():
@@ -188,7 +190,6 @@ def no_access():
 
 @app.route("/data", defaults={"req_path": "data"})
 @app.route("/data/<path:req_path>")
-
 @cross_origin()
 def get_data(req_path):
     try:
@@ -215,7 +216,6 @@ def get_data(req_path):
 
 @app.route("/saved_models", defaults={"req_path": "saved_models"})
 @app.route("/saved_models/<path:req_path>")
-
 @cross_origin()
 def saved_models(req_path):
     try:
@@ -242,7 +242,6 @@ def saved_models(req_path):
 
 @app.route("/performance", defaults={"req_path": "reports"})
 @app.route("/performance/<path:req_path>")
-
 @cross_origin()
 def performance(req_path):
     try:
@@ -269,7 +268,6 @@ def performance(req_path):
 
 @app.route("/logs", defaults={"req_path": "logs"})
 @app.route("/logs/<path:req_path>")
-
 @cross_origin()
 def get_logs(req_path):
     try:
@@ -281,7 +279,7 @@ def get_logs(req_path):
             abort(404)
         if os.path.isfile(abs_path):
             return send_file(abs_path)
-        files = {os.path.join(abs_path, file)                 : file for file in os.listdir(abs_path)}
+        files = {os.path.join(abs_path, file): file for file in os.listdir(abs_path)}
         result = {
             "files": files,
             "parent_folder": os.path.dirname(abs_path),
@@ -295,12 +293,12 @@ def get_logs(req_path):
 
 
 @app.route('/stream/train', methods=['GET', 'POST'])
+@login_required
 @cross_origin()
-
 def train():
     try:
         from subprocess import call
-        return_code = call(["python", "source/run_all_scipts.py"])
+        return_code = call(["python", "src/run_all_scipts.py"])
         print(return_code)
         return render_template('train.html')
     except FileNotFoundError as e:
@@ -317,8 +315,8 @@ log_file_path = os.path.join(LOG_DIR, file_name)
 
 
 @app.route('/stream', methods=['POST', 'GET'])
+@login_required
 @cross_origin()
-
 def stream():
     try:
         def generate():
@@ -366,8 +364,8 @@ def stream():
 
 
 @app.route("/upload", methods=["POST", "GET"])
+@login_required
 @cross_origin()
-
 def upload():
     if request.method == "POST":
         if not request.form["pq"] or not request.form["poso"]:
