@@ -1,0 +1,51 @@
+[2022-06-18 21:19:09,654] root - INFO - Getting the data from the source
+[2022-06-18 21:19:09,655] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:09,665] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:09,754] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-18 21:19:09,780] root - INFO - Loading data from the source
+[2022-06-18 21:19:09,780] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:09,794] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:09,794] root - INFO - Getting the data from the source
+[2022-06-18 21:19:09,794] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:09,810] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:09,934] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-18 21:19:10,116] root - INFO - Data Loaded from the source Successfully !!!
+[2022-06-18 21:19:10,138] root - INFO - 'data' FUNCTION STARTED
+[2022-06-18 21:19:10,138] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:10,157] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:10,157] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-06-18 21:19:10,157] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:10,175] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:10,175] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-06-18 21:19:10,175] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-06-18 21:19:10,175] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-06-18 21:19:10,175] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-06-18 21:19:10,175] root - INFO - Getting the data from the source
+[2022-06-18 21:19:10,175] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:10,186] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:10,271] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-18 21:19:10,272] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-18 21:19:10,277] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-18 21:19:11,692] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-18 21:19:14,133] root - INFO - transform_dates_columns function compiled successfully
+[2022-06-18 21:19:14,136] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-06-18 21:19:14,232] root - INFO - data function compiled successfully
+[2022-06-18 21:19:14,256] root - INFO - 'data' FUNCTION STARTED
+[2022-06-18 21:19:14,257] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-06-18 21:19:14,257] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-06-18 21:19:14,257] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-06-18 21:19:14,257] root - INFO - 'data_' FUNCTION STARTED
+[2022-06-18 21:19:14,257] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:14,295] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:14,413] root - INFO - Data loaded successfully
+[2022-06-18 21:19:14,424] numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2022-06-18 21:19:14,439] root - INFO - removed outliers function compiled successfully
+[2022-06-18 21:19:14,452] root - INFO - freight_cost_transform function compiled successfully
+[2022-06-18 21:19:14,842] root - INFO - feature engineering function compiled successfully
+[2022-06-18 21:19:14,843] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:14,922] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:15,152] root - INFO - Final Data for prediction successfully created
+[2022-06-18 21:19:15,179] root - INFO - 'split_data' function started
+[2022-06-18 21:19:15,179] root - INFO - Reading all parameters from config_path
+[2022-06-18 21:19:15,208] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-18 21:19:15,405] root - INFO - 'split_data' function successfully compiled

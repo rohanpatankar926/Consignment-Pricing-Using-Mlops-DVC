@@ -1,0 +1,68 @@
+base:
+  project: Consignment-Pricing-Using-MLops-DVC
+  random_state: 180
+  target_data: line_item_value
+
+data_source: 
+  local_data: H:/consignment pricing using mlops/data_given/Consignment_pricing_raw.csv
+
+load_data:
+  raw_data_csv: H:/consignment pricing using mlops/data/raw/Consignment_pricing_raw.csv
+data:
+  processed: H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv
+
+final_data:
+  transformed_data: H:/consignment pricing using mlops/data/transformed_data/Consignment_pricing_transformed.csv
+
+raw_data:
+  raw: H:/consignment pricing using mlops/consignment_data/Consignment_pricing_raw.csv
+
+columns:
+  select: ["pq_#",'po_/_so_#', 'asn/dn_#','country', 'fulfill_via', 'vendor_inco_term',
+       'sub_classification', 'unit_of_measure_(per_pack)',
+       'line_item_quantity', 'line_item_value', 'pack_price', 'unit_price',
+       'first_line_designation', 'freight_cost_(usd)', 'shipment_mode',
+        'line_item_insurance_(usd)', 'days_to_process']
+
+split_data:
+  train_path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+  test_path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_test.csv
+  split_ratio: 0.20
+
+
+model_dirs: saved_models
+
+estimators: 
+  RandomForestRegressor:
+    params:
+      criterion: mae
+      max_deapth: 10
+      min_sample_leaf: 2
+      min_sample_split: 8
+      n_estimators: 80
+      oob_score: True
+
+webapp_model_dir: H:/consignment pricing using mlops/prediction_service/model/model_rf.pkl
+
+RandomizedSearchCV:
+  n_iter: 10
+  scoring: r2
+  verbose: 5
+  cv: 10
+  n_jobs: -1
+  return_train_score:  True
+  params:
+    n_estimators: [5,10,20,40,80]
+    criterion: ['mse','mae']
+    max_depth: [2,5,10]
+    min_samples_split : [2,4,8,12]
+    min_samples_leaf: [2,4,8,10]
+
+data:
+  training_data: H:/consignment pricing using mlops/data/main_data/train_data.csv
+  test_data:  H:/consignment pricing using mlops/data/main_data/test_data.csv
+  processed: H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv
+
+reports:
+  scores: H:/consignment pricing using mlops/reports/scores.json
+  params: H:/consignment pricing using mlops/reports/params.json

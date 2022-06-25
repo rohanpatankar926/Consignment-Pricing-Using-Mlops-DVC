@@ -1,0 +1,126 @@
+{% extends 'login_layout.html' %}
+
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+
+
+
+{% block body %}
+<style>
+  .alert-primary{
+    color:rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+  
+  }
+  .alert{
+    position:left;
+    padding: .7rem 0.25rem;
+    border: .2px transparent;
+    border-radius: .25rem;
+  }
+</style>
+    <!-- Section: Design Block -->
+<body style="background-color:hsl(0, 10%, 92%)">
+
+<section class="">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 10%, 92%)">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h5 class="my-5 display-4 fw-bold ls-tight">
+              Consignment Pricing <br />
+              <span class="text-primary">For Logistic Products</span>
+            </h5>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              An AI platform which helps in predicting the consignment pricing based on the available factors in the dataset.Built an end to end solution for making better decisions in the market.Explore the possibilities of this AI platform and get a better understanding of the logistic market.
+            </p>
+          </div>
+  
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <p>
+                  {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                   <ul class=flashes>
+                   {% for message in messages %}
+                   <div class ="alert alert-primary">
+                     <center>{{ message }}</center>
+                    </div>
+                   {% endfor %}
+                   </ul>
+                 {% endif %}
+               {% endwith %}
+                 </p>
+                <form method="POST" action="{{url_for('login')}}">  
+               
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <label for="email" for="emailinput" class="form-label" for="form3Example3" required>Email address</label>
+                    <input type="email" name="email" id="form3Example3" class="form-control" onkeyup="return forceLower(this);"/>
+                  </div>
+                  <input type="hidden" name="next" value="{{ request.args.get('next', '') }}"/>
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <label for="passwordinput" class="form-label" for="form3Example4">Password</label>
+                    <input type="password" name="password" id="form3Example4" class="form-control" />
+                    <a href="/" style="width:400px;">forget password</a>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Login
+                  </button>
+                  <div>
+                    Don't have an account? <a href="{{ url_for('register') }}">Sign up here</a>.
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Jumbotron -->
+  </section>
+<br><br><br>
+
+  <footer class="text-center text-white " style="background-color: #d4d2d2;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <h5 style="color:black">Contact Me</h5>
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/rohanpatankar926/" role="button"
+                data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-linkedin" ></i></a>
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/rohanpatankar926" role="button"
+                data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-light p-3" style="background-color: rgba(3, 36, 67, 0.504);">
+        © 2022 Made with 💖 by <a class="text-light" href="https://rohanpatankar.netlify.app/" target="_blank">Rohan Patankar</a>:
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script>
+  function forceLower(strInput) 
+{
+strInput.value=strInput.value.toLowerCase();
+}
+</script>
+{% endblock %}
+</body>

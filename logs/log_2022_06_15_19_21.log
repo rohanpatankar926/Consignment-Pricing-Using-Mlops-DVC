@@ -1,0 +1,46 @@
+[2022-06-15 19:21:11,449] root - INFO - Getting the data from the source
+[2022-06-15 19:21:11,449] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:11,464] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:11,553] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-15 19:21:11,553] root - INFO - Loading data from the source
+[2022-06-15 19:21:11,553] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:11,563] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:11,563] root - INFO - Getting the data from the source
+[2022-06-15 19:21:11,563] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:11,575] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:11,656] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-15 19:21:11,826] root - INFO - Data Loaded from the source Successfully !!!
+[2022-06-15 19:21:11,827] root - INFO - 'data' FUNCTION STARTED
+[2022-06-15 19:21:11,827] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:11,838] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:11,838] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-06-15 19:21:11,838] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:11,847] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:11,847] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-06-15 19:21:11,847] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-06-15 19:21:11,847] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-06-15 19:21:11,847] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-06-15 19:21:11,847] root - INFO - Getting the data from the source
+[2022-06-15 19:21:11,847] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:11,856] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:11,932] root - INFO - Data Fetched from the source Successfully !!!
+[2022-06-15 19:21:11,933] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-15 19:21:11,937] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-15 19:21:14,063] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-06-15 19:21:18,036] root - INFO - transform_dates_columns function compiled successfully
+[2022-06-15 19:21:18,039] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-06-15 19:21:18,125] root - INFO - data function compiled successfully
+[2022-06-15 19:21:18,127] root - INFO - 'data' FUNCTION STARTED
+[2022-06-15 19:21:18,127] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-06-15 19:21:18,127] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-06-15 19:21:18,127] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-06-15 19:21:18,127] root - INFO - 'data_' FUNCTION STARTED
+[2022-06-15 19:21:18,127] root - INFO - Reading all parameters from config_path
+[2022-06-15 19:21:18,136] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-06-15 19:21:18,220] root - INFO - Data loaded successfully
+[2022-06-15 19:21:18,229] root - INFO - removed outliers function compiled successfully
+[2022-06-15 19:21:18,238] root - INFO - freight_cost_transform function compiled successfully
+[2022-06-15 19:21:18,478] root - INFO - Exception occurred while compiling the codeColumns must be same length as key
+[2022-06-15 19:21:18,478] root - INFO - Failed to execute the code please check your code and run
+[2022-06-15 19:21:18,478] root - INFO - Exception occurred while compiling the codeError occurred python script name [H:\consignment pricing using mlops\src\stage4_feature_engineering.py] line number [96] error message [Columns must be same length as key].
+[2022-06-15 19:21:18,478] root - INFO - Failed to execute the code please check your code and run

@@ -1,0 +1,91 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python source/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/Consignment_pricing_raw.csv
+      md5: 75ada24f6df3870fda5fde6a2e24cdad
+      size: 3785904
+    - path: source/get_data.py
+      md5: 891ebeb65818b5d976f461330e5aa2dc
+      size: 2296
+    - path: source/load_data.py
+      md5: b36574d097d2b112bab6fd5ab30d54cc
+      size: 1485
+    outs:
+    - path: data/raw/Consignment_pricing_raw.csv
+      md5: fa00f21b7e9c8ea082e583f595566888
+      size: 3804449
+  preprocessing:
+    cmd: python source/data_preprocessing.py --config=params.yaml
+    deps:
+    - path: data/raw/Consignment_pricing_raw.csv
+      md5: fa00f21b7e9c8ea082e583f595566888
+      size: 3804449
+    - path: source/data_preprocessing.py
+      md5: 8384b858c5564dd538eaefc9e76429f2
+      size: 8479
+    outs:
+    - path: data/processed/Consignment_pricing_processed.csv
+      md5: 56c2c68debc2665f29c0f0ee59f27b48
+      size: 1352324
+  feature_engineering:
+    cmd: python source/feature_engineering.py --config=params.yaml
+    deps:
+    - path: data/processed/Consignment_pricing_processed.csv
+      md5: 56c2c68debc2665f29c0f0ee59f27b48
+      size: 1352324
+    - path: source/feature_engineering.py
+      md5: c380ddeab93a8e36a19423b895c9f50e
+      size: 6905
+    outs:
+    - path: data/transformed_data/Consignment_pricing_transformed.csv
+      md5: 281b18f62a1e57650331c601f764dae8
+      size: 676279
+  split_data:
+    cmd: python source/split_data.py --config=params.yaml
+    deps:
+    - path: data/transformed_data/Consignment_pricing_transformed.csv
+      md5: 281b18f62a1e57650331c601f764dae8
+      size: 676279
+    - path: source/split_data.py
+      md5: 9ac8b4d0c6bac4d22095fa3da4ff9515
+      size: 2251
+    outs:
+    - path: data/split_data/Consignment_pricing_test.csv
+      md5: c0280137585f87fc38125c0468584412
+      size: 126124
+    - path: data/split_data/Consignment_pricing_train.csv
+      md5: 560ae71873d8ae1b8b2a0c18bedeb89b
+      size: 502828
+  train_model:
+    cmd: python source/train_evaluate.py --config=params.yaml
+    deps:
+    - path: data/split_data/Consignment_pricing_test.csv
+      md5: c0280137585f87fc38125c0468584412
+      size: 126124
+    - path: data/split_data/Consignment_pricing_train.csv
+      md5: 560ae71873d8ae1b8b2a0c18bedeb89b
+      size: 502828
+    - path: source/train_evaluate.py
+      md5: 3a0275277208711f3c21939448b57a54
+      size: 4044
+    params:
+      params.yaml:
+        estimators.GradientBoostingRegressor.params.alpha: 0.8
+        estimators.GradientBoostingRegressor.params.ccp_alpha: 0.1
+        estimators.GradientBoostingRegressor.params.learning_rate: 0.1001
+        estimators.GradientBoostingRegressor.params.n_estimators: 100
+        estimators.GradientBoostingRegressor.params.tol: 0.0001
+        estimators.GradientBoostingRegressor.params.validation_fraction: 1e-06
+        estimators.GradientBoostingRegressor.params.verbose: 0
+    outs:
+    - path: reports/params.json
+      md5: 1bb950cb0b786b544047a929a4026b1d
+      size: 150
+    - path: reports/scores.json
+      md5: 331298e6c1488bcc283bd1e564302301
+      size: 103
+    - path: saved_models/model.pkl
+      md5: 719453af3ae4ebc68943733fab9ac627
+      size: 175857

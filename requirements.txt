@@ -1,0 +1,16 @@
+numpy
+pandas
+flask
+scikit_learn
+gunicorn
+argparse
+joblib
+pytest==7.1.2
+flask_cors
+flask_sqlalchemy
+pyrebase4
+flask_pymongo
+bcrypt
+dnspython
+pymongo[srv]
+dill
