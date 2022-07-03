@@ -14,3 +14,4 @@ bcrypt
 dnspython
 pymongo[srv]
 dill
+flask_monitoringdashboard
