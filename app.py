@@ -14,6 +14,8 @@ from flask_cors import CORS, cross_origin
 # from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.engine import Engine
 from datetime import datetime
+import flask_monitoringdashboard as dashboard
+dashboard.config.init_from(envvar='FLASK_MONITORING_DASHBOARD_CONFIG',file='config.cfg')
 
 ROOT_DIR = os.getcwd()
 SAVED_MODELS_DIR_NAME = "H:/consignment pricing using mlops/saved_models/"
@@ -43,7 +45,7 @@ config = {
 }
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
-
+dashboard.bind(app)
 CORS(app)
 app.config["SECRET_KEY"] = "consignment_secret_key"
 app.config["MONGO_DBNAME"] = "ConsignmentPricing"
@@ -70,13 +72,12 @@ def login_required(f):
 
 # LOGIN SYSTEM
 @app.route("/")
-@login_required
 @cross_origin()
 def index():
     if "email" not in session:
-        return render_template("index.html")
-    else:
         return render_template("login.html")
+    else:
+        return render_template("index.html")
 
 
 @app.route('/login', methods=['POST'])
@@ -394,4 +395,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port, debug=False,host="0.0.0.0")
+    app.run(port=port,debug=False,)
