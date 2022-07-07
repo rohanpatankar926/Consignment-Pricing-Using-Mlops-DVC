@@ -1,0 +1,9 @@
+[2022-07-06 21:58:39,503] root - INFO - 'train_evaluate' function started
+[2022-07-06 21:58:39,503] root - INFO - Reading all parameters from config_path
+[2022-07-06 21:58:39,515] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-06 21:58:39,515] root - INFO - train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+[2022-07-06 21:58:39,532] root - INFO - train data read successfully
+[2022-07-06 21:58:39,539] root - INFO - test data read successfully
+[2022-07-06 21:58:39,539] root - INFO - model training started
+[2022-07-06 21:58:39,543] root - INFO - Exception occured in 'train_evaluate' function'mlflow_config_dir'
+[2022-07-06 21:58:39,543] root - INFO - train_evaluate function reported error in the function

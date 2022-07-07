@@ -44,8 +44,13 @@ estimators:
 
 webapp_model_dir: H:/consignment pricing using mlops/prediction_service/model/model_rf.pkl
 
+data1:
+  training_data: H:/consignment pricing using mlops/data/main_data/train_data.csv
+  test_data:  H:/consignment pricing using mlops/data/main_data/test_data.csv
+  processed: H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv
+
 RandomizedSearchCV:
-  n_iter: 10
+  n_iter: 3
   scoring: r2
   verbose: 5
   cv: 10
@@ -58,11 +63,15 @@ RandomizedSearchCV:
     min_samples_split : [2,4,8,12]
     min_samples_leaf: [2,4,8,10]
 
-data:
-  training_data: H:/consignment pricing using mlops/data/main_data/train_data.csv
-  test_data:  H:/consignment pricing using mlops/data/main_data/test_data.csv
-  processed: H:/consignment pricing using mlops/data/processed/Consignment_pricing_processed.csv
+
 
 reports:
   scores: H:/consignment pricing using mlops/reports/scores.json
   params: H:/consignment pricing using mlops/reports/params.json
+
+mlflow_config_dir:
+  artifacts_dir: artifacts
+  experiment_name: RandomForestRegression
+  run_name: Consignment_Pricing_Mlops
+  registered_model_name: RandomForestConsignmentModel
+  remote_server_uri: http://127.0.0.1:1234

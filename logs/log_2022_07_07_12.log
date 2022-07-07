@@ -1,0 +1,63 @@
+[2022-07-07 12:55:21,912] root - INFO - Getting the data from the source
+[2022-07-07 12:55:21,912] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:21,922] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:22,014] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-07 12:55:22,015] root - INFO - Loading data from the source
+[2022-07-07 12:55:22,015] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:22,027] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:22,027] root - INFO - Getting the data from the source
+[2022-07-07 12:55:22,027] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:22,039] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:22,136] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-07 12:55:22,305] root - INFO - Data Loaded from the source Successfully !!!
+[2022-07-07 12:55:22,328] root - INFO - 'data' FUNCTION STARTED
+[2022-07-07 12:55:22,328] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:22,339] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:22,339] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-07-07 12:55:22,339] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:22,350] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:22,350] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-07-07 12:55:22,350] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-07-07 12:55:22,350] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-07-07 12:55:22,350] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-07-07 12:55:22,350] root - INFO - Getting the data from the source
+[2022-07-07 12:55:22,350] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:22,360] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:22,444] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-07 12:55:22,445] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-07 12:55:22,449] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-07 12:55:23,479] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-07 12:55:32,924] root - INFO - transform_dates_columns function compiled successfully
+[2022-07-07 12:55:32,928] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-07-07 12:55:33,017] root - INFO - data function compiled successfully
+[2022-07-07 12:55:33,036] root - INFO - 'data' FUNCTION STARTED
+[2022-07-07 12:55:33,036] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-07-07 12:55:33,036] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-07-07 12:55:33,036] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-07-07 12:55:33,036] root - INFO - 'data_' FUNCTION STARTED
+[2022-07-07 12:55:33,036] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:33,050] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:33,099] root - INFO - Data loaded successfully
+[2022-07-07 12:55:33,109] numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2022-07-07 12:55:33,123] root - INFO - removed outliers function compiled successfully
+[2022-07-07 12:55:33,133] root - INFO - freight_cost_transform function compiled successfully
+[2022-07-07 12:55:33,282] root - INFO - feature engineering function compiled successfully
+[2022-07-07 12:55:33,283] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:33,296] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:33,389] root - INFO - Final Data for prediction successfully created
+[2022-07-07 12:55:33,403] root - INFO - 'split_data' function started
+[2022-07-07 12:55:33,403] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:33,418] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:33,518] root - INFO - 'split_data' function successfully compiled
+[2022-07-07 12:55:33,529] root - INFO - 'train_evaluate' function started
+[2022-07-07 12:55:33,529] root - INFO - Reading all parameters from config_path
+[2022-07-07 12:55:33,541] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-07 12:55:33,541] root - INFO - train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+[2022-07-07 12:55:33,564] root - INFO - train data read successfully
+[2022-07-07 12:55:33,576] root - INFO - test data read successfully
+[2022-07-07 12:55:33,576] root - INFO - model training started
+[2022-07-07 12:55:33,785] urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1234
+[2022-07-07 12:55:35,845] urllib3.util.retry - DEBUG - Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=RandomForestRegression'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+[2022-07-07 12:55:35,845] urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000206A0B66AF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=RandomForestRegression
+[2022-07-07 12:55:35,846] urllib3.connectionpool - DEBUG - Starting new HTTP connection (2): 127.0.0.1:1234
+[2022-07-07 12:55:37,908] urllib3.util.retry - DEBUG - Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=RandomForestRegression'): Retry(total=3, connect=3, read=5, redirect=5, status=5)

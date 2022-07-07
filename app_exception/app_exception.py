@@ -3,7 +3,6 @@ import os
 import sys
 sys.path.append("H:/Consignment pricing using mlops")
 
-
 class AppException(Exception):
     def __init__(self, error_message: Exception, error_detail: sys):
         """

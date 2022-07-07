@@ -8,12 +8,14 @@ from time import sleep
 from wsgiref import simple_server
 from flask_pymongo import PyMongo
 import bcrypt
+from call import Call
 from functools import wraps
 from predictor.predictor import ConsignmentData, ConsignmentPredictor
 from flask_cors import CORS, cross_origin
 # from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.engine import Engine
 from datetime import datetime
+import mlflow
 import flask_monitoringdashboard as dashboard
 dashboard.config.init_from(envvar='FLASK_MONITORING_DASHBOARD_CONFIG',file='config.cfg')
 
@@ -302,15 +304,25 @@ def get_logs(req_path):
 @cross_origin()
 def train():
     try:
-        from subprocess import call
-        return_code = call(["python", "src/run_all_scipts.py"])
-        print(return_code)
+        import subprocess
+        Call().main("src/run_all_scipts.py")
         return render_template('train.html')
     except FileNotFoundError as e:
         error = "Error occured while retraining 🤔🤔"
         error = {"error": error}
         return render_template("404.html", error=error)
 
+# @app.route('/mlflowserverup', methods=['GET', 'POST'])
+# @login_required
+# @cross_origin()
+# def server_up():
+#     try:
+#         Call().main("src/mlflow_run.py")
+#         return render_template("main.html")
+#     except FileNotFoundError as e:
+#         error = "Error occured while retraining 🤔🤔"
+#         error = {"error": error}
+#         return render_template("404.html", error=error)
 
 LOG_DIR = "logs"
 LOG_DIR = os.path.join(os.getcwd(), LOG_DIR)
@@ -395,4 +407,4 @@ if __name__ == "__main__":
     # db.create_all()
     stream
     train
-    app.run(port=port,host="0.0.0.0",debug=False)
+    app.run(port=port,debug=False)
