@@ -387,12 +387,3 @@ def upload():
         return render_template("db.html")
     else:
         return render_template("db.html")
-
-
-port = int(os.getenv("PORT", 5000))
-if __name__ == "__main__":
-    app.config["SECRET_KEY"] = "!@##$#!#EDS#@!df"
-    # db.create_all()
-    stream
-    train
-    app.run(port=port,host="0.0.0.0",debug=False)
