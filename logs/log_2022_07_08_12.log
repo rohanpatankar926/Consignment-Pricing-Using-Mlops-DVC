@@ -1,0 +1,84 @@
+[2022-07-08 12:01:17,189] root - INFO - Getting the data from the source
+[2022-07-08 12:01:17,189] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:17,199] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:17,290] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-08 12:01:17,292] root - INFO - Loading data from the source
+[2022-07-08 12:01:17,292] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:17,303] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:17,303] root - INFO - Getting the data from the source
+[2022-07-08 12:01:17,303] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:17,314] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:17,392] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-08 12:01:17,556] root - INFO - Data Loaded from the source Successfully !!!
+[2022-07-08 12:01:17,567] root - INFO - 'data' FUNCTION STARTED
+[2022-07-08 12:01:17,567] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:17,576] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:17,577] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-07-08 12:01:17,577] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:17,586] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:17,586] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-07-08 12:01:17,586] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-07-08 12:01:17,586] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-07-08 12:01:17,586] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-07-08 12:01:17,586] root - INFO - Getting the data from the source
+[2022-07-08 12:01:17,586] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:17,596] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:17,684] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-08 12:01:17,685] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-08 12:01:17,690] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-08 12:01:18,831] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-08 12:01:21,306] root - INFO - transform_dates_columns function compiled successfully
+[2022-07-08 12:01:21,311] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-07-08 12:01:21,398] root - INFO - data function compiled successfully
+[2022-07-08 12:01:21,413] root - INFO - 'data' FUNCTION STARTED
+[2022-07-08 12:01:21,413] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-07-08 12:01:21,413] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-07-08 12:01:21,413] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-07-08 12:01:21,413] root - INFO - 'data_' FUNCTION STARTED
+[2022-07-08 12:01:21,413] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:21,424] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:21,473] root - INFO - Data loaded successfully
+[2022-07-08 12:01:21,484] numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2022-07-08 12:01:21,495] root - INFO - removed outliers function compiled successfully
+[2022-07-08 12:01:21,505] root - INFO - freight_cost_transform function compiled successfully
+[2022-07-08 12:01:21,640] root - INFO - feature engineering function compiled successfully
+[2022-07-08 12:01:21,640] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:21,651] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:21,735] root - INFO - Final Data for prediction successfully created
+[2022-07-08 12:01:21,757] root - INFO - 'split_data' function started
+[2022-07-08 12:01:21,757] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:21,778] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:21,903] root - INFO - 'split_data' function successfully compiled
+[2022-07-08 12:01:21,926] root - INFO - 'train_evaluate' function started
+[2022-07-08 12:01:21,926] root - INFO - Reading all parameters from config_path
+[2022-07-08 12:01:21,939] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 12:01:21,939] root - INFO - train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+[2022-07-08 12:01:21,971] root - INFO - train data read successfully
+[2022-07-08 12:01:21,985] root - INFO - test data read successfully
+[2022-07-08 12:01:21,985] root - INFO - model training started
+[2022-07-08 12:01:22,205] urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1234
+[2022-07-08 12:01:22,217] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=RandomForestRegression HTTP/1.1" 200 166
+[2022-07-08 12:01:22,300] git.cmd - DEBUG - Popen(['git', 'version'], cwd=H:\consignment pricing using mlops, universal_newlines=False, shell=None, istream=None)
+[2022-07-08 12:01:22,340] git.cmd - DEBUG - Popen(['git', 'version'], cwd=H:\consignment pricing using mlops, universal_newlines=False, shell=None, istream=None)
+[2022-07-08 12:01:22,396] git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+[2022-07-08 12:01:22,398] git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=H:\consignment pricing using mlops, universal_newlines=False, shell=None, istream=<valid stream>)
+[2022-07-08 12:01:22,468] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 916
+[2022-07-08 12:05:51,285] root - INFO - Model Trained on RandomizedSearchCV successfully
+[2022-07-08 12:05:51,297] urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+[2022-07-08 12:05:51,316] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+[2022-07-08 12:05:51,339] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+[2022-07-08 12:05:51,361] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+[2022-07-08 12:05:51,382] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+[2022-07-08 12:05:51,402] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+[2022-07-08 12:05:51,423] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 2
+[2022-07-08 12:05:51,447] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 2
+[2022-07-08 12:05:51,471] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 2
+[2022-07-08 12:05:51,496] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 2
+[2022-07-08 12:05:51,514] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "GET /api/2.0/mlflow/runs/get?run_uuid=d77f10f21e8a46c7a0bd100661f28c32&run_id=d77f10f21e8a46c7a0bd100661f28c32 HTTP/1.1" 200 1862
+[2022-07-08 12:05:58,115] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "GET /api/2.0/mlflow/runs/get?run_uuid=d77f10f21e8a46c7a0bd100661f28c32&run_id=d77f10f21e8a46c7a0bd100661f28c32 HTTP/1.1" 200 1862
+[2022-07-08 12:05:58,148] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/log-model HTTP/1.1" 200 2
+[2022-07-08 12:05:58,302] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/preview/mlflow/registered-models/create HTTP/1.1" 400 460
+[2022-07-08 12:05:58,320] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "GET /api/2.0/mlflow/runs/get?run_uuid=d77f10f21e8a46c7a0bd100661f28c32&run_id=d77f10f21e8a46c7a0bd100661f28c32 HTTP/1.1" 200 2477
+[2022-07-08 12:05:58,342] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/preview/mlflow/model-versions/create HTTP/1.1" 200 405
+[2022-07-08 12:05:58,359] root - INFO - scores written to file
+[2022-07-08 12:05:58,387] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 376
