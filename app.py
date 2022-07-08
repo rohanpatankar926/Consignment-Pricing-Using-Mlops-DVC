@@ -305,7 +305,7 @@ def get_logs(req_path):
 def train():
     try:
         import subprocess
-        Call().main("src/run_all_scipts.py")
+        Call().main("source/run_all_scipts.py")
         return render_template('train.html')
     except FileNotFoundError as e:
         error = "Error occured while retraining 🤔🤔"
