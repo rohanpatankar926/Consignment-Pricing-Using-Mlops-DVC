@@ -312,18 +312,6 @@ def train():
         error = {"error": error}
         return render_template("404.html", error=error)
 
-# @app.route('/mlflowserverup', methods=['GET', 'POST'])
-# @login_required
-# @cross_origin()
-# def server_up():
-#     try:
-#         Call().main("src/mlflow_run.py")
-#         return render_template("main.html")
-#     except FileNotFoundError as e:
-#         error = "Error occured while retraining 🤔🤔"
-#         error = {"error": error}
-#         return render_template("404.html", error=error)
-
 LOG_DIR = "logs"
 LOG_DIR = os.path.join(os.getcwd(), LOG_DIR)
 CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y_%m_%d_%H')}"
