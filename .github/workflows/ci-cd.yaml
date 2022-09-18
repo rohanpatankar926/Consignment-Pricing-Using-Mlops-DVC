@@ -20,7 +20,7 @@ jobs:
         name: Running Unit-test cases
         
         run: |
-            python3 -m pip install pytest
+            python3 -m pip install -r requirements.txt
             python3 -m pytest Test_Cases/test.py
       -
         name: Set up Docker Build
