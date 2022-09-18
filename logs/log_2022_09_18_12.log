@@ -1,0 +1,11 @@
+[2022-09-18 12:43:59,443] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-09-18 12:43:59,443] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-09-18 12:43:59,443] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-09-18 12:43:59,443] root - INFO - 'data_' FUNCTION STARTED
+[2022-09-18 12:43:59,443] root - INFO - Reading all parameters from config_path
+[2022-09-18 12:43:59,451] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-09-18 12:43:59,478] root - INFO - Data loaded successfully
+[2022-09-18 12:43:59,484] root - INFO - removed outliers function compiled successfully
+[2022-09-18 12:43:59,490] root - INFO - freight_cost_transform function compiled successfully
+[2022-09-18 12:43:59,755] root - INFO - Exception occurred while compiling the codeColumns must be same length as key
+[2022-09-18 12:43:59,755] root - INFO - Failed to execute the code please check your code and run
