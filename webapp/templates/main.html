@@ -1,0 +1,87 @@
+{% extends  "header.html" %}
+{% block title %}
+<title>Main</title>
+{% endblock %}
+
+{%block content %}
+<div class="card">
+    <div class="card-header">View Training Logs</div>
+    <div class="card-body">
+      <h5 class="card-title">Training Logs History</h5>
+      <p class="card-text">All training logs can be downloaded click here..👇👇</p>
+      <a class="btn btn-primary" href="/logs">Training Logs</a>
+    </div>
+
+
+</div>
+<br>
+    <div class="card">
+    <div class="card-header">View Saved Models</div>
+    <div class="card-body">
+      <h5 class="card-title">Saved Model .pkl</h5>
+      <p class="card-text">All Saved models can be downloaded click here..👇👇</p>
+      <a class="btn btn-primary" href="/saved_models">Saved Models</a>
+    </div>
+
+</div>
+<br>
+<div class="card">
+    <div class="card-header">View Artifacts</div>
+    <div class="card-body">
+      <h5 class="card-title">Artifacts section</h5>
+      <p class="card-text">To view raw_data,preprocessed_data,trained_data click here..👇👇</p>
+      <a class="btn btn-primary" href="/data">Artifacts</a>
+    </div>
+
+</div>
+<br>
+<div class="card">
+    <div class="card-header">Estimate Consignment Pricing</div>
+    <div class="card-body">
+      <h5 class="card-title">Model Prediction</h5>
+      <p class="card-text">
+       For model prediction click here..👇👇
+      </p>
+      <a class="btn btn-secondary" href="/predict">Model Prediction</a>
+    </div>  
+</div>
+    <br>
+    <div class="card">
+      <div class="card-header">Uploading Data To Database</div>
+      <div class="card-body">
+        <h5 class="card-title">Data To Database</h5>
+        <p class="card-text">If you are from Logistics domain then please help me by filling the realtime consignment data in this form for future predictions</p>
+        <a class="btn btn-primary" href="/upload">Fill Data</a>
+      </div>
+  
+  </div>
+  <br>
+
+    <div class="card">
+    <div class="card-header">Train the model</div>
+    <div class="card-body">
+      <h5 class="card-title">Model Training</h5>
+      <p class="card-text">
+        Please be patient it may take more time than expected...😄😄🥱
+      </p>
+
+      <div class="button ">
+        <div class="text-icon">
+          <i class="bx bx-cloud-upload"></i>
+          
+          <a class="text btn btn-success"  href="/stream/train" >Train Model</a>
+        
+        </div>
+      </div>
+    </div>
+</div>
+   
+</div>
+  </div>
+</div>
+</div>
+<br>
+
+
+{% endblock %}
+</div>

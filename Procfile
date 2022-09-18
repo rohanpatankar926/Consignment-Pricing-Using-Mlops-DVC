@@ -1,0 +1,1 @@
+web: gunicorn main:run_server $PORT

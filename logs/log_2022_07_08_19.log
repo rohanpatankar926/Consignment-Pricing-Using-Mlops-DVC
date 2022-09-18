@@ -1,0 +1,78 @@
+[2022-07-08 23:00:17,350] root - INFO - Getting the data from the source
+[2022-07-08 23:00:17,350] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:17,367] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:17,455] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-08 23:00:17,566] root - INFO - Loading data from the source
+[2022-07-08 23:00:17,566] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:17,587] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:17,587] root - INFO - Getting the data from the source
+[2022-07-08 23:00:17,587] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:17,599] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:17,687] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-08 23:00:17,901] root - INFO - Data Loaded from the source Successfully !!!
+[2022-07-08 23:00:18,005] root - INFO - 'data' FUNCTION STARTED
+[2022-07-08 23:00:18,005] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:18,019] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:18,019] root - INFO - 'drop_unnecessary_columns' FUNCTION STARTED
+[2022-07-08 23:00:18,019] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:18,030] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:18,030] root - INFO - 'transform_dates_columns' FUNCTION STARTED
+[2022-07-08 23:00:18,030] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION STARTED
+[2022-07-08 23:00:18,030] root - INFO - 'impute_missing' FUNCTION STARTED
+[2022-07-08 23:00:18,030] root - INFO - 'column_imputation' FUNCTION STARTED
+[2022-07-08 23:00:18,030] root - INFO - Getting the data from the source
+[2022-07-08 23:00:18,030] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:18,040] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:18,122] root - INFO - Data Fetched from the source Successfully !!!
+[2022-07-08 23:00:18,122] root - INFO - 'column_imputation' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-08 23:00:18,127] root - INFO - 'impute_missing' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-08 23:00:19,176] root - INFO - 'transform_pq_first_sent_to_client_date_columns' FUNCTION COMPILED SUCCESSFULLY
+[2022-07-08 23:00:21,437] root - INFO - transform_dates_columns function compiled successfully
+[2022-07-08 23:00:21,441] root - INFO - drop_unnecessary_columns function compiled successfully
+[2022-07-08 23:00:21,522] root - INFO - data function compiled successfully
+[2022-07-08 23:00:21,638] root - INFO - 'data' FUNCTION STARTED
+[2022-07-08 23:00:21,638] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-07-08 23:00:21,638] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-07-08 23:00:21,638] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-07-08 23:00:21,639] root - INFO - 'data_' FUNCTION STARTED
+[2022-07-08 23:00:21,639] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:21,654] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:21,694] root - INFO - Data loaded successfully
+[2022-07-08 23:00:21,704] numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2022-07-08 23:00:21,715] root - INFO - removed outliers function compiled successfully
+[2022-07-08 23:00:21,725] root - INFO - freight_cost_transform function compiled successfully
+[2022-07-08 23:00:21,849] root - INFO - feature engineering function compiled successfully
+[2022-07-08 23:00:21,850] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:21,860] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:21,933] root - INFO - Final Data for prediction successfully created
+[2022-07-08 23:00:22,047] root - INFO - 'split_data' function started
+[2022-07-08 23:00:22,047] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:22,071] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:22,173] root - INFO - 'split_data' function successfully compiled
+[2022-07-08 23:00:22,281] root - INFO - 'train_evaluate' function started
+[2022-07-08 23:00:22,281] root - INFO - Reading all parameters from config_path
+[2022-07-08 23:00:22,305] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-07-08 23:00:22,306] root - INFO - train data read successfully-->path: H:/consignment pricing using mlops/data/split_data/Consignment_pricing_train.csv
+[2022-07-08 23:00:22,328] root - INFO - train data read successfully
+[2022-07-08 23:00:22,339] root - INFO - test data read successfully
+[2022-07-08 23:00:22,339] root - INFO - model training started
+[2022-07-08 23:00:22,496] urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1234
+[2022-07-08 23:00:22,963] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=RandomForestRegression HTTP/1.1" 200 166
+[2022-07-08 23:00:23,032] git.cmd - DEBUG - Popen(['git', 'version'], cwd=H:\consignment pricing using mlops, universal_newlines=False, shell=None, istream=None)
+[2022-07-08 23:00:23,070] git.cmd - DEBUG - Popen(['git', 'version'], cwd=H:\consignment pricing using mlops, universal_newlines=False, shell=None, istream=None)
+[2022-07-08 23:00:23,121] git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+[2022-07-08 23:00:23,124] git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=H:\consignment pricing using mlops, universal_newlines=False, shell=None, istream=<valid stream>)
+[2022-07-08 23:00:23,187] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 916
+[2022-07-08 23:00:29,150] urllib3.util.retry - DEBUG - Incremented Retry for (url='/api/2.0/mlflow/runs/update'): Retry(total=4, connect=5, read=4, redirect=5, status=5)
+[2022-07-08 23:00:29,151] urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /api/2.0/mlflow/runs/update
+[2022-07-08 23:00:29,151] urllib3.connectionpool - DEBUG - Starting new HTTP connection (2): 127.0.0.1:1234
+[2022-07-08 23:00:31,300] urllib3.util.retry - DEBUG - Incremented Retry for (url='/api/2.0/mlflow/runs/update'): Retry(total=3, connect=4, read=4, redirect=5, status=5)
+[2022-07-08 23:00:35,310] urllib3.connectionpool - WARNING - Retrying (Retry(total=3, connect=4, read=4, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025CE2B2F100>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/update
+[2022-07-08 23:00:35,310] urllib3.connectionpool - DEBUG - Starting new HTTP connection (3): 127.0.0.1:1234
+[2022-07-08 23:00:37,352] urllib3.util.retry - DEBUG - Incremented Retry for (url='/api/2.0/mlflow/runs/update'): Retry(total=2, connect=3, read=4, redirect=5, status=5)
+[2022-07-08 23:00:45,352] urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=3, read=4, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025CE2B2FE20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/update
+[2022-07-08 23:00:45,352] urllib3.connectionpool - DEBUG - Starting new HTTP connection (4): 127.0.0.1:1234
+[2022-07-08 23:00:47,412] urllib3.util.retry - DEBUG - Incremented Retry for (url='/api/2.0/mlflow/runs/update'): Retry(total=1, connect=2, read=4, redirect=5, status=5)
+[2022-07-08 23:01:03,419] urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=2, read=4, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025CE2B2F490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/update
+[2022-07-08 23:01:03,419] urllib3.connectionpool - DEBUG - Starting new HTTP connection (5): 127.0.0.1:1234
+[2022-07-08 23:01:03,956] urllib3.connectionpool - DEBUG - http://127.0.0.1:1234 "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 374

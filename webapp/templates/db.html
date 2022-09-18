@@ -1,0 +1,218 @@
+{% extends 'header.html' %}
+
+
+{% block content %}
+<style>
+  .alert-primary{
+    color:rgb(0, 28, 42);
+    border-color: rgb(16, 63, 91);
+
+  }
+  .alert{
+    position:relative;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+</style>
+<body>
+  <div id="database-container">
+    <p>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+         <ul class=flashes>
+         {% for message in messages %}
+         <div class ="alert alert-primary">
+           <strong>{{ message }}</strong>
+          </div>
+         {% endfor %}
+         </ul>
+       {% endif %}
+     {% endwith %}
+       </p>
+       <center> <h3>Fill Data To DataBase For Future Predictions</h3></center>
+       <di>
+       <div class="form-group">
+     <form method="POST" action="/upload" enctype="multipart/form-data">
+       <input type="text"
+                class="form-control"
+                name="pq"
+                placeholder="Enter product quantity"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="poso"
+                placeholder="Enter product order"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="asndn"
+                placeholder="Enter product asndn"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="country"
+                placeholder="Enter country"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="managedby"
+                placeholder="Enter Managed By"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="fulfil_via"
+                placeholder="Enter Fullfilled Via"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="vendor"
+                placeholder="Enter Vendo Inco Term"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="shipment_mode"
+                placeholder="Enter Shipment Mode"
+                >
+                <br>
+                <input placeholder="Product Quantity Date" class="form-control" type="text" onfocus="(this.type='date')" id="date"
+                name="pqdate"
+                >
+                <br>
+        
+                <input placeholder="Scheduled Delivery Date" class="form-control" type="text" onfocus="(this.type='date')" id="date"
+                name="scheduled_delivery_date"
+                >
+                <br>
+                <input placeholder="Delivery Client Date" class="form-control" type="text" onfocus="(this.type='date')" id="date"
+                name="delivery_client_date"
+                >
+                <br>
+                <input placeholder="Delivery Recorded Date" class="form-control" type="text" onfocus="(this.type='date')" id="date"
+                name="delivery_recorded_date"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="product_group"
+                placeholder="Enter Product Group"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="sub_classification"
+                placeholder="Enter Sub Classification"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="vendor"
+                placeholder="Enter Vendor"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="item_desc"
+                placeholder="Enter Item Description"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="molecular_test"
+                placeholder="Enter Molecular Test"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="brand"
+                placeholder="Enter Brand Name"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="dosage"
+                placeholder="Enter Dosage Details"
+                >
+                <br>
+                <input type="text"
+                class="form-control"
+                name="dosage_form"
+                placeholder="Enter Dosgage Form"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="unit_of_measure"
+                placeholder="Enter Unit Of Measure"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="line_item_quantity"
+                placeholder="Enter Line Item Quantity"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="line_item_value"
+                placeholder="Enter Unit Of Measure"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="pack_price"
+                placeholder="Enter Pack Price"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="unit_price"
+                placeholder="Enter Unit Price"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="manufacturing_site"
+                placeholder="Enter Enter Manufacturing Site"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="first_line_designation"
+                placeholder="Enter First Line Designation"
+               >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="weight_product"
+                placeholder="Enter Weight Product"
+               >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="freight_cost"
+                placeholder="Enter Freight Cost"
+                >
+                <br>
+                <input type="number"
+                class="form-control"
+                name="line_item_insurance"
+                placeholder="Enter Line Item Insurance"
+                >
+        <br>
+     <input class="btn btn-secondary" type="submit" value="submit">
+     </form>
+    </div>
+  </div>
+    </center>
+<br>
+</body>
+</html>
+{% endblock %}

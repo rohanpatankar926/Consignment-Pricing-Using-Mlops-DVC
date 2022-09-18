@@ -1,0 +1,58 @@
+{% extends 'header.html' %}
+
+{% block head %}
+
+
+<title>Train Status</title>
+{% endblock %}
+
+{% block content %}
+    <h3>Training Completed Successfully 😁😁 Go to <a class="btn btn-primary" href="/">Home</a></h3>
+
+    
+    <br>
+    <br>
+    <div class="card">
+        <div class="card-header">View Accuracy Metrics For this trained model</div>
+        <div class="card-body">
+          <h5 class="card-title">Accuracy Metrics</h5>
+          <p class="card-text">
+          To view Accuracy Score,model parameters and RMSE Score Click here..👇👇
+          </p>
+          <a class="btn btn-success" href="/performance">Training Performance</a>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">Mlflow</div>
+      <div class="card-body">
+        <h5 class="card-title">Mlflow Model Tracking</h5>
+        <p class="card-text">You can easily track your ml models through mlflow</p>
+        <a class="btn btn-primary" href="http://127.0.0.1:1234">Track Model</a>
+      </div>
+  </div>
+    <br>
+    <br>
+    <div class="Container">
+    <div class="card-header">Training Logs History</div>
+    <div id="container" style="background-color:black">
+      <div id="content" style="color:white">
+        <pre id="output"></pre>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+  <script>
+      var output = document.getElementById('output');
+  
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', "{{ url_for('stream') }}");
+      xhr.send();
+      setInterval(function() {
+          output.textContent = xhr.responseText;
+      }, 5);
+  </script>
+        
+{% endblock %}

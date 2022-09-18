@@ -1,0 +1,14 @@
+[2022-09-18 01:16:17,537] root - INFO - 'data' FUNCTION STARTED
+[2022-09-18 01:16:17,537] root - INFO - 'feature_engineering' FUNCTION STARTED
+[2022-09-18 01:16:17,537] root - INFO - 'freight_cost_transform' FUNCTION STARTED
+[2022-09-18 01:16:17,537] root - INFO - 'remove_outliers' FUNCTION STARTED
+[2022-09-18 01:16:17,537] root - INFO - 'data_' FUNCTION STARTED
+[2022-09-18 01:16:17,537] root - INFO - Reading all parameters from config_path
+[2022-09-18 01:16:17,553] root - INFO - Parameters Readed from config_path Successfully !!!
+[2022-09-18 01:16:17,606] root - INFO - Data loaded successfully
+[2022-09-18 01:16:17,617] root - INFO - removed outliers function compiled successfully
+[2022-09-18 01:16:17,630] root - INFO - freight_cost_transform function compiled successfully
+[2022-09-18 01:16:18,245] root - INFO - Exception occurred while compiling the codeColumns must be same length as key
+[2022-09-18 01:16:18,245] root - INFO - Failed to execute the code please check your code and run
+[2022-09-18 01:16:18,245] root - INFO - Exception occurred while compiling the codeError occurred python script name [/home/dataguy/Desktop/Consignment-Pricing-Using-Mlops-DVC-main/source/stage4_feature_engineering.py] line number [103] error message [Columns must be same length as key].
+[2022-09-18 01:16:18,245] root - INFO - Failed to execute the code please check your code and run

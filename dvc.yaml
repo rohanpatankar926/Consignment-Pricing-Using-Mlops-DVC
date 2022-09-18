@@ -1,0 +1,59 @@
+stages:
+  load_data:
+    cmd: python src/stage2_load_data.py --config=params.yaml
+    deps:
+    - src/stage1_Get_Data.py
+    - src/stage2_Load_Data.py
+    - data_given/Consignment_pricing_raw.csv
+    outs:
+    - data/raw/Consignment_pricing_raw.csv
+
+  preprocessing:
+    cmd: python src/stage3_preprocessing.py --config=params.yaml
+    deps:
+      - src/stage3_preprocessing.py
+      - data/raw/Consignment_pricing_raw.csv
+    outs:
+      - data/processed/Consignment_pricing_processed.csv
+
+  feature_engineering:
+    cmd: python src/stage4_feature_engineering.py --config=params.yaml
+    deps:
+    - src/stage4_feature_engineering.py
+    - data/processed/Consignment_pricing_processed.csv
+    outs: 
+    - data/transformed_data/Consignment_pricing_transformed.csv
+
+  split_data:
+    cmd: python src/stage5_split_data.py --config=params.yaml
+    deps:
+    - src/stage5_split_data.py
+    - data/transformed_data/Consignment_pricing_transformed.csv
+    outs:
+    - data/split_data/Consignment_pricing_train.csv
+    - data/split_data/Consignment_pricing_test.csv
+
+  train_model:
+    cmd: python src/stage6_train_evaluate.py --config=params.yaml
+    deps:
+    - src/stage6_train_evaluate.py
+    - data/split_data/Consignment_pricing_train.csv
+    - data/split_data/Consignment_pricing_test.csv
+    params:
+    - estimators.RandomForestRegressor.params.criterion
+    - estimators.RandomForestRegressor.params.max_deapth
+    - estimators.RandomForestRegressor.params.min_sample_leaf
+    - estimators.RandomForestRegressor.params.n_estimators
+    - estimators.RandomForestRegressor.params.oob_score
+    # metrics:
+    # - reports/scores.json:
+    #     cache: false
+    # - reports/params.json:
+    #     cache: false
+    # outs:
+    # - saved_models/model.pkl
+  
+  log_production_model:
+    cmd: python src/log_production_model.py --config=params.yaml
+    deps:
+    - src/log_production_model.py 
